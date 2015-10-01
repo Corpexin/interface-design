@@ -15,7 +15,6 @@ namespace BotonEscurridizo
     {
         Persona persona;
         ArrayList lista = new ArrayList();
-        int cont = 0;
 
         public BotonEscurridizo()
         {
@@ -26,39 +25,25 @@ namespace BotonEscurridizo
 
         private Persona añadirPersona()
         {
-            //poner añadirBoton() que devuelva un boton en persona. aqui ejecutar ese metodo y darle a this.controls
             //usar las propiedades de la persona en vez de las del boton.
-            Random rnd = new Random();
-
-            Button boton = new Button();
-            int tamaño = rnd.Next(3) + 1;
-            boton.Size = (Size)new Point(16 * tamaño, 30 * tamaño); //16,30
-            boton.Location = new Point(rnd.Next(760), rnd.Next(560));
-            boton.BackColor = Color.Transparent;
-            boton.BackgroundImage = Image.FromFile("C:\\Users\\Corpex\\Documents\\GitHub\\interface-design\\BotonEscurridizo\\persona.png");
-            boton.BackgroundImageLayout = ImageLayout.Zoom;
-            boton.FlatStyle = FlatStyle.Flat;
-            boton.FlatAppearance.BorderSize = 0;
-            boton.Visible = false;
-            this.Controls.Add(boton);
-
-            //elboton.click += new EventHandler(this.tePille)
-
-            persona = new Persona(20, 30, 150, boton, MaximumSize.Width, MaximumSize.Height);
-
+            persona = new Persona(20, 30, 150, MaximumSize.Width, MaximumSize.Height);
+            this.Controls.Add(persona.boton);
             return persona;
         }
 
         private void BotonEscurridizo_MouseMove(object sender, MouseEventArgs e)
         {
-            //hacer un for each para que cada elemento de la lista de personas mire
-            persona.mirar(e);
-            if (cont % 2000 == 0)
+            foreach (Persona p in lista)
             {
-                añadirPersona();
-                lista.Add(persona);
+                p.mirar(e);
             }
-            cont++;
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            añadirPersona();
+            lista.Add(persona);
         }
     }
 }

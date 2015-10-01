@@ -13,19 +13,19 @@ namespace BotonEscurridizo
         int aceleracion;
         int tamañoX;
         int tamañoY;
-        int vision;
-        Button boton;
+        int vision; //poner como constante
+        public Button boton;
         int maxSizeWidth;
         int maxSizeHeight;
 
-        public Persona(int tamañoX, int tamañoY, int vision, Button boton, int maxSizeWidth, int maxSizeHeight)
+        public Persona(int tamañoX, int tamañoY, int vision,int maxSizeWidth, int maxSizeHeight)
         {
             this.tamañoX = tamañoX;
             this.tamañoY = tamañoY;
             this.vision = vision;
-            this.boton = boton;
             this.maxSizeWidth = maxSizeWidth;
             this.maxSizeHeight = maxSizeHeight;
+            boton = añadirBoton();
             nacer();
         }
 
@@ -34,15 +34,35 @@ namespace BotonEscurridizo
             boton.Visible = true;
         }
 
-        public void mirar(MouseEventArgs e) //le pasamos por parametro la "e" de formulario(posicion del raton?)
+        public Button añadirBoton()
+        {
+            Random rnd = new Random();
+
+            boton = new Button();
+            int tamaño = rnd.Next(3) + 1;
+            boton.Size = (Size)new Point(16 * tamaño, 30 * tamaño); //16,30
+            boton.Location = new Point(rnd.Next(760), rnd.Next(560));
+            boton.BackColor = Color.Transparent;
+            boton.BackgroundImage = Image.FromFile("C:\\Users\\Corpex\\Documents\\GitHub\\interface-design\\BotonEscurridizo\\persona.png");
+            boton.BackgroundImageLayout = ImageLayout.Zoom;
+            boton.FlatStyle = FlatStyle.Flat;
+            boton.FlatAppearance.BorderSize = 0;
+            boton.Visible = false;
+
+            
+            //elboton.click += new EventHandler(this.tePille)
+            return boton;
+        }
+
+        public void mirar(MouseEventArgs e) //le pasamos por parametro la "e" de formulario(posicion del raton)
         {
 
-            if (fDistancia(new Point(e.X, e.Y), new Point(boton.Location.X, boton.Location.Y)) < 80)
+            if (fDistancia(new Point(e.X, e.Y), new Point(boton.Location.X, boton.Location.Y)) < 100)
             {
                 aceleracion = 5;
                 huir(e);
             }
-            else if (fDistancia(new Point(e.X, e.Y), new Point(boton.Location.X, boton.Location.Y)) < 110)
+            else if (fDistancia(new Point(e.X, e.Y), new Point(boton.Location.X, boton.Location.Y)) < 140)
             {
                 aceleracion = 1;
                 huir(e);

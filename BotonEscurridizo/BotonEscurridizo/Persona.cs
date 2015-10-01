@@ -11,17 +11,15 @@ namespace BotonEscurridizo
     class Persona
     {
         int aceleracion;
-        int tamañoX;
-        int tamañoY;
+        public int tamaño;
         int vision; //poner como constante
         public Button boton;
         int maxSizeWidth;
         int maxSizeHeight;
 
-        public Persona(int tamañoX, int tamañoY, int vision,int maxSizeWidth, int maxSizeHeight)
+        public Persona(int vision, int maxSizeWidth, int maxSizeHeight)
         {
-            this.tamañoX = tamañoX;
-            this.tamañoY = tamañoY;
+            tamaño = 1;
             this.vision = vision;
             this.maxSizeWidth = maxSizeWidth;
             this.maxSizeHeight = maxSizeHeight;
@@ -37,9 +35,7 @@ namespace BotonEscurridizo
         public Button añadirBoton()
         {
             Random rnd = new Random();
-
             boton = new Button();
-            int tamaño = rnd.Next(3) + 1;
             boton.Size = (Size)new Point(16 * tamaño, 30 * tamaño); //16,30
             boton.Location = new Point(rnd.Next(760), rnd.Next(560));
             boton.BackColor = Color.Transparent;
@@ -49,9 +45,15 @@ namespace BotonEscurridizo
             boton.FlatAppearance.BorderSize = 0;
             boton.Visible = false;
 
-            
-            //elboton.click += new EventHandler(this.tePille)
+
+            boton.Click += new EventHandler(morir);
             return boton;
+        }
+
+        internal void crece()
+        {
+            tamaño++;
+            boton.Size = (Size)new Point(16 * tamaño, 30 * tamaño);
         }
 
         public void mirar(MouseEventArgs e) //le pasamos por parametro la "e" de formulario(posicion del raton)
@@ -71,31 +73,27 @@ namespace BotonEscurridizo
 
         public void huir(MouseEventArgs e)
         {
-            int cont = 0;
-            if (cont % 2 == 0) // contador que relentiza el trackeo del boton a la mitad
+            //arriba
+            if (e.Y - boton.Location.Y > 0 && boton.Location.Y > 35)
             {
-                //arriba
-                if (e.Y - boton.Location.Y > 0 && boton.Location.Y > 35)
-                {
-                    boton.Location = new Point(boton.Location.X, boton.Location.Y - aceleracion);
-                }
-                //izquierda
-                if (e.X - boton.Location.X > 0 && boton.Location.X > 35)
-                {
-                    boton.Location = new Point(boton.Location.X - aceleracion, boton.Location.Y);
-                }
-                //abajo
-                if (e.Y - boton.Location.Y < 0 && boton.Location.Y < maxSizeHeight - boton.Height - 35)
-                {
-                    boton.Location = new Point(boton.Location.X, boton.Location.Y + aceleracion);
-                }
-                //derecha
-                if (e.X - boton.Location.X < 0 && boton.Location.X < maxSizeWidth - boton.Width - 35)
-                {
-                    boton.Location = new Point(boton.Location.X + aceleracion, boton.Location.Y);
-                }
-                cont++;
+                boton.Location = new Point(boton.Location.X, boton.Location.Y - aceleracion);
             }
+            //izquierda
+            if (e.X - boton.Location.X > 0 && boton.Location.X > 35)
+            {
+                boton.Location = new Point(boton.Location.X - aceleracion, boton.Location.Y);
+            }
+            //abajo
+            if (e.Y - boton.Location.Y < 0 && boton.Location.Y < maxSizeHeight - boton.Height - 35)
+            {
+                boton.Location = new Point(boton.Location.X, boton.Location.Y + aceleracion);
+            }
+            //derecha
+            if (e.X - boton.Location.X < 0 && boton.Location.X < maxSizeWidth - boton.Width - 35)
+            {
+                boton.Location = new Point(boton.Location.X + aceleracion, boton.Location.Y);
+            }
+
         }
 
         private int fDistancia(Point p1, Point p2)
@@ -103,9 +101,10 @@ namespace BotonEscurridizo
             return (int)Math.Pow(Math.Pow(p1.X - p2.X, 2) + Math.Pow(p1.Y - p2.Y, 2), 0.5);
         }
 
-        public void morir()
+        public void morir(object sender, EventArgs e)
         {
-
+            boton.Dispose();
+            
         }
     }
 }

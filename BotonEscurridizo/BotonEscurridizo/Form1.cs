@@ -26,7 +26,7 @@ namespace BotonEscurridizo
         private Persona añadirPersona()
         {
             //usar las propiedades de la persona en vez de las del boton.
-            persona = new Persona(20, 30, 150, MaximumSize.Width, MaximumSize.Height);
+            persona = new Persona(150, MaximumSize.Width, MaximumSize.Height);
             this.Controls.Add(persona.boton);
             return persona;
         }
@@ -44,6 +44,15 @@ namespace BotonEscurridizo
         {
             añadirPersona();
             lista.Add(persona);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            foreach (Persona p in lista)
+            {
+                if(p.tamaño<4)
+                 p.crece();
+            }
         }
     }
 }

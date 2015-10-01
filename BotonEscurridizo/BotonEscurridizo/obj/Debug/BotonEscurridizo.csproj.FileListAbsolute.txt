@@ -1,0 +1,9 @@
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\bin\Debug\BotonEscurridizo.exe.config
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\bin\Debug\BotonEscurridizo.exe
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\bin\Debug\BotonEscurridizo.pdb
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\obj\Debug\BotonEscurridizo.csprojResolveAssemblyReference.cache
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\obj\Debug\BotonEscurridizo.BotonEscurridizo.resources
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\obj\Debug\BotonEscurridizo.Properties.Resources.resources
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\obj\Debug\BotonEscurridizo.csproj.GenerateResource.Cache
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\obj\Debug\BotonEscurridizo.exe
+C:\Users\Corpex\Documents\GitHub\interface-design\BotonEscurridizo\BotonEscurridizo\obj\Debug\BotonEscurridizo.pdb

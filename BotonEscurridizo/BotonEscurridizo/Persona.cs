@@ -10,24 +10,26 @@ namespace BotonEscurridizo
 {
     class Persona
     {
-        int aceleracion;
-        public int tamaño;
-        int vision; //poner como constante
-        public Button boton;
-        int maxSizeWidth;
-        int maxSizeHeight;
+        int aceleracion; //aumento de la velocidad con respecto a la cercania del monstruo
+        public int tamaño; //tamaño de la persona. 
+        int vision; //campo de vision de la persona
+        public Button boton; //boton relacionado con la persona
+        int maxSizeWidth; //altura minima del formulario
+        int maxSizeHeight; //altura maxima del formulario
+        public Boolean vivo; //boolean que dice si la persona esta viva o muerta. Muere cuando se clickea sobre la persona
 
-        public Persona(int vision, int maxSizeWidth, int maxSizeHeight)
+        public Persona(int vision, int maxSizeWidth, int maxSizeHeight) 
         {
             tamaño = 1;
             this.vision = vision;
             this.maxSizeWidth = maxSizeWidth;
             this.maxSizeHeight = maxSizeHeight;
-            boton = añadirBoton();
+            boton = añadirBoton(); 
             nacer();
+            vivo = true;
         }
 
-        public void nacer()
+        public void nacer() //tecnicamente se podria crear el boton directamente visible, pero por aumentar el realismo....
         {
             boton.Visible = true;
         }
@@ -45,7 +47,7 @@ namespace BotonEscurridizo
             boton.FlatAppearance.BorderSize = 0;
             boton.Visible = false;
 
-
+            //Evento que se activa cuando se hace click sobre el boton (muere)
             boton.Click += new EventHandler(morir);
             return boton;
         }
@@ -53,12 +55,12 @@ namespace BotonEscurridizo
         internal void crece()
         {
             tamaño++;
-            boton.Size = (Size)new Point(16 * tamaño, 30 * tamaño);
+            boton.Size = (Size)new Point(16 * tamaño, 30 * tamaño); //Para crecer se aumenta el tamaño fijo de la imagen (16 x 30) * tamaño
         }
 
-        public void mirar(MouseEventArgs e) //le pasamos por parametro la "e" de formulario(posicion del raton)
+        public void mirar(MouseEventArgs e) //le pasamos por parametro la posicion del raton
         {
-
+            //Si la distancia es de 0-100 va corriendo, si la distancia es de 100-140 va andando.
             if (fDistancia(new Point(e.X, e.Y), new Point(boton.Location.X, boton.Location.Y)) < 100)
             {
                 aceleracion = 5;
@@ -103,8 +105,9 @@ namespace BotonEscurridizo
 
         public void morir(object sender, EventArgs e)
         {
+            //El boton muere y la persona cambia su estado vivo a false, para ser usado por la clase Form1 y eliminarlo de su ArrayList de personas
             boton.Dispose();
-            
+            vivo = false;
         }
     }
 }

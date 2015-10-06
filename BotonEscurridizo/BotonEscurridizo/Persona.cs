@@ -41,7 +41,7 @@ namespace BotonEscurridizo
             boton.Size = (Size)new Point(16 * tamaño, 30 * tamaño); //16,30
             boton.Location = new Point(rnd.Next(760), rnd.Next(560));
             boton.BackColor = Color.Transparent;
-            boton.BackgroundImage = Image.FromFile("C:\\Users\\Corpex\\Documents\\GitHub\\interface-design\\BotonEscurridizo\\persona.png");
+            boton.BackgroundImage = Properties.Resources.persona;
             boton.BackgroundImageLayout = ImageLayout.Zoom;
             boton.FlatStyle = FlatStyle.Flat;
             boton.FlatAppearance.BorderSize = 0;

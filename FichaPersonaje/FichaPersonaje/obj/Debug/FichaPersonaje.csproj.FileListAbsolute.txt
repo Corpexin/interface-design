@@ -1,0 +1,9 @@
+c:\users\corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.exe.config
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.exe
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.pdb
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csprojResolveAssemblyReference.cache
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.Form1.resources
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.Properties.Resources.resources
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csproj.GenerateResource.Cache
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.exe
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.pdb

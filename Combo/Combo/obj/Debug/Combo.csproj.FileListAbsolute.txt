@@ -1,0 +1,9 @@
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\bin\Debug\Combo.exe.config
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\bin\Debug\Combo.exe
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\bin\Debug\Combo.pdb
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\obj\Debug\Combo.csprojResolveAssemblyReference.cache
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\obj\Debug\Combo.Form1.resources
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\obj\Debug\Combo.Properties.Resources.resources
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\obj\Debug\Combo.csproj.GenerateResource.Cache
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\obj\Debug\Combo.exe
+c:\users\corpex\Documents\GitHub\interface-design\Combo\Combo\obj\Debug\Combo.pdb

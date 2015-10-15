@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ficha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ficha1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\df.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ficha-gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbkdesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldwdesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clelfdesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldldesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbkdesact1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldwdesact1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clelfdesact1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldldesact1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbk3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clelf1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

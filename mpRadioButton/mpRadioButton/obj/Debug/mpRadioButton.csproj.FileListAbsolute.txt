@@ -1,0 +1,9 @@
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\bin\Debug\mpRadioButton.exe.config
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\bin\Debug\mpRadioButton.exe
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\bin\Debug\mpRadioButton.pdb
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\obj\Debug\mpRadioButton.csprojResolveAssemblyReference.cache
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\obj\Debug\mpRadioButton.Form1.resources
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\obj\Debug\mpRadioButton.Properties.Resources.resources
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\obj\Debug\mpRadioButton.csproj.GenerateResource.Cache
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\obj\Debug\mpRadioButton.exe
+c:\users\corpex\Documents\GitHub\interface-design\mpRadioButton\mpRadioButton\obj\Debug\mpRadioButton.pdb

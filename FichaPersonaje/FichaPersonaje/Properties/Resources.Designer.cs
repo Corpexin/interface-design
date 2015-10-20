@@ -83,6 +83,26 @@ namespace FichaPersonaje.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnAct {
+            get {
+                object obj = ResourceManager.GetObject("btnAct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnDesact {
+            get {
+                object obj = ResourceManager.GetObject("btnDesact", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clbk {
             get {
                 object obj = ResourceManager.GetObject("clbk", resourceCulture);
@@ -143,6 +163,16 @@ namespace FichaPersonaje.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clbkproh {
+            get {
+                object obj = ResourceManager.GetObject("clbkproh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cldl {
             get {
                 object obj = ResourceManager.GetObject("cldl", resourceCulture);
@@ -176,6 +206,16 @@ namespace FichaPersonaje.Properties {
         internal static System.Drawing.Bitmap cldldesact1 {
             get {
                 object obj = ResourceManager.GetObject("cldldesact1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cldlproh {
+            get {
+                object obj = ResourceManager.GetObject("cldlproh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +263,16 @@ namespace FichaPersonaje.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cldwproh {
+            get {
+                object obj = ResourceManager.GetObject("cldwproh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clelf {
             get {
                 object obj = ResourceManager.GetObject("clelf", resourceCulture);
@@ -256,6 +306,16 @@ namespace FichaPersonaje.Properties {
         internal static System.Drawing.Bitmap clelfdesact1 {
             get {
                 object obj = ResourceManager.GetObject("clelfdesact1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clelfproh {
+            get {
+                object obj = ResourceManager.GetObject("clelfproh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

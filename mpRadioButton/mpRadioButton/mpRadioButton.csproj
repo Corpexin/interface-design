@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70333383-D4B5-4C0F-91B1-22EFCCBB7514}</ProjectGuid>
+    <ProjectGuid>{1024C79C-019A-4355-8A11-FE4B598E186C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FichaPersonaje</RootNamespace>
-    <AssemblyName>FichaPersonaje</AssemblyName>
+    <RootNamespace>mpRadioButton</RootNamespace>
+    <AssemblyName>mpRadioButton</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -65,7 +65,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,111 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ficha.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ficha1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bk1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\df.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ficha-gif.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\elf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clbk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clbk1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clelf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clbkdesact.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldwdesact.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clelfdesact.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldldesact.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clbk2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clbkdesact1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldwdesact1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clelfdesact1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldldesact1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clbk3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldl1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldw1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clelf1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnAct.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnDesact.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clbkproh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldlproh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cldwproh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clelfproh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

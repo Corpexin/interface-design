@@ -1,11 +1,13 @@
 ﻿using FichaPersonaje.Properties;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,8 +15,10 @@ namespace FichaPersonaje
 {
     public partial class FichaPersonaje : Form
     {
-
         Boolean[] clickeado = new Boolean[4]; //Indices: 0 = bk | 1 = dw | 2 = elf | 3 = dl
+        Boolean[] btnclickeado = new Boolean[3]; //Indices: 0 = basic | 1 = caract | 2 = equip
+        private readonly int MAX_PUNTOS_CONT = 5000;//Constante con el maximo de puntos disponibles para las caracteristicas
+        int[] listaValoresCaract = new int[4]; //aqui se guardan los puntos de las 4 caracteristicas
 
         public FichaPersonaje()
         {
@@ -24,8 +28,28 @@ namespace FichaPersonaje
             {
                 clickeado[i] = false;
             }
+
+            for(int i =0; i<btnclickeado.Length; i++)
+            {
+                if (i == 0)
+                {
+                    btnclickeado[i] = true;
+                }
+                else
+                {
+                    btnclickeado[i] = false;
+                }
+            }
+            //Inicializamos el uptodown
+            inicioUptoDown();
             
+            //Inicializamos array de valores de estadisticas a 0
+            for(int i =0; i<listaValoresCaract.Length; i++)
+            {
+                listaValoresCaract[i] = 0;
+            }
         }
+
 
         private void imgBk_MouseHover(object sender, EventArgs e)
         {
@@ -158,25 +182,39 @@ namespace FichaPersonaje
                 }
             }
         }
+        private void btn1_MouseHover(object sender, EventArgs e)
+        {
+            btn1.Image = Resources.btnAct1;
+        }
 
         private void btn2_MouseHover(object sender, EventArgs e)
         {
-            btn2.Image = Resources.btnAct;
+            btn2.Image = Resources.btnAct1;
         }
 
         private void btn3_MouseHover(object sender, EventArgs e)
         {
-            btn3.Image = Resources.btnAct;
+            btn3.Image = Resources.btnAct1;
+        }
+
+        private void btn1_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnclickeado[0] == false)
+                btn1.Image = Resources.btnDesact1;
+                
+            
         }
 
         private void btn2_MouseLeave(object sender, EventArgs e)
         {
-            btn2.Image = Resources.btnDesact;
+            if (btnclickeado[1] == false)
+                btn2.Image = Resources.btnDesact1;
         }
 
         private void btn3_MouseLeave(object sender, EventArgs e)
         {
-            btn3.Image = Resources.btnDesact;
+            if (btnclickeado[2] == false)
+                btn3.Image = Resources.btnDesact1;
         }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
@@ -195,8 +233,8 @@ namespace FichaPersonaje
                     imgDL.Enabled = false;
                     imgBk.Image = Resources.clbkdesact1;
                     imgDW.Image = Resources.cldwdesact1;
-                    imgElf.Image = Resources.clelfproh;
-                    imgDL.Image = Resources.cldlproh;
+                    imgElf.Image = Resources.clelfproh1;
+                    imgDL.Image = Resources.cldlproh1;
                     break;
                 case 1:
                     imgBk.Enabled = false;
@@ -204,9 +242,9 @@ namespace FichaPersonaje
                     imgElf.Enabled = true;
                     imgDL.Enabled = false;
                     imgElf.Image = Resources.clelfdesact1;
-                    imgBk.Image = Resources.clbkproh;
-                    imgDW.Image = Resources.cldwproh;
-                    imgDL.Image = Resources.cldlproh;
+                    imgBk.Image = Resources.clbkproh1;
+                    imgDW.Image = Resources.cldwproh1;
+                    imgDL.Image = Resources.cldlproh1;
                     break;
                 case 2:
                     imgBk.Enabled = false;
@@ -214,11 +252,110 @@ namespace FichaPersonaje
                     imgElf.Enabled = false;
                     imgDL.Enabled = true;
                     imgDL.Image = Resources.cldldesact1;
-                    imgBk.Image = Resources.clbkproh;
-                    imgDW.Image = Resources.cldwproh;
-                    imgElf.Image = Resources.clelfproh;
+                    imgBk.Image = Resources.clbkproh1;
+                    imgDW.Image = Resources.cldwproh1;
+                    imgElf.Image = Resources.clelfproh1;
                     break;
             }
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            btn1.Image = Resources.btnAct1;
+            btn2.Image = Resources.btnDesact1;
+            btn3.Image = Resources.btnDesact1;
+            panelDos.Visible = false;
+            btnclickeado[0] = true;
+            btnclickeado[1] = false;
+            btnclickeado[2] = false;
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            btn2.Image = Resources.btnAct1;
+            btn1.Image = Resources.btnDesact1;
+            btn3.Image = Resources.btnDesact1;
+            panelDos.Visible = true;
+            btnclickeado[0] = false;
+            btnclickeado[1] = true;
+            btnclickeado[2] = false;
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            btn3.Image = Resources.btnAct1;
+            btn1.Image = Resources.btnDesact1;
+            btn2.Image = Resources.btnDesact1;
+            //panelTres.Visible = true;
+            btnclickeado[0] = false;
+            btnclickeado[2] = true;
+            btnclickeado[1] = false;
+        }
+
+        private void inicioUptoDown()
+        {
+            //Creo un arrayList de 9999 numeros y se los asigno a los uptodown
+            ArrayList listNum = new ArrayList();
+            for (int i = MAX_PUNTOS_CONT; i >=0; i--)
+            {
+                listNum.Add(i);
+            }
+            UDFuerza.Items.AddRange(listNum);
+            UDFuerza.SelectedIndex = MAX_PUNTOS_CONT; //mueve el indice al 0 (ultimo numero añadido)
+            UDAgilidad.Items.AddRange(listNum);
+            UDAgilidad.SelectedIndex = MAX_PUNTOS_CONT;
+            UDVitalidad.Items.AddRange(listNum);
+            UDVitalidad.SelectedIndex = MAX_PUNTOS_CONT;
+            UDEnergia.Items.AddRange(listNum);
+            UDEnergia.SelectedIndex = MAX_PUNTOS_CONT;
+            
+        }
+
+        private void UDFuerza_SelectedItemChanged(object sender, EventArgs e)
+        {
+            calcularValor(UDFuerza, 0);
+        }
+
+        private void UDAgilidad_SelectedItemChanged(object sender, EventArgs e)
+        {
+            calcularValor(UDAgilidad, 1);
+        }
+
+        private void UDVitalidad_SelectedItemChanged(object sender, EventArgs e)
+        {
+            calcularValor(UDVitalidad, 2);
+        }
+
+        private void UDEnergia_SelectedItemChanged(object sender, EventArgs e)
+        {
+            calcularValor(UDEnergia, 3);
+        }
+
+        private void calcularValor(DomainUpDown udCaract, int indice)
+        {
+            Regex r = new Regex("^\\d+$"); //Patron que solo coge numeros (hora y media de debug y busquedas para encontrarlo .... )
+            String ft = udCaract.Text;
+            Match m2 = r.Match(ft);
+            int valor=0;
+            if (m2.Success && udCaract.Text.Length<=6 && Int32.Parse(udCaract.Text) <= MAX_PUNTOS_CONT)
+            {
+                listaValoresCaract[indice] = Int32.Parse(udCaract.Text);
+                for (int i = 0; i < listaValoresCaract.Length; i++)
+                {
+                    valor = valor + listaValoresCaract[i];
+                }
+                if (udCaract.Text != null && Int32.Parse(udCaract.Text) <= MAX_PUNTOS_CONT)
+                {
+                    tvContadorPuntos.Text = "" + (MAX_PUNTOS_CONT - valor);
+                }
+            }
+            else
+            {
+                tvContadorPuntos.Text = "Valor no soportado.";
+                    listaValoresCaract[indice] = 0;
+            }
+          
+            
         }
     }
 

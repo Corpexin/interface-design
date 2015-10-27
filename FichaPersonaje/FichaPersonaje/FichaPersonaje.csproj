@@ -185,6 +185,30 @@
   <ItemGroup>
     <None Include="Resources\clelfproh.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAct1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDesact1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbkproh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldlproh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cldwproh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clelfproh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\separadorIzq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\separadorDer.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

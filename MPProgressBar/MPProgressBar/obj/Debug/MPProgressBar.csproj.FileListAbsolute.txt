@@ -1,0 +1,9 @@
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\bin\Debug\MPProgressBar.exe.config
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\bin\Debug\MPProgressBar.exe
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\bin\Debug\MPProgressBar.pdb
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\obj\Debug\MPProgressBar.csprojResolveAssemblyReference.cache
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\obj\Debug\MPProgressBar.Form1.resources
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\obj\Debug\MPProgressBar.Properties.Resources.resources
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\obj\Debug\MPProgressBar.csproj.GenerateResource.Cache
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\obj\Debug\MPProgressBar.exe
+c:\users\corpex\Documents\GitHub\interface-design\MPProgressBar\MPProgressBar\obj\Debug\MPProgressBar.pdb

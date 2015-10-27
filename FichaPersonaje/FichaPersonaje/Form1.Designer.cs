@@ -32,9 +32,21 @@
             this.tvNombrePJ = new System.Windows.Forms.Label();
             this.etNombrePJ = new System.Windows.Forms.TextBox();
             this.panelUno = new System.Windows.Forms.Panel();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
+            this.panelDos = new System.Windows.Forms.Panel();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.PBFuerza = new System.Windows.Forms.ProgressBar();
+            this.UDEnergia = new System.Windows.Forms.DomainUpDown();
+            this.tvEnergia = new System.Windows.Forms.Label();
+            this.UDVitalidad = new System.Windows.Forms.DomainUpDown();
+            this.etVitalidad = new System.Windows.Forms.Label();
+            this.UDAgilidad = new System.Windows.Forms.DomainUpDown();
+            this.tvAgilidad = new System.Windows.Forms.Label();
+            this.UDFuerza = new System.Windows.Forms.DomainUpDown();
+            this.tvFuerza = new System.Windows.Forms.Label();
+            this.tvContadorPuntos = new System.Windows.Forms.Label();
+            this.tvPuntos = new System.Windows.Forms.Label();
             this.tvDarkLord = new System.Windows.Forms.Label();
             this.tvElf = new System.Windows.Forms.Label();
             this.tvSoulWizard = new System.Windows.Forms.Label();
@@ -53,43 +65,22 @@
             this.rbVanert = new System.Windows.Forms.RadioButton();
             this.rbDuprian = new System.Windows.Forms.RadioButton();
             this.pnRBFaccion = new System.Windows.Forms.Panel();
+            this.separadorIzq = new System.Windows.Forms.PictureBox();
+            this.separadorDer = new System.Windows.Forms.PictureBox();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
+            this.panelDos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgDL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgElf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separadorIzq)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separadorDer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // imagPerfil
@@ -131,10 +122,7 @@
             // 
             this.panelUno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
             this.panelUno.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
-            this.panelUno.Controls.Add(this.panel1);
-            this.panelUno.Controls.Add(this.btn3);
-            this.panelUno.Controls.Add(this.btn2);
-            this.panelUno.Controls.Add(this.btn1);
+            this.panelUno.Controls.Add(this.panelDos);
             this.panelUno.Controls.Add(this.tvDarkLord);
             this.panelUno.Controls.Add(this.tvElf);
             this.panelUno.Controls.Add(this.tvSoulWizard);
@@ -155,53 +143,186 @@
             this.panelUno.Controls.Add(this.rbDuprian);
             this.panelUno.Controls.Add(this.tvNombrePJ);
             this.panelUno.Controls.Add(this.pnRBFaccion);
+            this.panelUno.Controls.Add(this.separadorIzq);
+            this.panelUno.Controls.Add(this.separadorDer);
             this.panelUno.Location = new System.Drawing.Point(29, 113);
             this.panelUno.Name = "panelUno";
             this.panelUno.Size = new System.Drawing.Size(643, 468);
             this.panelUno.TabIndex = 24;
             // 
-            // btn3
+            // panelDos
             // 
-            this.btn3.FlatAppearance.BorderSize = 0;
-            this.btn3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3.Image = global::FichaPersonaje.Properties.Resources.btnDesact;
-            this.btn3.Location = new System.Drawing.Point(343, 429);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(31, 33);
-            this.btn3.TabIndex = 35;
-            this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.MouseLeave += new System.EventHandler(this.btn3_MouseLeave);
-            this.btn3.MouseHover += new System.EventHandler(this.btn3_MouseHover);
+            this.panelDos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
+            this.panelDos.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
+            this.panelDos.Controls.Add(this.progressBar3);
+            this.panelDos.Controls.Add(this.progressBar2);
+            this.panelDos.Controls.Add(this.progressBar1);
+            this.panelDos.Controls.Add(this.PBFuerza);
+            this.panelDos.Controls.Add(this.UDEnergia);
+            this.panelDos.Controls.Add(this.tvEnergia);
+            this.panelDos.Controls.Add(this.UDVitalidad);
+            this.panelDos.Controls.Add(this.etVitalidad);
+            this.panelDos.Controls.Add(this.UDAgilidad);
+            this.panelDos.Controls.Add(this.tvAgilidad);
+            this.panelDos.Controls.Add(this.UDFuerza);
+            this.panelDos.Controls.Add(this.tvFuerza);
+            this.panelDos.Controls.Add(this.tvContadorPuntos);
+            this.panelDos.Controls.Add(this.tvPuntos);
+            this.panelDos.Location = new System.Drawing.Point(0, 0);
+            this.panelDos.Name = "panelDos";
+            this.panelDos.Size = new System.Drawing.Size(643, 468);
+            this.panelDos.TabIndex = 36;
+            this.panelDos.Visible = false;
             // 
-            // btn2
+            // progressBar3
             // 
-            this.btn2.FlatAppearance.BorderSize = 0;
-            this.btn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn2.Image = global::FichaPersonaje.Properties.Resources.btnDesact;
-            this.btn2.Location = new System.Drawing.Point(306, 429);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(31, 33);
-            this.btn2.TabIndex = 34;
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.MouseLeave += new System.EventHandler(this.btn2_MouseLeave);
-            this.btn2.MouseHover += new System.EventHandler(this.btn2_MouseHover);
+            this.progressBar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.progressBar3.Location = new System.Drawing.Point(56, 333);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(159, 10);
+            this.progressBar3.TabIndex = 14;
             // 
-            // btn1
+            // progressBar2
             // 
-            this.btn1.FlatAppearance.BorderSize = 0;
-            this.btn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1.Image = global::FichaPersonaje.Properties.Resources.btnAct;
-            this.btn1.Location = new System.Drawing.Point(269, 429);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(31, 33);
-            this.btn1.TabIndex = 33;
-            this.btn1.UseVisualStyleBackColor = true;
+            this.progressBar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.progressBar2.Location = new System.Drawing.Point(56, 267);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(159, 10);
+            this.progressBar2.TabIndex = 13;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.progressBar1.Location = new System.Drawing.Point(56, 201);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(159, 10);
+            this.progressBar1.TabIndex = 12;
+            // 
+            // PBFuerza
+            // 
+            this.PBFuerza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.PBFuerza.Location = new System.Drawing.Point(56, 134);
+            this.PBFuerza.Name = "PBFuerza";
+            this.PBFuerza.Size = new System.Drawing.Size(159, 10);
+            this.PBFuerza.TabIndex = 11;
+            // 
+            // UDEnergia
+            // 
+            this.UDEnergia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.UDEnergia.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UDEnergia.ForeColor = System.Drawing.Color.Salmon;
+            this.UDEnergia.Location = new System.Drawing.Point(140, 304);
+            this.UDEnergia.Name = "UDEnergia";
+            this.UDEnergia.Size = new System.Drawing.Size(75, 22);
+            this.UDEnergia.TabIndex = 10;
+            this.UDEnergia.Text = "0";
+            this.UDEnergia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UDEnergia.SelectedItemChanged += new System.EventHandler(this.UDEnergia_SelectedItemChanged);
+            // 
+            // tvEnergia
+            // 
+            this.tvEnergia.AutoSize = true;
+            this.tvEnergia.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvEnergia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.tvEnergia.Location = new System.Drawing.Point(51, 304);
+            this.tvEnergia.Name = "tvEnergia";
+            this.tvEnergia.Size = new System.Drawing.Size(63, 27);
+            this.tvEnergia.TabIndex = 9;
+            this.tvEnergia.Text = "Energia:";
+            // 
+            // UDVitalidad
+            // 
+            this.UDVitalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.UDVitalidad.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UDVitalidad.ForeColor = System.Drawing.Color.Salmon;
+            this.UDVitalidad.Location = new System.Drawing.Point(140, 237);
+            this.UDVitalidad.Name = "UDVitalidad";
+            this.UDVitalidad.Size = new System.Drawing.Size(75, 22);
+            this.UDVitalidad.TabIndex = 8;
+            this.UDVitalidad.Text = "0";
+            this.UDVitalidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UDVitalidad.SelectedItemChanged += new System.EventHandler(this.UDVitalidad_SelectedItemChanged);
+            // 
+            // etVitalidad
+            // 
+            this.etVitalidad.AutoSize = true;
+            this.etVitalidad.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.etVitalidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.etVitalidad.Location = new System.Drawing.Point(51, 237);
+            this.etVitalidad.Name = "etVitalidad";
+            this.etVitalidad.Size = new System.Drawing.Size(74, 27);
+            this.etVitalidad.TabIndex = 7;
+            this.etVitalidad.Text = "Vitalidad:";
+            // 
+            // UDAgilidad
+            // 
+            this.UDAgilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.UDAgilidad.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UDAgilidad.ForeColor = System.Drawing.Color.Salmon;
+            this.UDAgilidad.Location = new System.Drawing.Point(140, 171);
+            this.UDAgilidad.Name = "UDAgilidad";
+            this.UDAgilidad.Size = new System.Drawing.Size(75, 22);
+            this.UDAgilidad.TabIndex = 6;
+            this.UDAgilidad.Text = "0";
+            this.UDAgilidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UDAgilidad.SelectedItemChanged += new System.EventHandler(this.UDAgilidad_SelectedItemChanged);
+            // 
+            // tvAgilidad
+            // 
+            this.tvAgilidad.AutoSize = true;
+            this.tvAgilidad.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvAgilidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.tvAgilidad.Location = new System.Drawing.Point(51, 171);
+            this.tvAgilidad.Name = "tvAgilidad";
+            this.tvAgilidad.Size = new System.Drawing.Size(68, 27);
+            this.tvAgilidad.TabIndex = 5;
+            this.tvAgilidad.Text = "Agilidad:";
+            // 
+            // UDFuerza
+            // 
+            this.UDFuerza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.UDFuerza.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UDFuerza.ForeColor = System.Drawing.Color.Salmon;
+            this.UDFuerza.Location = new System.Drawing.Point(140, 104);
+            this.UDFuerza.Name = "UDFuerza";
+            this.UDFuerza.Size = new System.Drawing.Size(75, 22);
+            this.UDFuerza.TabIndex = 4;
+            this.UDFuerza.Text = "0";
+            this.UDFuerza.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UDFuerza.SelectedItemChanged += new System.EventHandler(this.UDFuerza_SelectedItemChanged);
+            // 
+            // tvFuerza
+            // 
+            this.tvFuerza.AutoSize = true;
+            this.tvFuerza.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvFuerza.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.tvFuerza.Location = new System.Drawing.Point(51, 102);
+            this.tvFuerza.Name = "tvFuerza";
+            this.tvFuerza.Size = new System.Drawing.Size(59, 27);
+            this.tvFuerza.TabIndex = 2;
+            this.tvFuerza.Text = "Fuerza:";
+            // 
+            // tvContadorPuntos
+            // 
+            this.tvContadorPuntos.AutoSize = true;
+            this.tvContadorPuntos.Font = new System.Drawing.Font("Roboto Light", 10.25F);
+            this.tvContadorPuntos.ForeColor = System.Drawing.Color.Salmon;
+            this.tvContadorPuntos.Location = new System.Drawing.Point(145, 55);
+            this.tvContadorPuntos.Name = "tvContadorPuntos";
+            this.tvContadorPuntos.Size = new System.Drawing.Size(41, 19);
+            this.tvContadorPuntos.TabIndex = 1;
+            this.tvContadorPuntos.Text = "5000";
+            // 
+            // tvPuntos
+            // 
+            this.tvPuntos.AutoSize = true;
+            this.tvPuntos.Font = new System.Drawing.Font("Pristina", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvPuntos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.tvPuntos.Location = new System.Drawing.Point(75, 50);
+            this.tvPuntos.Name = "tvPuntos";
+            this.tvPuntos.Size = new System.Drawing.Size(74, 32);
+            this.tvPuntos.TabIndex = 0;
+            this.tvPuntos.Text = "Puntos:";
             // 
             // tvDarkLord
             // 
@@ -254,11 +375,10 @@
             this.tvDescrip.ForeColor = System.Drawing.Color.Salmon;
             this.tvDescrip.Location = new System.Drawing.Point(136, 240);
             this.tvDescrip.Name = "tvDescrip";
-            this.tvDescrip.Size = new System.Drawing.Size(362, 19);
+            this.tvDescrip.Size = new System.Drawing.Size(329, 19);
             this.tvDescrip.TabIndex = 28;
-            this.tvDescrip.Text = "12444444444444444444444444444 44444444  444444";
+            this.tvDescrip.Text = "Rellena el campo de Mapa de Inicio para elegir Clase";
             this.tvDescrip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tvDescrip.Visible = false;
             // 
             // comboBox1
             // 
@@ -279,6 +399,7 @@
             // 
             // imgDL
             // 
+            this.imgDL.Enabled = false;
             this.imgDL.Image = global::FichaPersonaje.Properties.Resources.cldldesact1;
             this.imgDL.Location = new System.Drawing.Point(477, 289);
             this.imgDL.Name = "imgDL";
@@ -418,319 +539,94 @@
             this.pnRBFaccion.Size = new System.Drawing.Size(175, 30);
             this.pnRBFaccion.TabIndex = 16;
             // 
+            // separadorIzq
+            // 
+            this.separadorIzq.Image = global::FichaPersonaje.Properties.Resources.separadorIzq;
+            this.separadorIzq.Location = new System.Drawing.Point(77, 219);
+            this.separadorIzq.Name = "separadorIzq";
+            this.separadorIzq.Size = new System.Drawing.Size(194, 26);
+            this.separadorIzq.TabIndex = 37;
+            this.separadorIzq.TabStop = false;
+            // 
+            // separadorDer
+            // 
+            this.separadorDer.Image = global::FichaPersonaje.Properties.Resources.separadorDer;
+            this.separadorDer.Location = new System.Drawing.Point(360, 219);
+            this.separadorDer.Name = "separadorDer";
+            this.separadorDer.Size = new System.Drawing.Size(213, 26);
+            this.separadorDer.TabIndex = 0;
+            this.separadorDer.TabStop = false;
+            // 
+            // btn3
+            // 
+            this.btn3.BackColor = System.Drawing.Color.Transparent;
+            this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Image = global::FichaPersonaje.Properties.Resources.btnDesact1;
+            this.btn3.Location = new System.Drawing.Point(377, 545);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(23, 23);
+            this.btn3.TabIndex = 35;
+            this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.MouseLeave += new System.EventHandler(this.btn3_MouseLeave);
+            this.btn3.MouseHover += new System.EventHandler(this.btn3_MouseHover);
+            // 
+            // btn2
+            // 
+            this.btn2.BackColor = System.Drawing.Color.Transparent;
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Image = global::FichaPersonaje.Properties.Resources.btnDesact1;
+            this.btn2.Location = new System.Drawing.Point(340, 545);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(23, 23);
+            this.btn2.TabIndex = 34;
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.MouseLeave += new System.EventHandler(this.btn2_MouseLeave);
+            this.btn2.MouseHover += new System.EventHandler(this.btn2_MouseHover);
+            // 
+            // btn1
+            // 
+            this.btn1.BackColor = System.Drawing.Color.Transparent;
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Image = global::FichaPersonaje.Properties.Resources.btnAct1;
+            this.btn1.Location = new System.Drawing.Point(303, 545);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(23, 23);
+            this.btn1.TabIndex = 33;
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.MouseLeave += new System.EventHandler(this.btn1_MouseLeave);
+            this.btn1.MouseHover += new System.EventHandler(this.btn1_MouseHover);
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FichaPersonaje.Properties.Resources.ficha_gif;
+            this.pictureBox1.Image = global::FichaPersonaje.Properties.Resources.fichagif;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(701, 66);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
-            this.panel1.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(643, 468);
-            this.panel1.TabIndex = 36;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::FichaPersonaje.Properties.Resources.btnDesact;
-            this.button1.Location = new System.Drawing.Point(343, 429);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 33);
-            this.button1.TabIndex = 35;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::FichaPersonaje.Properties.Resources.btnDesact;
-            this.button2.Location = new System.Drawing.Point(306, 429);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 33);
-            this.button2.TabIndex = 34;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::FichaPersonaje.Properties.Resources.btnAct;
-            this.button3.Location = new System.Drawing.Point(269, 429);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(31, 33);
-            this.button3.TabIndex = 33;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(485, 386);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 27);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Dark Lord";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label2.Location = new System.Drawing.Point(355, 386);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 27);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Fairy Elf";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label3.Location = new System.Drawing.Point(211, 386);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 27);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Soul Wizard";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label4.Location = new System.Drawing.Point(75, 386);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 27);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Blade Knight";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto Light", 10.25F);
-            this.label5.ForeColor = System.Drawing.Color.Salmon;
-            this.label5.Location = new System.Drawing.Point(136, 240);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(362, 19);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "12444444444444444444444444444 44444444  444444";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Visible = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox2.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.Salmon;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "     Lorencia",
-            "     Noria",
-            "     Devias"});
-            this.comboBox2.Location = new System.Drawing.Point(435, 160);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 27;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::FichaPersonaje.Properties.Resources.cldldesact1;
-            this.pictureBox2.Location = new System.Drawing.Point(477, 289);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox2.TabIndex = 26;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Enabled = false;
-            this.pictureBox3.Image = global::FichaPersonaje.Properties.Resources.clelfdesact1;
-            this.pictureBox3.Location = new System.Drawing.Point(343, 289);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox3.TabIndex = 25;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Enabled = false;
-            this.pictureBox4.Image = global::FichaPersonaje.Properties.Resources.cldwdesact1;
-            this.pictureBox4.Location = new System.Drawing.Point(211, 289);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox4.TabIndex = 24;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Enabled = false;
-            this.pictureBox5.Image = global::FichaPersonaje.Properties.Resources.clbkdesact1;
-            this.pictureBox5.Location = new System.Drawing.Point(77, 289);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox5.TabIndex = 23;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Pristina", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label6.Location = new System.Drawing.Point(285, 205);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 35);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Clase:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Pristina", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label7.Location = new System.Drawing.Point(429, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 32);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Mapa Inicio:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Pristina", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label8.Location = new System.Drawing.Point(50, 122);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 32);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Facción:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Roboto Light", 8F);
-            this.textBox1.ForeColor = System.Drawing.Color.Salmon;
-            this.textBox1.Location = new System.Drawing.Point(397, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(198, 22);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label9.Location = new System.Drawing.Point(392, 47);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 27);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Nombre Jugador:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Roboto Light", 8F);
-            this.textBox2.ForeColor = System.Drawing.Color.Salmon;
-            this.textBox2.Location = new System.Drawing.Point(47, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(201, 22);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Roboto Light", 10.25F);
-            this.radioButton1.ForeColor = System.Drawing.Color.Salmon;
-            this.radioButton1.Location = new System.Drawing.Point(148, 157);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(69, 23);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Vanert";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Roboto Light", 10.25F);
-            this.radioButton2.ForeColor = System.Drawing.Color.Salmon;
-            this.radioButton2.Location = new System.Drawing.Point(50, 157);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 23);
-            this.radioButton2.TabIndex = 14;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Duprian";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Pristina", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label10.Location = new System.Drawing.Point(42, 47);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 27);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Nombre PJ:";
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(50, 157);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(175, 30);
-            this.panel2.TabIndex = 16;
-            // 
             // FichaPersonaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FichaPersonaje.Properties.Resources.ficha_gif;
+            this.BackgroundImage = global::FichaPersonaje.Properties.Resources.fichagif;
             this.ClientSize = new System.Drawing.Size(700, 600);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn1);
             this.Controls.Add(this.imagPerfil);
             this.Controls.Add(this.panelUno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -742,17 +638,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).EndInit();
             this.panelUno.ResumeLayout(false);
             this.panelUno.PerformLayout();
+            this.panelDos.ResumeLayout(false);
+            this.panelDos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgDL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgElf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separadorIzq)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separadorDer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -785,30 +679,23 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelDos;
+        private System.Windows.Forms.PictureBox separadorIzq;
+        private System.Windows.Forms.PictureBox separadorDer;
+        private System.Windows.Forms.Label tvContadorPuntos;
+        private System.Windows.Forms.Label tvPuntos;
+        private System.Windows.Forms.DomainUpDown UDFuerza;
+        private System.Windows.Forms.Label tvFuerza;
+        private System.Windows.Forms.DomainUpDown UDAgilidad;
+        private System.Windows.Forms.Label tvAgilidad;
+        private System.Windows.Forms.DomainUpDown UDEnergia;
+        private System.Windows.Forms.Label tvEnergia;
+        private System.Windows.Forms.DomainUpDown UDVitalidad;
+        private System.Windows.Forms.Label etVitalidad;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar PBFuerza;
     }
 }
 

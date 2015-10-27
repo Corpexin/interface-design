@@ -313,49 +313,55 @@ namespace FichaPersonaje
 
         private void UDFuerza_SelectedItemChanged(object sender, EventArgs e)
         {
-            calcularValor(UDFuerza, 0);
+            calcularValor(UDFuerza, 0, PBFuerza);
         }
 
         private void UDAgilidad_SelectedItemChanged(object sender, EventArgs e)
         {
-            calcularValor(UDAgilidad, 1);
+            calcularValor(UDAgilidad, 1, PBAgilidad);
         }
 
         private void UDVitalidad_SelectedItemChanged(object sender, EventArgs e)
         {
-            calcularValor(UDVitalidad, 2);
+            calcularValor(UDVitalidad, 2, PBVitalidad);
         }
 
         private void UDEnergia_SelectedItemChanged(object sender, EventArgs e)
         {
-            calcularValor(UDEnergia, 3);
+            calcularValor(UDEnergia, 3, PBEnergia);
         }
 
-        private void calcularValor(DomainUpDown udCaract, int indice)
+        private void calcularValor(DomainUpDown udCaract, int indice, ProgressBar pbCaract)
         {
             Regex r = new Regex("^\\d+$"); //Patron que solo coge numeros (hora y media de debug y busquedas para encontrarlo .... )
             String ft = udCaract.Text;
             Match m2 = r.Match(ft);
             int valor=0;
-            if (m2.Success && udCaract.Text.Length<=6 && Int32.Parse(udCaract.Text) <= MAX_PUNTOS_CONT)
+            if (udCaract.Text != null && m2.Success && udCaract.Text.Length<=6 && Int32.Parse(udCaract.Text) <= MAX_PUNTOS_CONT)
             {
                 listaValoresCaract[indice] = Int32.Parse(udCaract.Text);
                 for (int i = 0; i < listaValoresCaract.Length; i++)
                 {
                     valor = valor + listaValoresCaract[i];
                 }
-                if (udCaract.Text != null && Int32.Parse(udCaract.Text) <= MAX_PUNTOS_CONT)
+                tvContadorPuntos.Text = "" + (MAX_PUNTOS_CONT - valor);
+                pbCaract.Value = listaValoresCaract[indice];
+                if(Int32.Parse(tvContadorPuntos.Text)  < 0)
                 {
-                    tvContadorPuntos.Text = "" + (MAX_PUNTOS_CONT - valor);
+                    tvError.Visible = true;
+                }
+                else
+                {
+                    tvError.Visible = false;
                 }
             }
             else
             {
-                tvContadorPuntos.Text = "Valor no soportado.";
-                    listaValoresCaract[indice] = 0;
+                tvContadorPuntos.Text = "Valor no Soportado";
+                listaValoresCaract[indice] = 0;
+                pbCaract.Value = 0;
             }
-          
-            
+
         }
     }
 

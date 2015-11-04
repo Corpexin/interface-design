@@ -34,6 +34,50 @@
             this.etNombrePJ = new System.Windows.Forms.TextBox();
             this.panelUno = new System.Windows.Forms.Panel();
             this.panelDos = new System.Windows.Forms.Panel();
+            this.panelTres = new System.Windows.Forms.Panel();
+            this.tvNumTiradas = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.btnTirar = new System.Windows.Forms.PictureBox();
+            this.tvST10 = new System.Windows.Forms.Label();
+            this.tvST9 = new System.Windows.Forms.Label();
+            this.tvST8 = new System.Windows.Forms.Label();
+            this.tvST7 = new System.Windows.Forms.Label();
+            this.tvST6 = new System.Windows.Forms.Label();
+            this.tvST11 = new System.Windows.Forms.Label();
+            this.tvST5 = new System.Windows.Forms.Label();
+            this.tvST4 = new System.Windows.Forms.Label();
+            this.tvST3 = new System.Windows.Forms.Label();
+            this.tvST2 = new System.Windows.Forms.Label();
+            this.tvST1 = new System.Windows.Forms.Label();
+            this.tvSTText11 = new System.Windows.Forms.Label();
+            this.tvSTText10 = new System.Windows.Forms.Label();
+            this.tvSTText9 = new System.Windows.Forms.Label();
+            this.tvSTText8 = new System.Windows.Forms.Label();
+            this.tvSTText7 = new System.Windows.Forms.Label();
+            this.tvSTText6 = new System.Windows.Forms.Label();
+            this.tvSTText5 = new System.Windows.Forms.Label();
+            this.tvSTText4 = new System.Windows.Forms.Label();
+            this.tvSTText3 = new System.Windows.Forms.Label();
+            this.tvSTText2 = new System.Windows.Forms.Label();
+            this.tvSTText1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ckbItem4 = new System.Windows.Forms.CheckBox();
+            this.ckbItem3 = new System.Windows.Forms.CheckBox();
+            this.ckbItem2 = new System.Windows.Forms.CheckBox();
+            this.ckbItem1 = new System.Windows.Forms.CheckBox();
+            this.pbItem4 = new System.Windows.Forms.PictureBox();
+            this.pbItem3 = new System.Windows.Forms.PictureBox();
+            this.pbItem2 = new System.Windows.Forms.PictureBox();
+            this.pbItem1 = new System.Windows.Forms.PictureBox();
+            this.pbImagenArma = new System.Windows.Forms.PictureBox();
+            this.cbArma = new System.Windows.Forms.ComboBox();
+            this.cbTipoArma = new System.Windows.Forms.ComboBox();
+            this.imSeparadorVert = new System.Windows.Forms.PictureBox();
             this.tvError = new System.Windows.Forms.Label();
             this.PBEnergia = new System.Windows.Forms.ProgressBar();
             this.PBVitalidad = new System.Windows.Forms.ProgressBar();
@@ -76,6 +120,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
             this.panelDos.SuspendLayout();
+            this.panelTres.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTirar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenArma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imSeparadorVert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgElf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDW)).BeginInit();
@@ -87,9 +140,9 @@
             // 
             // imagPerfil
             // 
-            resources.ApplyResources(this.imagPerfil, "imagPerfil");
             this.imagPerfil.BackColor = System.Drawing.Color.Transparent;
             this.imagPerfil.Image = global::FichaPersonaje.Properties.Resources.df;
+            resources.ApplyResources(this.imagPerfil, "imagPerfil");
             this.imagPerfil.Name = "imagPerfil";
             this.imagPerfil.TabStop = false;
             // 
@@ -101,15 +154,14 @@
             // 
             // etNombrePJ
             // 
-            resources.ApplyResources(this.etNombrePJ, "etNombrePJ");
             this.etNombrePJ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
             this.etNombrePJ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.etNombrePJ, "etNombrePJ");
             this.etNombrePJ.ForeColor = System.Drawing.Color.Salmon;
             this.etNombrePJ.Name = "etNombrePJ";
             // 
             // panelUno
             // 
-            resources.ApplyResources(this.panelUno, "panelUno");
             this.panelUno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
             this.panelUno.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
             this.panelUno.Controls.Add(this.panelDos);
@@ -135,13 +187,31 @@
             this.panelUno.Controls.Add(this.pnRBFaccion);
             this.panelUno.Controls.Add(this.separadorIzq);
             this.panelUno.Controls.Add(this.separadorDer);
+            resources.ApplyResources(this.panelUno, "panelUno");
             this.panelUno.Name = "panelUno";
             // 
             // panelDos
             // 
-            resources.ApplyResources(this.panelDos, "panelDos");
             this.panelDos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
             this.panelDos.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
+            this.panelDos.Controls.Add(this.panelTres);
+            this.panelDos.Controls.Add(this.label5);
+            this.panelDos.Controls.Add(this.label4);
+            this.panelDos.Controls.Add(this.label3);
+            this.panelDos.Controls.Add(this.label2);
+            this.panelDos.Controls.Add(this.label1);
+            this.panelDos.Controls.Add(this.ckbItem4);
+            this.panelDos.Controls.Add(this.ckbItem3);
+            this.panelDos.Controls.Add(this.ckbItem2);
+            this.panelDos.Controls.Add(this.ckbItem1);
+            this.panelDos.Controls.Add(this.pbItem4);
+            this.panelDos.Controls.Add(this.pbItem3);
+            this.panelDos.Controls.Add(this.pbItem2);
+            this.panelDos.Controls.Add(this.pbItem1);
+            this.panelDos.Controls.Add(this.pbImagenArma);
+            this.panelDos.Controls.Add(this.cbArma);
+            this.panelDos.Controls.Add(this.cbTipoArma);
+            this.panelDos.Controls.Add(this.imSeparadorVert);
             this.panelDos.Controls.Add(this.tvError);
             this.panelDos.Controls.Add(this.PBEnergia);
             this.panelDos.Controls.Add(this.PBVitalidad);
@@ -157,7 +227,344 @@
             this.panelDos.Controls.Add(this.tvFuerza);
             this.panelDos.Controls.Add(this.tvContadorPuntos);
             this.panelDos.Controls.Add(this.tvPuntos);
+            resources.ApplyResources(this.panelDos, "panelDos");
             this.panelDos.Name = "panelDos";
+            // 
+            // panelTres
+            // 
+            this.panelTres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
+            this.panelTres.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
+            this.panelTres.Controls.Add(this.tvNumTiradas);
+            this.panelTres.Controls.Add(this.label28);
+            this.panelTres.Controls.Add(this.btnTirar);
+            this.panelTres.Controls.Add(this.tvST10);
+            this.panelTres.Controls.Add(this.tvST9);
+            this.panelTres.Controls.Add(this.tvST8);
+            this.panelTres.Controls.Add(this.tvST7);
+            this.panelTres.Controls.Add(this.tvST6);
+            this.panelTres.Controls.Add(this.tvST11);
+            this.panelTres.Controls.Add(this.tvST5);
+            this.panelTres.Controls.Add(this.tvST4);
+            this.panelTres.Controls.Add(this.tvST3);
+            this.panelTres.Controls.Add(this.tvST2);
+            this.panelTres.Controls.Add(this.tvST1);
+            this.panelTres.Controls.Add(this.tvSTText11);
+            this.panelTres.Controls.Add(this.tvSTText10);
+            this.panelTres.Controls.Add(this.tvSTText9);
+            this.panelTres.Controls.Add(this.tvSTText8);
+            this.panelTres.Controls.Add(this.tvSTText7);
+            this.panelTres.Controls.Add(this.tvSTText6);
+            this.panelTres.Controls.Add(this.tvSTText5);
+            this.panelTres.Controls.Add(this.tvSTText4);
+            this.panelTres.Controls.Add(this.tvSTText3);
+            this.panelTres.Controls.Add(this.tvSTText2);
+            this.panelTres.Controls.Add(this.tvSTText1);
+            this.panelTres.Controls.Add(this.pictureBox2);
+            resources.ApplyResources(this.panelTres, "panelTres");
+            this.panelTres.Name = "panelTres";
+            // 
+            // tvNumTiradas
+            // 
+            resources.ApplyResources(this.tvNumTiradas, "tvNumTiradas");
+            this.tvNumTiradas.ForeColor = System.Drawing.Color.Salmon;
+            this.tvNumTiradas.Name = "tvNumTiradas";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.label28.Name = "label28";
+            // 
+            // btnTirar
+            // 
+            this.btnTirar.Image = global::FichaPersonaje.Properties.Resources.stbtnDesact;
+            resources.ApplyResources(this.btnTirar, "btnTirar");
+            this.btnTirar.Name = "btnTirar";
+            this.btnTirar.TabStop = false;
+            this.btnTirar.Click += new System.EventHandler(this.btnTirar_Click);
+            this.btnTirar.MouseLeave += new System.EventHandler(this.btnTirar_MouseLeave);
+            this.btnTirar.MouseHover += new System.EventHandler(this.btnTirar_MouseHover);
+            // 
+            // tvST10
+            // 
+            resources.ApplyResources(this.tvST10, "tvST10");
+            this.tvST10.BackColor = System.Drawing.Color.Black;
+            this.tvST10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST10.Name = "tvST10";
+            // 
+            // tvST9
+            // 
+            resources.ApplyResources(this.tvST9, "tvST9");
+            this.tvST9.BackColor = System.Drawing.Color.Black;
+            this.tvST9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST9.Name = "tvST9";
+            // 
+            // tvST8
+            // 
+            resources.ApplyResources(this.tvST8, "tvST8");
+            this.tvST8.BackColor = System.Drawing.Color.Black;
+            this.tvST8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST8.Name = "tvST8";
+            // 
+            // tvST7
+            // 
+            resources.ApplyResources(this.tvST7, "tvST7");
+            this.tvST7.BackColor = System.Drawing.Color.Black;
+            this.tvST7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST7.Name = "tvST7";
+            // 
+            // tvST6
+            // 
+            resources.ApplyResources(this.tvST6, "tvST6");
+            this.tvST6.BackColor = System.Drawing.Color.Black;
+            this.tvST6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST6.Name = "tvST6";
+            // 
+            // tvST11
+            // 
+            resources.ApplyResources(this.tvST11, "tvST11");
+            this.tvST11.BackColor = System.Drawing.Color.Black;
+            this.tvST11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST11.Name = "tvST11";
+            // 
+            // tvST5
+            // 
+            resources.ApplyResources(this.tvST5, "tvST5");
+            this.tvST5.BackColor = System.Drawing.Color.Black;
+            this.tvST5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST5.Name = "tvST5";
+            // 
+            // tvST4
+            // 
+            resources.ApplyResources(this.tvST4, "tvST4");
+            this.tvST4.BackColor = System.Drawing.Color.Black;
+            this.tvST4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST4.Name = "tvST4";
+            // 
+            // tvST3
+            // 
+            resources.ApplyResources(this.tvST3, "tvST3");
+            this.tvST3.BackColor = System.Drawing.Color.Black;
+            this.tvST3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST3.Name = "tvST3";
+            // 
+            // tvST2
+            // 
+            resources.ApplyResources(this.tvST2, "tvST2");
+            this.tvST2.BackColor = System.Drawing.Color.Black;
+            this.tvST2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST2.Name = "tvST2";
+            // 
+            // tvST1
+            // 
+            resources.ApplyResources(this.tvST1, "tvST1");
+            this.tvST1.BackColor = System.Drawing.Color.Black;
+            this.tvST1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST1.Name = "tvST1";
+            // 
+            // tvSTText11
+            // 
+            resources.ApplyResources(this.tvSTText11, "tvSTText11");
+            this.tvSTText11.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText11.Name = "tvSTText11";
+            // 
+            // tvSTText10
+            // 
+            resources.ApplyResources(this.tvSTText10, "tvSTText10");
+            this.tvSTText10.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText10.Name = "tvSTText10";
+            // 
+            // tvSTText9
+            // 
+            resources.ApplyResources(this.tvSTText9, "tvSTText9");
+            this.tvSTText9.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText9.Name = "tvSTText9";
+            // 
+            // tvSTText8
+            // 
+            resources.ApplyResources(this.tvSTText8, "tvSTText8");
+            this.tvSTText8.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText8.Name = "tvSTText8";
+            // 
+            // tvSTText7
+            // 
+            resources.ApplyResources(this.tvSTText7, "tvSTText7");
+            this.tvSTText7.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText7.Name = "tvSTText7";
+            // 
+            // tvSTText6
+            // 
+            resources.ApplyResources(this.tvSTText6, "tvSTText6");
+            this.tvSTText6.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText6.Name = "tvSTText6";
+            // 
+            // tvSTText5
+            // 
+            resources.ApplyResources(this.tvSTText5, "tvSTText5");
+            this.tvSTText5.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText5.Name = "tvSTText5";
+            // 
+            // tvSTText4
+            // 
+            resources.ApplyResources(this.tvSTText4, "tvSTText4");
+            this.tvSTText4.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText4.Name = "tvSTText4";
+            // 
+            // tvSTText3
+            // 
+            resources.ApplyResources(this.tvSTText3, "tvSTText3");
+            this.tvSTText3.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText3.Name = "tvSTText3";
+            // 
+            // tvSTText2
+            // 
+            resources.ApplyResources(this.tvSTText2, "tvSTText2");
+            this.tvSTText2.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText2.Name = "tvSTText2";
+            // 
+            // tvSTText1
+            // 
+            resources.ApplyResources(this.tvSTText1, "tvSTText1");
+            this.tvSTText1.ForeColor = System.Drawing.Color.Salmon;
+            this.tvSTText1.Name = "tvSTText1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::FichaPersonaje.Properties.Resources.skilltreeBtn;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Salmon;
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.Salmon;
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Salmon;
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.Salmon;
+            this.label1.Name = "label1";
+            // 
+            // ckbItem4
+            // 
+            resources.ApplyResources(this.ckbItem4, "ckbItem4");
+            this.ckbItem4.Name = "ckbItem4";
+            this.ckbItem4.UseVisualStyleBackColor = true;
+            this.ckbItem4.CheckStateChanged += new System.EventHandler(this.ckbItem4_CheckStateChanged);
+            // 
+            // ckbItem3
+            // 
+            resources.ApplyResources(this.ckbItem3, "ckbItem3");
+            this.ckbItem3.Name = "ckbItem3";
+            this.ckbItem3.UseVisualStyleBackColor = true;
+            this.ckbItem3.CheckStateChanged += new System.EventHandler(this.ckbItem3_CheckStateChanged);
+            // 
+            // ckbItem2
+            // 
+            resources.ApplyResources(this.ckbItem2, "ckbItem2");
+            this.ckbItem2.Name = "ckbItem2";
+            this.ckbItem2.UseVisualStyleBackColor = true;
+            this.ckbItem2.CheckStateChanged += new System.EventHandler(this.ckbItem2_CheckStateChanged);
+            // 
+            // ckbItem1
+            // 
+            resources.ApplyResources(this.ckbItem1, "ckbItem1");
+            this.ckbItem1.Name = "ckbItem1";
+            this.ckbItem1.UseVisualStyleBackColor = true;
+            this.ckbItem1.CheckStateChanged += new System.EventHandler(this.ckbItem1_CheckStateChanged);
+            // 
+            // pbItem4
+            // 
+            this.pbItem4.Image = global::FichaPersonaje.Properties.Resources.item4ShiningRing;
+            resources.ApplyResources(this.pbItem4, "pbItem4");
+            this.pbItem4.Name = "pbItem4";
+            this.pbItem4.TabStop = false;
+            // 
+            // pbItem3
+            // 
+            this.pbItem3.Image = global::FichaPersonaje.Properties.Resources.item3WindRing;
+            resources.ApplyResources(this.pbItem3, "pbItem3");
+            this.pbItem3.Name = "pbItem3";
+            this.pbItem3.TabStop = false;
+            // 
+            // pbItem2
+            // 
+            this.pbItem2.Image = global::FichaPersonaje.Properties.Resources.item2WindPendant;
+            resources.ApplyResources(this.pbItem2, "pbItem2");
+            this.pbItem2.Name = "pbItem2";
+            this.pbItem2.TabStop = false;
+            // 
+            // pbItem1
+            // 
+            this.pbItem1.Image = global::FichaPersonaje.Properties.Resources.item1ShiningPendant;
+            resources.ApplyResources(this.pbItem1, "pbItem1");
+            this.pbItem1.Name = "pbItem1";
+            this.pbItem1.TabStop = false;
+            // 
+            // pbImagenArma
+            // 
+            this.pbImagenArma.Image = global::FichaPersonaje.Properties.Resources.defectoarma;
+            resources.ApplyResources(this.pbImagenArma, "pbImagenArma");
+            this.pbImagenArma.Name = "pbImagenArma";
+            this.pbImagenArma.TabStop = false;
+            // 
+            // cbArma
+            // 
+            resources.ApplyResources(this.cbArma, "cbArma");
+            this.cbArma.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbArma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.cbArma.ForeColor = System.Drawing.Color.Salmon;
+            this.cbArma.FormattingEnabled = true;
+            this.cbArma.Name = "cbArma";
+            this.cbArma.SelectedValueChanged += new System.EventHandler(this.cbArma_SelectedValueChanged);
+            // 
+            // cbTipoArma
+            // 
+            resources.ApplyResources(this.cbTipoArma, "cbTipoArma");
+            this.cbTipoArma.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbTipoArma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.cbTipoArma.ForeColor = System.Drawing.Color.Salmon;
+            this.cbTipoArma.FormattingEnabled = true;
+            this.cbTipoArma.Name = "cbTipoArma";
+            this.cbTipoArma.SelectedValueChanged += new System.EventHandler(this.cbTipoArma_SelectedValueChanged);
+            // 
+            // imSeparadorVert
+            // 
+            this.imSeparadorVert.Image = global::FichaPersonaje.Properties.Resources.separadorVert;
+            resources.ApplyResources(this.imSeparadorVert, "imSeparadorVert");
+            this.imSeparadorVert.Name = "imSeparadorVert";
+            this.imSeparadorVert.TabStop = false;
             // 
             // tvError
             // 
@@ -167,36 +574,36 @@
             // 
             // PBEnergia
             // 
-            resources.ApplyResources(this.PBEnergia, "PBEnergia");
             this.PBEnergia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.PBEnergia, "PBEnergia");
             this.PBEnergia.Maximum = 5000;
             this.PBEnergia.Name = "PBEnergia";
             // 
             // PBVitalidad
             // 
-            resources.ApplyResources(this.PBVitalidad, "PBVitalidad");
             this.PBVitalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.PBVitalidad, "PBVitalidad");
             this.PBVitalidad.Maximum = 5000;
             this.PBVitalidad.Name = "PBVitalidad";
             // 
             // PBAgilidad
             // 
-            resources.ApplyResources(this.PBAgilidad, "PBAgilidad");
             this.PBAgilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.PBAgilidad, "PBAgilidad");
             this.PBAgilidad.Maximum = 5000;
             this.PBAgilidad.Name = "PBAgilidad";
             // 
             // PBFuerza
             // 
-            resources.ApplyResources(this.PBFuerza, "PBFuerza");
             this.PBFuerza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.PBFuerza, "PBFuerza");
             this.PBFuerza.Maximum = 5000;
             this.PBFuerza.Name = "PBFuerza";
             // 
             // UDEnergia
             // 
-            resources.ApplyResources(this.UDEnergia, "UDEnergia");
             this.UDEnergia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.UDEnergia, "UDEnergia");
             this.UDEnergia.ForeColor = System.Drawing.Color.Salmon;
             this.UDEnergia.Name = "UDEnergia";
             this.UDEnergia.SelectedItemChanged += new System.EventHandler(this.UDEnergia_SelectedItemChanged);
@@ -209,8 +616,8 @@
             // 
             // UDVitalidad
             // 
-            resources.ApplyResources(this.UDVitalidad, "UDVitalidad");
             this.UDVitalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.UDVitalidad, "UDVitalidad");
             this.UDVitalidad.ForeColor = System.Drawing.Color.Salmon;
             this.UDVitalidad.Name = "UDVitalidad";
             this.UDVitalidad.SelectedItemChanged += new System.EventHandler(this.UDVitalidad_SelectedItemChanged);
@@ -223,8 +630,8 @@
             // 
             // UDAgilidad
             // 
-            resources.ApplyResources(this.UDAgilidad, "UDAgilidad");
             this.UDAgilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.UDAgilidad, "UDAgilidad");
             this.UDAgilidad.ForeColor = System.Drawing.Color.Salmon;
             this.UDAgilidad.Name = "UDAgilidad";
             this.UDAgilidad.SelectedItemChanged += new System.EventHandler(this.UDAgilidad_SelectedItemChanged);
@@ -237,8 +644,8 @@
             // 
             // UDFuerza
             // 
-            resources.ApplyResources(this.UDFuerza, "UDFuerza");
             this.UDFuerza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.UDFuerza, "UDFuerza");
             this.UDFuerza.ForeColor = System.Drawing.Color.Salmon;
             this.UDFuerza.Name = "UDFuerza";
             this.UDFuerza.SelectedItemChanged += new System.EventHandler(this.UDFuerza_SelectedItemChanged);
@@ -293,8 +700,8 @@
             // 
             // comboBox1
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.ForeColor = System.Drawing.Color.Salmon;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -364,9 +771,9 @@
             // 
             // etNombreJug
             // 
-            resources.ApplyResources(this.etNombreJug, "etNombreJug");
             this.etNombreJug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
             this.etNombreJug.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.etNombreJug, "etNombreJug");
             this.etNombreJug.ForeColor = System.Drawing.Color.Salmon;
             this.etNombreJug.Name = "etNombreJug";
             // 
@@ -399,25 +806,25 @@
             // 
             // separadorIzq
             // 
-            resources.ApplyResources(this.separadorIzq, "separadorIzq");
             this.separadorIzq.Image = global::FichaPersonaje.Properties.Resources.separadorIzq;
+            resources.ApplyResources(this.separadorIzq, "separadorIzq");
             this.separadorIzq.Name = "separadorIzq";
             this.separadorIzq.TabStop = false;
             // 
             // separadorDer
             // 
-            resources.ApplyResources(this.separadorDer, "separadorDer");
             this.separadorDer.Image = global::FichaPersonaje.Properties.Resources.separadorDer;
+            resources.ApplyResources(this.separadorDer, "separadorDer");
             this.separadorDer.Name = "separadorDer";
             this.separadorDer.TabStop = false;
             // 
             // btn3
             // 
-            resources.ApplyResources(this.btn3, "btn3");
             this.btn3.BackColor = System.Drawing.Color.Transparent;
             this.btn3.FlatAppearance.BorderSize = 0;
             this.btn3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btn3, "btn3");
             this.btn3.Image = global::FichaPersonaje.Properties.Resources.btnDesact1;
             this.btn3.Name = "btn3";
             this.btn3.UseVisualStyleBackColor = false;
@@ -427,11 +834,11 @@
             // 
             // btn2
             // 
-            resources.ApplyResources(this.btn2, "btn2");
             this.btn2.BackColor = System.Drawing.Color.Transparent;
             this.btn2.FlatAppearance.BorderSize = 0;
             this.btn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btn2, "btn2");
             this.btn2.Image = global::FichaPersonaje.Properties.Resources.btnDesact1;
             this.btn2.Name = "btn2";
             this.btn2.UseVisualStyleBackColor = false;
@@ -441,11 +848,11 @@
             // 
             // btn1
             // 
-            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.BackColor = System.Drawing.Color.Transparent;
             this.btn1.FlatAppearance.BorderSize = 0;
             this.btn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.Image = global::FichaPersonaje.Properties.Resources.btnAct1;
             this.btn1.Name = "btn1";
             this.btn1.UseVisualStyleBackColor = false;
@@ -455,8 +862,8 @@
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::FichaPersonaje.Properties.Resources.fichagif;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
@@ -475,11 +882,22 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FichaPersonaje";
+            this.Load += new System.EventHandler(this.FichaPersonaje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).EndInit();
             this.panelUno.ResumeLayout(false);
             this.panelUno.PerformLayout();
             this.panelDos.ResumeLayout(false);
             this.panelDos.PerformLayout();
+            this.panelTres.ResumeLayout(false);
+            this.panelTres.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTirar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenArma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imSeparadorVert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgElf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDW)).EndInit();
@@ -537,6 +955,50 @@
         private System.Windows.Forms.ProgressBar PBAgilidad;
         private System.Windows.Forms.ProgressBar PBFuerza;
         private System.Windows.Forms.Label tvError;
+        private System.Windows.Forms.PictureBox imSeparadorVert;
+        private System.Windows.Forms.ComboBox cbTipoArma;
+        private System.Windows.Forms.ComboBox cbArma;
+        private System.Windows.Forms.PictureBox pbImagenArma;
+        private System.Windows.Forms.PictureBox pbItem1;
+        private System.Windows.Forms.PictureBox pbItem4;
+        private System.Windows.Forms.PictureBox pbItem3;
+        private System.Windows.Forms.PictureBox pbItem2;
+        private System.Windows.Forms.CheckBox ckbItem4;
+        private System.Windows.Forms.CheckBox ckbItem3;
+        private System.Windows.Forms.CheckBox ckbItem2;
+        private System.Windows.Forms.CheckBox ckbItem1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelTres;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label tvST1;
+        private System.Windows.Forms.Label tvSTText11;
+        private System.Windows.Forms.Label tvSTText10;
+        private System.Windows.Forms.Label tvSTText9;
+        private System.Windows.Forms.Label tvSTText8;
+        private System.Windows.Forms.Label tvSTText7;
+        private System.Windows.Forms.Label tvSTText6;
+        private System.Windows.Forms.Label tvSTText5;
+        private System.Windows.Forms.Label tvSTText4;
+        private System.Windows.Forms.Label tvSTText3;
+        private System.Windows.Forms.Label tvSTText2;
+        private System.Windows.Forms.Label tvSTText1;
+        private System.Windows.Forms.Label tvST10;
+        private System.Windows.Forms.Label tvST9;
+        private System.Windows.Forms.Label tvST8;
+        private System.Windows.Forms.Label tvST7;
+        private System.Windows.Forms.Label tvST6;
+        private System.Windows.Forms.Label tvST11;
+        private System.Windows.Forms.Label tvST5;
+        private System.Windows.Forms.Label tvST4;
+        private System.Windows.Forms.Label tvST3;
+        private System.Windows.Forms.Label tvST2;
+        private System.Windows.Forms.Label tvNumTiradas;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.PictureBox btnTirar;
     }
 }
 

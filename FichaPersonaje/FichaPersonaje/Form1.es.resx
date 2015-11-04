@@ -122,26 +122,8 @@
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="UDEnergia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 303</value>
-  </data>
-  <data name="tvEnergia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 303</value>
-  </data>
-  <data name="UDVitalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 236</value>
-  </data>
-  <data name="etVitalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 236</value>
-  </data>
-  <data name="UDAgilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 170</value>
-  </data>
-  <data name="tvAgilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 170</value>
-  </data>
   <data name="UDFuerza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 105</value>
+    <value>196, 105</value>
   </data>
   <data name="tvFuerza.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 103</value>

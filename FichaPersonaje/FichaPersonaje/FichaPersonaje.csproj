@@ -212,6 +212,78 @@
   <ItemGroup>
     <None Include="Resources\separadorDer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\separadorVert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espada1boneblade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arco1stingerbow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arco2sylphbow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arco3vyperbow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baston1mysterystick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baston2violentstick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cetro1shiningscepter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cetro2kingscepter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defectoarma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espada2breakerblade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espada3flamesword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanza1dragonspear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanza2beurobaspear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vara1platinastaff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vara2imperialstaff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item1ShiningPendant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item2WindPendant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item3WindRing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item4ShiningRing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skilltree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skilltreeBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stbtnAct-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stbtnDesact.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -118,23 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fichagif" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ficha-gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="espada2breakerblade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espada2breakerblade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="separadorDer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\separadorDer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defectoarma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defectoarma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnDesact1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnDesact1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clbk2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clbk2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ficha1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ficha1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="skilltree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skilltree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bk1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="separadorVert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\separadorVert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clbkproh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clbkproh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fichagif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha-gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clelfdesact1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clelfdesact1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,23 +151,74 @@
   <data name="cldw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="item4ShiningRing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\item4ShiningRing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clbk2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clbk2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cldwdesact1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldwdesact1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vara1platinastaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vara1platinastaff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baston2violentstick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baston2violentstick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clelfproh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clelfproh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vara2imperialstaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vara2imperialstaff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arco1stingerbow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arco1stingerbow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baston1mysterystick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baston1mysterystick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cetro1shiningscepter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cetro1shiningscepter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cetro2kingscepter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cetro2kingscepter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ficha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ficha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="clbkdesact1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clbkdesact1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDesact1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnDesact1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item2WindPendant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\item2WindPendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skilltreeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skilltreeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arco2sylphbow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arco2sylphbow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnAct1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnAct1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clbkproh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clbkproh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lanza2beurobaspear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanza2beurobaspear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item1ShiningPendant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\item1ShiningPendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arco3vyperbow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arco3vyperbow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanza1dragonspear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanza1dragonspear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cldlproh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldlproh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,20 +232,32 @@
   <data name="cldwproh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldwproh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ficha1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clelf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clelf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cldl1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldl1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="stbtnAct-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stbtnAct-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="df" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\df.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item3WindRing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\item3WindRing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="espada1boneblade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espada1boneblade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espada3flamesword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espada3flamesword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clbk3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clbk3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,10 +268,10 @@
   <data name="separadorIzq" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\separadorIzq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clbkdesact1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clbkdesact1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="separadorDer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\separadorDer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stbtnDesact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stbtnDesact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

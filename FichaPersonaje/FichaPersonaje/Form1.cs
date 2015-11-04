@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -17,14 +18,16 @@ namespace FichaPersonaje
     {
         Boolean[] clickeado = new Boolean[4]; //Indices: 0 = bk | 1 = dw | 2 = elf | 3 = dl
         Boolean[] btnclickeado = new Boolean[3]; //Indices: 0 = basic | 1 = caract | 2 = equip
-        private readonly int MAX_PUNTOS_CONT = 5000;//Constante con el maximo de puntos disponibles para las caracteristicas
+        private int MAX_PUNTOS_CONT = 5000;//Constante con el maximo de puntos disponibles para las caracteristicas
         int[] listaValoresCaract = new int[4]; //aqui se guardan los puntos de las 4 caracteristicas
+        List<Label> listaST; //Lista de los campos del Skill Tree
 
         public FichaPersonaje()
         {
+
             InitializeComponent();
             //Inicializamos los booleans de clickeados. Controlan si una clase esta clickeada o no
-            for(int i=0; i<clickeado.Length; i++)
+            for (int i=0; i<clickeado.Length; i++)
             {
                 clickeado[i] = false;
             }
@@ -48,6 +51,19 @@ namespace FichaPersonaje
             {
                 listaValoresCaract[i] = 0;
             }
+        }
+
+        private void FichaPersonaje_Load(object sender, EventArgs e)
+        {
+            //Supuesto codigo que pone el doublebuffered a true en los elementos que se indiquen. sin mucho exito
+            typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelUno, new object[] { true });
+            typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelDos, new object[] { true });
+            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pictureBox1, new object[] { true });
+            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbImagenArma, new object[] { true });
+            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem1, new object[] { true });
+            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem2, new object[] { true });
+            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem3, new object[] { true });
+            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem4, new object[] { true });
         }
 
 
@@ -125,6 +141,8 @@ namespace FichaPersonaje
             desactivarImagen();
             clickeado[0] = true;
             imagPerfil.Image = Resources.bk1;
+            //Activo los tipos de armas pertenecientes al blade knight
+            TipoArma(0);
         }
 
         private void imgDW_Click(object sender, EventArgs e)
@@ -134,6 +152,8 @@ namespace FichaPersonaje
             desactivarImagen();
             clickeado[1] = true;
             imagPerfil.Image = Resources.dw;
+            //Activo los tipos de armas pertenecientes al dark wizard
+            TipoArma(1);
         }
 
         private void imgElf_Click(object sender, EventArgs e)
@@ -143,6 +163,8 @@ namespace FichaPersonaje
             desactivarImagen();
             clickeado[2] = true;
             imagPerfil.Image = Resources.elf;
+            //Activo los tipos de armas pertenecientes al elf
+            TipoArma(2);
         }
 
         private void imgDL_Click(object sender, EventArgs e)
@@ -152,6 +174,8 @@ namespace FichaPersonaje
             desactivarImagen();
             clickeado[3] = true;
             imagPerfil.Image = Resources.dl;
+            //Activo los tipos de armas pertenecientes al dark lord
+            TipoArma(3);
         }
 
         //Metodo para desactivar resto de imagenes segun el que se haga click
@@ -201,8 +225,6 @@ namespace FichaPersonaje
         {
             if (btnclickeado[0] == false)
                 btn1.Image = Resources.btnDesact1;
-                
-            
         }
 
         private void btn2_MouseLeave(object sender, EventArgs e)
@@ -265,6 +287,7 @@ namespace FichaPersonaje
             btn2.Image = Resources.btnDesact1;
             btn3.Image = Resources.btnDesact1;
             panelDos.Visible = false;
+            panelTres.Visible = false;
             btnclickeado[0] = true;
             btnclickeado[1] = false;
             btnclickeado[2] = false;
@@ -276,6 +299,7 @@ namespace FichaPersonaje
             btn1.Image = Resources.btnDesact1;
             btn3.Image = Resources.btnDesact1;
             panelDos.Visible = true;
+            panelTres.Visible = false;
             btnclickeado[0] = false;
             btnclickeado[1] = true;
             btnclickeado[2] = false;
@@ -286,7 +310,8 @@ namespace FichaPersonaje
             btn3.Image = Resources.btnAct1;
             btn1.Image = Resources.btnDesact1;
             btn2.Image = Resources.btnDesact1;
-            //panelTres.Visible = true;
+            panelDos.Visible = true;
+            panelTres.Visible = true;
             btnclickeado[0] = false;
             btnclickeado[2] = true;
             btnclickeado[1] = false;
@@ -294,21 +319,29 @@ namespace FichaPersonaje
 
         private void inicioUptoDown()
         {
-            //Creo un arrayList de 9999 numeros y se los asigno a los uptodown
+            //Creo un arrayList de 5000 numeros y se los asigno a los uptodown
             ArrayList listNum = new ArrayList();
-            for (int i = MAX_PUNTOS_CONT; i >=0; i--)
+            UDFuerza.Items.Clear();
+            UDAgilidad.Items.Clear();
+            UDVitalidad.Items.Clear();
+            UDEnergia.Items.Clear();
+            for (int i = MAX_PUNTOS_CONT; i >=0; i=i-100)
             {
                 listNum.Add(i);
             }
             UDFuerza.Items.AddRange(listNum);
-            UDFuerza.SelectedIndex = MAX_PUNTOS_CONT; //mueve el indice al 0 (ultimo numero añadido)
+            UDFuerza.SelectedIndex = MAX_PUNTOS_CONT/100; //mueve el indice al 0 (ultimo numero añadido)
             UDAgilidad.Items.AddRange(listNum);
-            UDAgilidad.SelectedIndex = MAX_PUNTOS_CONT;
+            UDAgilidad.SelectedIndex = MAX_PUNTOS_CONT/100;
             UDVitalidad.Items.AddRange(listNum);
-            UDVitalidad.SelectedIndex = MAX_PUNTOS_CONT;
+            UDVitalidad.SelectedIndex = MAX_PUNTOS_CONT/100;
             UDEnergia.Items.AddRange(listNum);
-            UDEnergia.SelectedIndex = MAX_PUNTOS_CONT;
-            
+            UDEnergia.SelectedIndex = MAX_PUNTOS_CONT/100;
+            tvContadorPuntos.Text = ""+MAX_PUNTOS_CONT;
+            PBFuerza.Maximum = MAX_PUNTOS_CONT;//Cambio el maximo de puntos de la progressbar
+            PBAgilidad.Maximum = MAX_PUNTOS_CONT;
+            PBVitalidad.Maximum = MAX_PUNTOS_CONT;
+            PBEnergia.Maximum = MAX_PUNTOS_CONT;
         }
 
         private void UDFuerza_SelectedItemChanged(object sender, EventArgs e)
@@ -348,6 +381,7 @@ namespace FichaPersonaje
                 pbCaract.Value = listaValoresCaract[indice];
                 if(Int32.Parse(tvContadorPuntos.Text)  < 0)
                 {
+                    tvError.Text = "El numero de puntos repartidos debe ser menor que " + MAX_PUNTOS_CONT;
                     tvError.Visible = true;
                 }
                 else
@@ -363,6 +397,346 @@ namespace FichaPersonaje
             }
 
         }
+
+        private void TipoArma(int v)
+        {
+            //reinicio la lista del combobox y el texto
+            cbTipoArma.Items.Clear();
+            cbTipoArma.Text = "   Tipo de Arma";
+            cbArma.Items.Clear();
+            cbArma.Text = "          Arma";
+            pbImagenArma.Image = Resources.defectoarma;
+            switch (v)
+            {
+                case 0://bk
+                    cbTipoArma.Items.Add("Espadas");
+                    cbTipoArma.Items.Add("Lanzas");
+                    break;
+                case 1://dw
+                    cbTipoArma.Items.Add("Varas");
+                    cbTipoArma.Items.Add("Bastones");
+                    break;
+                case 2://elf
+                    cbTipoArma.Items.Add("Arcos");
+                    break;
+                case 3://dl
+                    cbTipoArma.Items.Add("Cetros");
+                    cbTipoArma.Items.Add("Bastones");
+                    break;
+            }
+        }
+
+        private void cbTipoArma_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //Limpio la lista de armas
+            cbArma.Items.Clear();
+            cbArma.Text = "          Arma";
+            pbImagenArma.Image = Resources.defectoarma;
+            //Segun el tipo de armas, añado al combobox unas armas u otras
+            switch (cbTipoArma.Text)
+            {
+                case "Espadas":
+                    cbArma.Items.Add("Bone Blade");
+                    cbArma.Items.Add("Breaker Sword");
+                    cbArma.Items.Add("Flame Sword");
+                    break;
+                case "Lanzas":
+                    cbArma.Items.Add("Dragon Spear");
+                    cbArma.Items.Add("Beuroba Spear");
+                    break;
+                case "Varas":
+                    cbArma.Items.Add("Platina Staff");
+                    cbArma.Items.Add("Imperial Staff");
+                    break;
+                case "Bastones":
+                    cbArma.Items.Add("Mystery Stick");
+                    cbArma.Items.Add("Violent Stick");
+                    break;
+                case "Arcos":
+                    cbArma.Items.Add("Stinger Bow");
+                    cbArma.Items.Add("Sylph Bow");
+                    cbArma.Items.Add("Vyper Bow");
+                    break;
+                case "Cetros":
+                    cbArma.Items.Add("King Scepter");
+                    cbArma.Items.Add("Shining Scepter");
+                    break;
+            }
+        }
+
+        private void cbArma_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //Cambio la imagen segun el arma seleccionada
+            pbImagenArma.Image = Resources.defectoarma;
+            switch (cbArma.Text)
+            {
+                case "Bone Blade":
+                    pbImagenArma.Image = Resources.espada1boneblade;
+                    break;
+                case "Breaker Sword":
+                    pbImagenArma.Image = Resources.espada2breakerblade;
+                    break;
+                case "Flame Sword":
+                    pbImagenArma.Image = Resources.espada3flamesword;
+                    break;
+                case "Dragon Spear":
+                    pbImagenArma.Image = Resources.lanza1dragonspear;
+                    break;
+                case "Beuroba Spear":
+                    pbImagenArma.Image = Resources.lanza2beurobaspear;
+                    break;
+                case "Platina Staff":
+                    pbImagenArma.Image = Resources.vara1platinastaff;
+                    break;
+                case "Imperial Staff":
+                    pbImagenArma.Image = Resources.vara2imperialstaff;
+                    break;
+                case "Mystery Stick":
+                    pbImagenArma.Image = Resources.baston1mysterystick;
+                    break;
+                case "Violent Stick":
+                    pbImagenArma.Image = Resources.baston2violentstick;
+                    break;
+                case "Stinger Bow":
+                    pbImagenArma.Image = Resources.arco1stingerbow;
+                    break;
+                case "Sylph Bow":
+                    pbImagenArma.Image = Resources.arco2sylphbow;
+                    break;
+                case "Vyper Bow":
+                    pbImagenArma.Image = Resources.arco3vyperbow;
+                    break;
+                case "King Scepter":
+                    pbImagenArma.Image = Resources.cetro2kingscepter;
+                    break;
+                case "Shining Scepter":
+                    pbImagenArma.Image = Resources.cetro1shiningscepter;
+                    break;
+            }
+        }
+
+        private void ckbItem1_CheckStateChanged(object sender, EventArgs e)
+        {
+            if(ckbItem1.CheckState == CheckState.Checked){
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT - 500;
+                inicioUptoDown();
+            }
+            else
+            {
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT + 500;
+                inicioUptoDown();
+            }
+        }
+
+        private void ckbItem2_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (ckbItem2.CheckState == CheckState.Checked)
+            {
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT - 500;
+                inicioUptoDown();
+            }
+            else
+            {
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT + 500;
+                inicioUptoDown();
+            }
+        }
+
+        private void ckbItem3_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (ckbItem3.CheckState == CheckState.Checked)
+            {
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT - 500;
+                inicioUptoDown();
+            }
+            else
+            {
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT + 500;
+                inicioUptoDown();
+            }
+        }
+
+        private void ckbItem4_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (ckbItem4.CheckState == CheckState.Checked)
+            {
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT - 500;
+                inicioUptoDown();
+            }
+            else
+            {
+                MAX_PUNTOS_CONT = MAX_PUNTOS_CONT + 500;
+                inicioUptoDown();
+            }
+        }
+
+        private void btnTirar_MouseHover(object sender, EventArgs e)
+        {
+            btnTirar.Image = Resources.stbtnAct_5;
+        }
+
+        private void btnTirar_MouseLeave(object sender, EventArgs e)
+        {
+            btnTirar.Image = Resources.stbtnDesact;
+        }
+
+        private void btnTirar_Click(object sender, EventArgs e)
+        {
+            //Disminuimos en 1 la tirada
+            if (Int32.Parse(tvNumTiradas.Text) > 0)
+            {
+                tvNumTiradas.Text = "" + (Int32.Parse(tvNumTiradas.Text) - 1);
+                iniciarCamposTreeSkill();
+                generarTreeSkill();
+                habilitar();
+            }
+            else
+            {
+                btnTirar.Enabled = false; //si se queda sin tiradas se deshabilita el boton
+            }
+        }
+
+        private void habilitar()
+        {
+           foreach(Label l in listaST)
+            {
+                l.Enabled = true;
+            }
+        }
+
+        private void generarTreeSkill()
+        {
+            Random rnd = new Random();
+            int cont=0; //55 max, 28 ptos totales
+            int aleat;
+
+            while (cont < 28)
+            {
+                //Genero Aleatorio
+                aleat = rnd.Next(11);
+                //Habilito los dos primeros campos.
+                if (cont == 0)
+                {
+                    listaST[0].Enabled = true;
+                    listaST[1].Enabled = true;
+                }
+
+                //Primer bloque
+                if (aleat == 0 || aleat == 2 || aleat == 3 || aleat == 6 || aleat == 7)
+                {
+                    if (aleat == 0 && listaST[aleat].Enabled == true)
+                    {
+                        listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
+                        cont++;
+                        if (listaST[aleat].Text == "5")//si llega a 5 se desactiva y activa a los siguientes
+                        {
+                            listaST[aleat].Enabled = false;
+                            listaST[2].Enabled = true;
+                            listaST[3].Enabled = true;
+                        }
+                    }
+                    else if (aleat == 2 || aleat == 3 || aleat == 6 || aleat == 7)
+                    {
+                        if ((aleat == 2 || aleat == 3) && listaST[aleat].Enabled == true)//cuidado con los parentesis
+                        {
+                            listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
+                            cont++;
+                            if (listaST[aleat].Text == "5")
+                            {
+                                listaST[aleat].Enabled = false;
+                                listaST[6].Enabled = true;
+                                listaST[7].Enabled = true;
+                            }
+                        }
+                        else if ((aleat == 6 || aleat == 7) && listaST[aleat].Enabled == true)
+                        {
+                            listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
+                            cont++;
+                            if (listaST[aleat].Text == "5")
+                            {
+                                listaST[aleat].Enabled = false;
+                                listaST[10].Enabled = true;
+                            }
+                        }
+                    }
+                }
+                else if (aleat == 1 || aleat == 4 || aleat == 5 || aleat == 8 || aleat == 9)
+                {
+                    if (aleat == 1 && listaST[aleat].Enabled == true)
+                    {
+                        listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
+                        cont++;
+                        if (listaST[aleat].Text == "5")//si llega a 5 se desactiva y activa a los siguientes
+                        {
+                            listaST[aleat].Enabled = false;
+                            listaST[4].Enabled = true;
+                            listaST[5].Enabled = true;
+                        }
+                    }
+                    else if (aleat == 4 || aleat == 5 || aleat == 8 || aleat == 9)
+                    {
+                        if ((aleat == 4 || aleat == 5) && listaST[aleat].Enabled == true)//cuidado con los parentesis
+                        {
+                            listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
+                            cont++;
+                            if (listaST[aleat].Text == "5")
+                            {
+                                listaST[aleat].Enabled = false;
+                                listaST[8].Enabled = true;
+                                listaST[9].Enabled = true;
+                            }
+                        }
+                        else if ((aleat == 8 || aleat == 9) && listaST[aleat].Enabled == true)
+                        {
+                            listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
+                            cont++;
+                            if (listaST[aleat].Text == "5")
+                            {
+                                listaST[aleat].Enabled = false;
+                                listaST[10].Enabled = true;
+                            }
+                        }
+                    }
+                }
+                else //10
+                {
+                    if(aleat == 10 && listaST[aleat].Enabled == true)
+                    {
+                        listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
+                        cont++;
+                        if (listaST[aleat].Text == "5")
+                        {
+                            listaST[aleat].Enabled = false;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        private void iniciarCamposTreeSkill()
+        {
+            listaST = new List<Label>();
+            listaST.Add(tvST1);
+            listaST.Add(tvST6);
+            listaST.Add(tvST2);
+            listaST.Add(tvST3);
+            listaST.Add(tvST7);
+            listaST.Add(tvST8);
+            listaST.Add(tvST4);
+            listaST.Add(tvST5);
+            listaST.Add(tvST9);
+            listaST.Add(tvST10);
+            listaST.Add(tvST11); 
+            
+            foreach(Label l in listaST)
+            {
+                l.Text = "0";
+                l.Enabled = false;
+            }   
+        }
+
     }
 
 }

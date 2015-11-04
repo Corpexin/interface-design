@@ -1,0 +1,9 @@
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\bin\Debug\MPBotoneraArrayList.exe.config
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\bin\Debug\MPBotoneraArrayList.exe
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\bin\Debug\MPBotoneraArrayList.pdb
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\obj\Debug\MPBotoneraArrayList.csprojResolveAssemblyReference.cache
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\obj\Debug\MPBotoneraArrayList.Form1.resources
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\obj\Debug\MPBotoneraArrayList.Properties.Resources.resources
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\obj\Debug\MPBotoneraArrayList.csproj.GenerateResource.Cache
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\obj\Debug\MPBotoneraArrayList.exe
+c:\users\corpex\Documents\GitHub\interface-design\MPBotoneraArrayList\MPBotoneraArrayList\obj\Debug\MPBotoneraArrayList.pdb

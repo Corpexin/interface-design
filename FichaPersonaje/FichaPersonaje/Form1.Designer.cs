@@ -117,6 +117,9 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tvErrorEdicion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
             this.panelDos.SuspendLayout();
@@ -867,12 +870,35 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // tvErrorEdicion
+            // 
+            resources.ApplyResources(this.tvErrorEdicion, "tvErrorEdicion");
+            this.tvErrorEdicion.BackColor = System.Drawing.Color.Transparent;
+            this.tvErrorEdicion.ForeColor = System.Drawing.Color.Red;
+            this.tvErrorEdicion.Name = "tvErrorEdicion";
+            // 
             // FichaPersonaje
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FichaPersonaje.Properties.Resources.fichagif;
             this.CausesValidation = false;
+            this.Controls.Add(this.tvErrorEdicion);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.pictureBox1);
@@ -906,6 +932,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.separadorDer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -999,6 +1026,9 @@
         private System.Windows.Forms.Label tvNumTiradas;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox btnTirar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label tvErrorEdicion;
     }
 }
 

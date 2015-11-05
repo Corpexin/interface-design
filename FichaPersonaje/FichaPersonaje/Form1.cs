@@ -737,6 +737,69 @@ namespace FichaPersonaje
             }   
         }
 
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            //Comprobar que todos los campos sean correctos.
+            Boolean correcto = comprobacion();
+        }
+
+        private bool comprobacion()
+        {
+            Boolean result = true;
+
+            //NombrePJ
+            if (etNombrePJ.Text == "")
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: Nombre de PJ debe ser rellenado";
+                tvErrorEdicion.Visible = true;
+            }
+
+            //NombreJug
+            if(etNombreJug.Text == "")
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: Nombre de Jugador debe ser rellenado";
+                tvErrorEdicion.Visible = true;
+            }
+          
+            //Faccion
+            if(rbDuprian.Checked == false && rbVanert.Checked == false)
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: Faccion debe ser elegida";
+                tvErrorEdicion.Visible = true;
+            }
+
+            //MapaInicio
+            if (comboBox1.SelectedItem == null)
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: Mapa Inicio debe ser elegido";
+                tvErrorEdicion.Visible = true;
+            }
+
+            //Clase
+            if (clickeado[0] == false && clickeado[1] == false && clickeado[2] == false && clickeado[3]==false)
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: La Clase debe ser elegida";
+                tvErrorEdicion.Visible = true;
+                
+            }
+
+            //Puntos
+            if(tvContadorPuntos.Text != "0")
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: Deben introducirse todos los puntos (quedar 0 restantes)";
+                tvErrorEdicion.Visible = true;
+            }
+            
+            
+
+            return result;
+        }
     }
 
 }

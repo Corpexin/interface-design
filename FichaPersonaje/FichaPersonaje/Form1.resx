@@ -207,23 +207,8 @@
   <metadata name="panelUno.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="tvNumTiradas.AutoSize" type="System.Boolean, mscorlib">
+  <data name="panelTres.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="tvNumTiradas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 14.25pt, style=Bold</value>
-  </data>
-  <data name="tvNumTiradas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 291</value>
-  </data>
-  <data name="tvNumTiradas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 22</value>
-  </data>
-  <data name="tvNumTiradas.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="tvNumTiradas.Text" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;tvNumTiradas.Name" xml:space="preserve">
     <value>tvNumTiradas</value>
@@ -237,24 +222,6 @@
   <data name="&gt;&gt;tvNumTiradas.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 18pt</value>
-  </data>
-  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 265</value>
-  </data>
-  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 32</value>
-  </data>
-  <data name="label28.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label28.Text" xml:space="preserve">
-    <value>Tiradas</value>
-  </data>
   <data name="&gt;&gt;label28.Name" xml:space="preserve">
     <value>label28</value>
   </data>
@@ -266,15 +233,6 @@
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="btnTirar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 159</value>
-  </data>
-  <data name="btnTirar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 67</value>
-  </data>
-  <data name="btnTirar.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
   </data>
   <data name="&gt;&gt;btnTirar.Name" xml:space="preserve">
     <value>btnTirar</value>
@@ -288,30 +246,6 @@
   <data name="&gt;&gt;btnTirar.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tvST10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST10.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 252</value>
-  </data>
-  <data name="tvST10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST10.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="tvST10.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tvST10.Name" xml:space="preserve">
     <value>tvST10</value>
   </data>
@@ -323,30 +257,6 @@
   </data>
   <data name="&gt;&gt;tvST10.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="tvST9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST9.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>450, 253</value>
-  </data>
-  <data name="tvST9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST9.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="tvST9.Text" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;tvST9.Name" xml:space="preserve">
     <value>tvST9</value>
@@ -360,30 +270,6 @@
   <data name="&gt;&gt;tvST9.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="tvST8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST8.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 148</value>
-  </data>
-  <data name="tvST8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST8.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="tvST8.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tvST8.Name" xml:space="preserve">
     <value>tvST8</value>
   </data>
@@ -395,30 +281,6 @@
   </data>
   <data name="&gt;&gt;tvST8.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="tvST7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST7.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 148</value>
-  </data>
-  <data name="tvST7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST7.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="tvST7.Text" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;tvST7.Name" xml:space="preserve">
     <value>tvST7</value>
@@ -432,30 +294,6 @@
   <data name="&gt;&gt;tvST7.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="tvST6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST6.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 50</value>
-  </data>
-  <data name="tvST6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST6.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="tvST6.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tvST6.Name" xml:space="preserve">
     <value>tvST6</value>
   </data>
@@ -467,30 +305,6 @@
   </data>
   <data name="&gt;&gt;tvST6.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="tvST11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST11.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 381</value>
-  </data>
-  <data name="tvST11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST11.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="tvST11.Text" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;tvST11.Name" xml:space="preserve">
     <value>tvST11</value>
@@ -504,30 +318,6 @@
   <data name="&gt;&gt;tvST11.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="tvST5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST5.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 252</value>
-  </data>
-  <data name="tvST5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST5.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="tvST5.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tvST5.Name" xml:space="preserve">
     <value>tvST5</value>
   </data>
@@ -539,30 +329,6 @@
   </data>
   <data name="&gt;&gt;tvST5.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="tvST4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST4.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 252</value>
-  </data>
-  <data name="tvST4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST4.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="tvST4.Text" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;tvST4.Name" xml:space="preserve">
     <value>tvST4</value>
@@ -576,30 +342,6 @@
   <data name="&gt;&gt;tvST4.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="tvST3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST3.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 148</value>
-  </data>
-  <data name="tvST3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST3.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="tvST3.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tvST3.Name" xml:space="preserve">
     <value>tvST3</value>
   </data>
@@ -611,30 +353,6 @@
   </data>
   <data name="&gt;&gt;tvST3.ZOrder" xml:space="preserve">
     <value>11</value>
-  </data>
-  <data name="tvST2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvST2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 148</value>
-  </data>
-  <data name="tvST2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST2.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="tvST2.Text" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;tvST2.Name" xml:space="preserve">
     <value>tvST2</value>
@@ -648,27 +366,6 @@
   <data name="&gt;&gt;tvST2.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="tvST1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvST1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tvST1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="tvST1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 52</value>
-  </data>
-  <data name="tvST1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="tvST1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="tvST1.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tvST1.Name" xml:space="preserve">
     <value>tvST1</value>
   </data>
@@ -680,27 +377,6 @@
   </data>
   <data name="&gt;&gt;tvST1.ZOrder" xml:space="preserve">
     <value>13</value>
-  </data>
-  <data name="tvSTText11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 353</value>
-  </data>
-  <data name="tvSTText11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 14</value>
-  </data>
-  <data name="tvSTText11.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="tvSTText11.Text" xml:space="preserve">
-    <value>Life +10%</value>
   </data>
   <data name="&gt;&gt;tvSTText11.Name" xml:space="preserve">
     <value>tvSTText11</value>
@@ -714,27 +390,6 @@
   <data name="&gt;&gt;tvSTText11.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="tvSTText10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 314</value>
-  </data>
-  <data name="tvSTText10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 14</value>
-  </data>
-  <data name="tvSTText10.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="tvSTText10.Text" xml:space="preserve">
-    <value>Money +10%</value>
-  </data>
   <data name="&gt;&gt;tvSTText10.Name" xml:space="preserve">
     <value>tvSTText10</value>
   </data>
@@ -746,27 +401,6 @@
   </data>
   <data name="&gt;&gt;tvSTText10.ZOrder" xml:space="preserve">
     <value>15</value>
-  </data>
-  <data name="tvSTText9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 314</value>
-  </data>
-  <data name="tvSTText9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 14</value>
-  </data>
-  <data name="tvSTText9.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="tvSTText9.Text" xml:space="preserve">
-    <value>Intelig +10%</value>
   </data>
   <data name="&gt;&gt;tvSTText9.Name" xml:space="preserve">
     <value>tvSTText9</value>
@@ -780,27 +414,6 @@
   <data name="&gt;&gt;tvSTText9.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="tvSTText8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 209</value>
-  </data>
-  <data name="tvSTText8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 14</value>
-  </data>
-  <data name="tvSTText8.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="tvSTText8.Text" xml:space="preserve">
-    <value>Resist +10%</value>
-  </data>
   <data name="&gt;&gt;tvSTText8.Name" xml:space="preserve">
     <value>tvSTText8</value>
   </data>
@@ -812,27 +425,6 @@
   </data>
   <data name="&gt;&gt;tvSTText8.ZOrder" xml:space="preserve">
     <value>17</value>
-  </data>
-  <data name="tvSTText7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 209</value>
-  </data>
-  <data name="tvSTText7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 14</value>
-  </data>
-  <data name="tvSTText7.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="tvSTText7.Text" xml:space="preserve">
-    <value>Hability +10%</value>
   </data>
   <data name="&gt;&gt;tvSTText7.Name" xml:space="preserve">
     <value>tvSTText7</value>
@@ -846,27 +438,6 @@
   <data name="&gt;&gt;tvSTText7.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="tvSTText6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>464, 114</value>
-  </data>
-  <data name="tvSTText6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 14</value>
-  </data>
-  <data name="tvSTText6.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tvSTText6.Text" xml:space="preserve">
-    <value>Defense +10%</value>
-  </data>
   <data name="&gt;&gt;tvSTText6.Name" xml:space="preserve">
     <value>tvSTText6</value>
   </data>
@@ -878,27 +449,6 @@
   </data>
   <data name="&gt;&gt;tvSTText6.ZOrder" xml:space="preserve">
     <value>19</value>
-  </data>
-  <data name="tvSTText5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 313</value>
-  </data>
-  <data name="tvSTText5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 14</value>
-  </data>
-  <data name="tvSTText5.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tvSTText5.Text" xml:space="preserve">
-    <value>Exp +10%</value>
   </data>
   <data name="&gt;&gt;tvSTText5.Name" xml:space="preserve">
     <value>tvSTText5</value>
@@ -912,27 +462,6 @@
   <data name="&gt;&gt;tvSTText5.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
-  <data name="tvSTText4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 314</value>
-  </data>
-  <data name="tvSTText4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 14</value>
-  </data>
-  <data name="tvSTText4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tvSTText4.Text" xml:space="preserve">
-    <value>Att.Vel +10%</value>
-  </data>
   <data name="&gt;&gt;tvSTText4.Name" xml:space="preserve">
     <value>tvSTText4</value>
   </data>
@@ -944,27 +473,6 @@
   </data>
   <data name="&gt;&gt;tvSTText4.ZOrder" xml:space="preserve">
     <value>21</value>
-  </data>
-  <data name="tvSTText3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 211</value>
-  </data>
-  <data name="tvSTText3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 14</value>
-  </data>
-  <data name="tvSTText3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tvSTText3.Text" xml:space="preserve">
-    <value>Power +10%</value>
   </data>
   <data name="&gt;&gt;tvSTText3.Name" xml:space="preserve">
     <value>tvSTText3</value>
@@ -978,27 +486,6 @@
   <data name="&gt;&gt;tvSTText3.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="tvSTText2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvSTText2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 211</value>
-  </data>
-  <data name="tvSTText2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 14</value>
-  </data>
-  <data name="tvSTText2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tvSTText2.Text" xml:space="preserve">
-    <value>Stam +10%</value>
-  </data>
   <data name="&gt;&gt;tvSTText2.Name" xml:space="preserve">
     <value>tvSTText2</value>
   </data>
@@ -1011,24 +498,6 @@
   <data name="&gt;&gt;tvSTText2.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
-  <data name="tvSTText1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSTText1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="tvSTText1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 114</value>
-  </data>
-  <data name="tvSTText1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 14</value>
-  </data>
-  <data name="tvSTText1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tvSTText1.Text" xml:space="preserve">
-    <value>Attack +10%</value>
-  </data>
   <data name="&gt;&gt;tvSTText1.Name" xml:space="preserve">
     <value>tvSTText1</value>
   </data>
@@ -1040,15 +509,6 @@
   </data>
   <data name="&gt;&gt;tvSTText1.ZOrder" xml:space="preserve">
     <value>24</value>
-  </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 25</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>597, 401</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
@@ -1064,6 +524,9 @@
   </data>
   <data name="panelTres.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="panelTres.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="panelTres.Size" type="System.Drawing.Size, System.Drawing">
     <value>643, 468</value>
@@ -1483,7 +946,7 @@
     <value>17</value>
   </data>
   <data name="cbArma.Text" xml:space="preserve">
-    <value>          Arma</value>
+    <value>         Arma</value>
   </data>
   <data name="&gt;&gt;cbArma.Name" xml:space="preserve">
     <value>cbArma</value>
@@ -2571,6 +2034,861 @@
   <data name="&gt;&gt;panelUno.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="tvNumTiradas.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvNumTiradas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt, style=Bold</value>
+  </data>
+  <data name="tvNumTiradas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 291</value>
+  </data>
+  <data name="tvNumTiradas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 22</value>
+  </data>
+  <data name="tvNumTiradas.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="tvNumTiradas.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.Name" xml:space="preserve">
+    <value>tvNumTiradas</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Pristina, 18pt</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 265</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 32</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Tiradas</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnTirar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 159</value>
+  </data>
+  <data name="btnTirar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 67</value>
+  </data>
+  <data name="btnTirar.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.Name" xml:space="preserve">
+    <value>btnTirar</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tvST10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST10.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 252</value>
+  </data>
+  <data name="tvST10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST10.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="tvST10.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST10.Name" xml:space="preserve">
+    <value>tvST10</value>
+  </data>
+  <data name="&gt;&gt;tvST10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST10.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tvST9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 253</value>
+  </data>
+  <data name="tvST9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST9.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="tvST9.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST9.Name" xml:space="preserve">
+    <value>tvST9</value>
+  </data>
+  <data name="&gt;&gt;tvST9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST9.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST9.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tvST8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>557, 148</value>
+  </data>
+  <data name="tvST8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST8.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="tvST8.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST8.Name" xml:space="preserve">
+    <value>tvST8</value>
+  </data>
+  <data name="&gt;&gt;tvST8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST8.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tvST7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST7.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 148</value>
+  </data>
+  <data name="tvST7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST7.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="tvST7.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST7.Name" xml:space="preserve">
+    <value>tvST7</value>
+  </data>
+  <data name="&gt;&gt;tvST7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST7.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tvST6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST6.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 50</value>
+  </data>
+  <data name="tvST6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST6.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="tvST6.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST6.Name" xml:space="preserve">
+    <value>tvST6</value>
+  </data>
+  <data name="&gt;&gt;tvST6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST6.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tvST11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST11.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 381</value>
+  </data>
+  <data name="tvST11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST11.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="tvST11.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST11.Name" xml:space="preserve">
+    <value>tvST11</value>
+  </data>
+  <data name="&gt;&gt;tvST11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST11.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tvST5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST5.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 252</value>
+  </data>
+  <data name="tvST5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST5.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="tvST5.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST5.Name" xml:space="preserve">
+    <value>tvST5</value>
+  </data>
+  <data name="&gt;&gt;tvST5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST5.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST5.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tvST4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 252</value>
+  </data>
+  <data name="tvST4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST4.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="tvST4.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST4.Name" xml:space="preserve">
+    <value>tvST4</value>
+  </data>
+  <data name="&gt;&gt;tvST4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST4.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tvST3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 148</value>
+  </data>
+  <data name="tvST3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="tvST3.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST3.Name" xml:space="preserve">
+    <value>tvST3</value>
+  </data>
+  <data name="&gt;&gt;tvST3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST3.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tvST2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvST2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 148</value>
+  </data>
+  <data name="tvST2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="tvST2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST2.Name" xml:space="preserve">
+    <value>tvST2</value>
+  </data>
+  <data name="&gt;&gt;tvST2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST2.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="tvST1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvST1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tvST1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tvST1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 52</value>
+  </data>
+  <data name="tvST1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="tvST1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="tvST1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvST1.Name" xml:space="preserve">
+    <value>tvST1</value>
+  </data>
+  <data name="&gt;&gt;tvST1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST1.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="tvSTText11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 353</value>
+  </data>
+  <data name="tvSTText11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="tvSTText11.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="tvSTText11.Text" xml:space="preserve">
+    <value>Life +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText11.Name" xml:space="preserve">
+    <value>tvSTText11</value>
+  </data>
+  <data name="&gt;&gt;tvSTText11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText11.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText11.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="tvSTText10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 314</value>
+  </data>
+  <data name="tvSTText10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 14</value>
+  </data>
+  <data name="tvSTText10.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="tvSTText10.Text" xml:space="preserve">
+    <value>Money +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText10.Name" xml:space="preserve">
+    <value>tvSTText10</value>
+  </data>
+  <data name="&gt;&gt;tvSTText10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText10.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText10.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tvSTText9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 314</value>
+  </data>
+  <data name="tvSTText9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 14</value>
+  </data>
+  <data name="tvSTText9.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="tvSTText9.Text" xml:space="preserve">
+    <value>Intelig +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText9.Name" xml:space="preserve">
+    <value>tvSTText9</value>
+  </data>
+  <data name="&gt;&gt;tvSTText9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText9.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText9.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="tvSTText8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 209</value>
+  </data>
+  <data name="tvSTText8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 14</value>
+  </data>
+  <data name="tvSTText8.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tvSTText8.Text" xml:space="preserve">
+    <value>Resist +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText8.Name" xml:space="preserve">
+    <value>tvSTText8</value>
+  </data>
+  <data name="&gt;&gt;tvSTText8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText8.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText8.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="tvSTText7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>403, 209</value>
+  </data>
+  <data name="tvSTText7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 14</value>
+  </data>
+  <data name="tvSTText7.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tvSTText7.Text" xml:space="preserve">
+    <value>Hability +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText7.Name" xml:space="preserve">
+    <value>tvSTText7</value>
+  </data>
+  <data name="&gt;&gt;tvSTText7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText7.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText7.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tvSTText6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 114</value>
+  </data>
+  <data name="tvSTText6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 14</value>
+  </data>
+  <data name="tvSTText6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tvSTText6.Text" xml:space="preserve">
+    <value>Defense +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText6.Name" xml:space="preserve">
+    <value>tvSTText6</value>
+  </data>
+  <data name="&gt;&gt;tvSTText6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText6.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText6.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="tvSTText5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 313</value>
+  </data>
+  <data name="tvSTText5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="tvSTText5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tvSTText5.Text" xml:space="preserve">
+    <value>Exp +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText5.Name" xml:space="preserve">
+    <value>tvSTText5</value>
+  </data>
+  <data name="&gt;&gt;tvSTText5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText5.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText5.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="tvSTText4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 314</value>
+  </data>
+  <data name="tvSTText4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 14</value>
+  </data>
+  <data name="tvSTText4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tvSTText4.Text" xml:space="preserve">
+    <value>Att.Vel +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText4.Name" xml:space="preserve">
+    <value>tvSTText4</value>
+  </data>
+  <data name="&gt;&gt;tvSTText4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText4.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText4.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="tvSTText3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 211</value>
+  </data>
+  <data name="tvSTText3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 14</value>
+  </data>
+  <data name="tvSTText3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tvSTText3.Text" xml:space="preserve">
+    <value>Power +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText3.Name" xml:space="preserve">
+    <value>tvSTText3</value>
+  </data>
+  <data name="&gt;&gt;tvSTText3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText3.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText3.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="tvSTText2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvSTText2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 211</value>
+  </data>
+  <data name="tvSTText2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 14</value>
+  </data>
+  <data name="tvSTText2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tvSTText2.Text" xml:space="preserve">
+    <value>Stam +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText2.Name" xml:space="preserve">
+    <value>tvSTText2</value>
+  </data>
+  <data name="&gt;&gt;tvSTText2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText2.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText2.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="tvSTText1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvSTText1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="tvSTText1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 114</value>
+  </data>
+  <data name="tvSTText1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 14</value>
+  </data>
+  <data name="tvSTText1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tvSTText1.Text" xml:space="preserve">
+    <value>Attack +10%</value>
+  </data>
+  <data name="&gt;&gt;tvSTText1.Name" xml:space="preserve">
+    <value>tvSTText1</value>
+  </data>
+  <data name="&gt;&gt;tvSTText1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvSTText1.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvSTText1.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 25</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>597, 401</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
   <data name="btn3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -2664,57 +2982,6 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 72</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Guardar</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 72</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tvErrorEdicion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2743,6 +3010,51 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tvErrorEdicion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="imgGuardar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="imgGuardar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 70</value>
+  </data>
+  <data name="imgGuardar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 40</value>
+  </data>
+  <data name="imgGuardar.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;imgGuardar.Name" xml:space="preserve">
+    <value>imgGuardar</value>
+  </data>
+  <data name="&gt;&gt;imgGuardar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgGuardar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imgGuardar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="imagCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 70</value>
+  </data>
+  <data name="imagCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 40</value>
+  </data>
+  <data name="imagCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;imagCancelar.Name" xml:space="preserve">
+    <value>imagCancelar</value>
+  </data>
+  <data name="&gt;&gt;imagCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imagCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imagCancelar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -1,0 +1,9 @@
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\bin\Debug\MPFicheros.exe.config
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\bin\Debug\MPFicheros.exe
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\bin\Debug\MPFicheros.pdb
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\obj\Debug\MPFicheros.csprojResolveAssemblyReference.cache
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\obj\Debug\MPFicheros.Form1.resources
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\obj\Debug\MPFicheros.Properties.Resources.resources
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\obj\Debug\MPFicheros.csproj.GenerateResource.Cache
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\obj\Debug\MPFicheros.exe
+c:\users\corpex\Documents\GitHub\interface-design\MPFicheros\MPFicheros\obj\Debug\MPFicheros.pdb

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +284,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stbtnDesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-GuardarAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-CancelarAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-CancelarDesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-GuardarDesact.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

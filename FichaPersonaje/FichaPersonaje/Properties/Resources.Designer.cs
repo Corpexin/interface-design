@@ -133,6 +133,46 @@ namespace FichaPersonaje.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_CancelarAct {
+            get {
+                object obj = ResourceManager.GetObject("btn-CancelarAct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_CancelarDesact {
+            get {
+                object obj = ResourceManager.GetObject("btn-CancelarDesact", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_GuardarAct {
+            get {
+                object obj = ResourceManager.GetObject("btn-GuardarAct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_GuardarDesact {
+            get {
+                object obj = ResourceManager.GetObject("btn-GuardarDesact", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnAct1 {
             get {
                 object obj = ResourceManager.GetObject("btnAct1", resourceCulture);

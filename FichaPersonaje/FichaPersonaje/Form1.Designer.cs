@@ -117,9 +117,9 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tvErrorEdicion = new System.Windows.Forms.Label();
+            this.imgGuardar = new System.Windows.Forms.PictureBox();
+            this.imagCancelar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
             this.panelDos.SuspendLayout();
@@ -139,6 +139,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.separadorIzq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separadorDer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgGuardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagCancelar)).BeginInit();
             this.SuspendLayout();
             // 
             // imagPerfil
@@ -235,7 +237,8 @@
             // 
             // panelTres
             // 
-            this.panelTres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
+            resources.ApplyResources(this.panelTres, "panelTres");
+            this.panelTres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panelTres.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
             this.panelTres.Controls.Add(this.tvNumTiradas);
             this.panelTres.Controls.Add(this.label28);
@@ -263,7 +266,7 @@
             this.panelTres.Controls.Add(this.tvSTText2);
             this.panelTres.Controls.Add(this.tvSTText1);
             this.panelTres.Controls.Add(this.pictureBox2);
-            resources.ApplyResources(this.panelTres, "panelTres");
+            this.panelTres.ForeColor = System.Drawing.Color.Transparent;
             this.panelTres.Name = "panelTres";
             // 
             // tvNumTiradas
@@ -545,22 +548,22 @@
             // cbArma
             // 
             resources.ApplyResources(this.cbArma, "cbArma");
-            this.cbArma.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbArma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
             this.cbArma.ForeColor = System.Drawing.Color.Salmon;
             this.cbArma.FormattingEnabled = true;
             this.cbArma.Name = "cbArma";
             this.cbArma.SelectedValueChanged += new System.EventHandler(this.cbArma_SelectedValueChanged);
+            this.cbArma.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbArma_KeyPress);
             // 
             // cbTipoArma
             // 
             resources.ApplyResources(this.cbTipoArma, "cbTipoArma");
-            this.cbTipoArma.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbTipoArma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
             this.cbTipoArma.ForeColor = System.Drawing.Color.Salmon;
             this.cbTipoArma.FormattingEnabled = true;
             this.cbTipoArma.Name = "cbTipoArma";
             this.cbTipoArma.SelectedValueChanged += new System.EventHandler(this.cbTipoArma_SelectedValueChanged);
+            this.cbTipoArma.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbTipoArma_KeyPress);
             // 
             // imSeparadorVert
             // 
@@ -704,6 +707,7 @@
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(12)))), ((int)(((byte)(13)))));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.ForeColor = System.Drawing.Color.Salmon;
             this.comboBox1.FormattingEnabled = true;
@@ -717,7 +721,7 @@
             // imgDL
             // 
             resources.ApplyResources(this.imgDL, "imgDL");
-            this.imgDL.Image = global::FichaPersonaje.Properties.Resources.cldldesact1;
+            this.imgDL.Image = global::FichaPersonaje.Properties.Resources.cldlproh1;
             this.imgDL.Name = "imgDL";
             this.imgDL.TabStop = false;
             this.imgDL.Click += new System.EventHandler(this.imgDL_Click);
@@ -727,7 +731,7 @@
             // imgElf
             // 
             resources.ApplyResources(this.imgElf, "imgElf");
-            this.imgElf.Image = global::FichaPersonaje.Properties.Resources.clelfdesact1;
+            this.imgElf.Image = global::FichaPersonaje.Properties.Resources.clelfproh1;
             this.imgElf.Name = "imgElf";
             this.imgElf.TabStop = false;
             this.imgElf.Click += new System.EventHandler(this.imgElf_Click);
@@ -737,7 +741,7 @@
             // imgDW
             // 
             resources.ApplyResources(this.imgDW, "imgDW");
-            this.imgDW.Image = global::FichaPersonaje.Properties.Resources.cldwdesact1;
+            this.imgDW.Image = global::FichaPersonaje.Properties.Resources.cldwproh1;
             this.imgDW.Name = "imgDW";
             this.imgDW.TabStop = false;
             this.imgDW.Click += new System.EventHandler(this.imgDW_Click);
@@ -747,7 +751,7 @@
             // imgBk
             // 
             resources.ApplyResources(this.imgBk, "imgBk");
-            this.imgBk.Image = global::FichaPersonaje.Properties.Resources.clbkdesact1;
+            this.imgBk.Image = global::FichaPersonaje.Properties.Resources.clbkproh1;
             this.imgBk.Name = "imgBk";
             this.imgBk.TabStop = false;
             this.imgBk.Click += new System.EventHandler(this.imgBk_Click);
@@ -870,19 +874,6 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // tvErrorEdicion
             // 
             resources.ApplyResources(this.tvErrorEdicion, "tvErrorEdicion");
@@ -890,15 +881,37 @@
             this.tvErrorEdicion.ForeColor = System.Drawing.Color.Red;
             this.tvErrorEdicion.Name = "tvErrorEdicion";
             // 
+            // imgGuardar
+            // 
+            this.imgGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.imgGuardar.Image = global::FichaPersonaje.Properties.Resources.btn_GuardarAct;
+            resources.ApplyResources(this.imgGuardar, "imgGuardar");
+            this.imgGuardar.Name = "imgGuardar";
+            this.imgGuardar.TabStop = false;
+            this.imgGuardar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.imgGuardar_MouseClick);
+            this.imgGuardar.MouseLeave += new System.EventHandler(this.imgGuardar_MouseLeave);
+            this.imgGuardar.MouseHover += new System.EventHandler(this.imgGuardar_MouseHover);
+            // 
+            // imagCancelar
+            // 
+            this.imagCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.imagCancelar.Image = global::FichaPersonaje.Properties.Resources.btn_CancelarAct;
+            resources.ApplyResources(this.imagCancelar, "imagCancelar");
+            this.imagCancelar.Name = "imagCancelar";
+            this.imagCancelar.TabStop = false;
+            this.imagCancelar.Click += new System.EventHandler(this.imagCancelar_Click);
+            this.imagCancelar.MouseLeave += new System.EventHandler(this.imagCancelar_MouseLeave);
+            this.imagCancelar.MouseHover += new System.EventHandler(this.imagCancelar_MouseHover);
+            // 
             // FichaPersonaje
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FichaPersonaje.Properties.Resources.fichagif;
             this.CausesValidation = false;
+            this.Controls.Add(this.imagCancelar);
+            this.Controls.Add(this.imgGuardar);
             this.Controls.Add(this.tvErrorEdicion);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.pictureBox1);
@@ -931,6 +944,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.separadorIzq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separadorDer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgGuardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagCancelar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1026,9 +1041,9 @@
         private System.Windows.Forms.Label tvNumTiradas;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox btnTirar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label tvErrorEdicion;
+        private System.Windows.Forms.PictureBox imgGuardar;
+        private System.Windows.Forms.PictureBox imagCancelar;
     }
 }
 

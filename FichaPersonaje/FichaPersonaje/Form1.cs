@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -21,16 +22,19 @@ namespace FichaPersonaje
         private int MAX_PUNTOS_CONT = 5000;//Constante con el maximo de puntos disponibles para las caracteristicas
         int[] listaValoresCaract = new int[4]; //aqui se guardan los puntos de las 4 caracteristicas
         List<Label> listaST; //Lista de los campos del Skill Tree
+        public String[] lines;
+        Album album;
 
         public FichaPersonaje()
         {
 
             InitializeComponent();
+            //Inicializamos el album de pj
+            album = new Album();
+
             //Inicializamos los booleans de clickeados. Controlan si una clase esta clickeada o no
-            for (int i=0; i<clickeado.Length; i++)
-            {
-                clickeado[i] = false;
-            }
+            initClickeado();
+
 
             for(int i =0; i<btnclickeado.Length; i++)
             {
@@ -50,6 +54,14 @@ namespace FichaPersonaje
             for(int i =0; i<listaValoresCaract.Length; i++)
             {
                 listaValoresCaract[i] = 0;
+            }
+        }
+
+        private void initClickeado()
+        {
+            for (int i = 0; i < clickeado.Length; i++)
+            {
+                clickeado[i] = false;
             }
         }
 
@@ -319,6 +331,11 @@ namespace FichaPersonaje
 
         private void inicioUptoDown()
         {
+            UDFuerza.ReadOnly = true;
+            UDAgilidad.ReadOnly = true;
+            UDVitalidad.ReadOnly = true;
+            UDEnergia.ReadOnly = true;
+
             //Creo un arrayList de 5000 numeros y se los asigno a los uptodown
             ArrayList listNum = new ArrayList();
             UDFuerza.Items.Clear();
@@ -737,10 +754,23 @@ namespace FichaPersonaje
             }   
         }
 
-        private void button1_MouseClick(object sender, MouseEventArgs e)
+
+        private void guardar_MouseClick(object sender, MouseEventArgs e)
         {
-            //Comprobar que todos los campos sean correctos.
-            Boolean correcto = comprobacion();
+          
+        }
+
+        private void imgGuardar_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (!comprobacion())
+            {
+                tvErrorEdicion.Visible = true;//?
+            }
+            else
+            {
+                tvErrorEdicion.Visible = false;
+                guardarPj();
+            }
         }
 
         private bool comprobacion()
@@ -752,7 +782,6 @@ namespace FichaPersonaje
             {
                 result = false;
                 tvErrorEdicion.Text = "Error: Nombre de PJ debe ser rellenado";
-                tvErrorEdicion.Visible = true;
             }
 
             //NombreJug
@@ -760,7 +789,6 @@ namespace FichaPersonaje
             {
                 result = false;
                 tvErrorEdicion.Text = "Error: Nombre de Jugador debe ser rellenado";
-                tvErrorEdicion.Visible = true;
             }
           
             //Faccion
@@ -768,7 +796,6 @@ namespace FichaPersonaje
             {
                 result = false;
                 tvErrorEdicion.Text = "Error: Faccion debe ser elegida";
-                tvErrorEdicion.Visible = true;
             }
 
             //MapaInicio
@@ -776,7 +803,6 @@ namespace FichaPersonaje
             {
                 result = false;
                 tvErrorEdicion.Text = "Error: Mapa Inicio debe ser elegido";
-                tvErrorEdicion.Visible = true;
             }
 
             //Clase
@@ -784,21 +810,183 @@ namespace FichaPersonaje
             {
                 result = false;
                 tvErrorEdicion.Text = "Error: La Clase debe ser elegida";
-                tvErrorEdicion.Visible = true;
-                
             }
 
             //Puntos
             if(tvContadorPuntos.Text != "0")
             {
                 result = false;
-                tvErrorEdicion.Text = "Error: Deben introducirse todos los puntos (quedar 0 restantes)";
-                tvErrorEdicion.Visible = true;
+                tvErrorEdicion.Text = "Error: Deben introducirse todos los Puntos de caracteristicas";
             }
             
-            
+            //Armas
+            if(cbArma.SelectedItem == null)
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: El arma debe ser elegida";
+            }
+
+            //TreeSkill
+            if(tvST1.Enabled == false)
+            {
+                result = false;
+                tvErrorEdicion.Text = "Error: Debe lanzarse el TreeSkill 1 vez al menos";
+            }
 
             return result;
+        }
+
+        private void guardarPj()
+        {
+            lines = new String[12]; //POSIBLEMENTE HAYA QUE CAMBIARLO
+            //vamos introduciendo todos los atributos
+
+            //nombrePJ
+            lines[0] = etNombrePJ.Text;
+            //nombreJug
+            lines[1] = etNombreJug.Text;
+            //faccion
+            if (rbDuprian.Checked == true)
+                lines[2] = "duprian";
+            else
+                lines[2] = "vanert";
+            //mapa inicio
+            lines[3] = ""+comboBox1.SelectedItem; //quizas de error
+            //clase
+            if (clickeado[0] == true)
+            {
+                lines[4] = "0";
+            }
+            else if (clickeado[1] == true)
+            {
+                lines[4] = "1";
+            }
+            else if (clickeado[2] == true)
+            {
+                lines[4] = "2";
+            }
+            else if (clickeado[3] == true)
+            {
+                lines[4] = "3";
+            }
+            //puntos  quizas de error
+            lines[5] = UDFuerza.SelectedItem + ":" + UDAgilidad.SelectedItem + ":" + UDVitalidad.SelectedItem + ":" + UDEnergia.SelectedItem;           
+            //tipo de arma
+            lines[6] = ""+cbTipoArma.SelectedItem;
+            //arma
+            lines[7] = "" + cbArma.SelectedItem;
+            //inventario
+            if(ckbItem1.Checked==true)
+                lines[8] = "1";
+            else
+                lines[8] = "0";
+            //inventario 2
+            if (ckbItem2.Checked == true)
+                lines[8] = lines[8] + ":1";
+            else
+                lines[8] = lines[8] + ":0";
+            //inventario 3
+            if (ckbItem3.Checked == true)
+                lines[8] = lines[8] + ":1";
+            else
+                lines[8] = lines[8] + ":0";
+            //inventario 4
+            if (ckbItem4.Checked == true)
+                lines[8] = lines[8] + ":1";
+            else
+                lines[8] = lines[8] +":0";
+
+            //treeskill
+            lines[9] = tvST1.Text+":"+ tvST2.Text + ":" + tvST3.Text + ":" + tvST4.Text + ":" + tvST5.Text + ":" + tvST6.Text + ":" + tvST7.Text + ":" + tvST8.Text + ":" + tvST9.Text + ":" + tvST10.Text + ":" + tvST11.Text;
+
+            //Se alade al album
+            album.guardarPj(lines);
+            //esto para importar/exportar
+            StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
+            foreach (string line in lines)
+            {
+                file.WriteLine(line);
+
+            }
+            file.Close();
+        }
+
+        private void imgGuardar_MouseHover(object sender, EventArgs e)
+        {
+            imgGuardar.Image = Resources.btn_GuardarDesact;
+        }
+
+        private void imgGuardar_MouseLeave(object sender, EventArgs e)
+        {
+            imgGuardar.Image = Resources.btn_GuardarAct;
+        }
+
+        private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true; //Desactiva el combobox tipo arma sin perder la funcionalidad
+        }
+
+        private void cbArma_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true; //Desactiva el combobox arma sin perder la funcionalidad
+        }
+
+        private void imagCancelar_Click(object sender, EventArgs e)
+        {
+            //Resetear todas las opciones T.T
+            //nombrePJ
+            etNombrePJ.Text ="";
+            //nombreJug
+            etNombreJug.Text ="";
+            //faccion
+            rbDuprian.Checked = false;
+            rbVanert.Checked = false;
+            //mapa inicio
+            comboBox1.SelectedItem = null; //?
+            //clase
+            initClickeado();
+            //puntos  quizas de error
+            UDFuerza.SelectedItem = null;
+            UDAgilidad.SelectedItem = null;
+            UDVitalidad.SelectedItem = null;
+            UDEnergia.SelectedItem = null;
+            //tipo de arma
+            cbTipoArma.SelectedItem = null;
+            //arma
+            cbArma.SelectedItem = null;
+            //inventario
+            ckbItem1.Checked = false;
+            ckbItem2.Checked = false;
+            ckbItem3.Checked = false;
+            ckbItem4.Checked = false;
+
+            //treeskill
+            iniciarCamposTreeSkill();
+
+            //tiradas
+            tvNumTiradas.Text = "3";
+            //imagenes de clase 
+            imgBk.Enabled = false;
+            imgDW.Enabled = false;
+            imgElf.Enabled = false;
+            imgDL.Enabled = false;
+            imgBk.Image = Resources.clbkproh1;
+            imgDW.Image = Resources.cldwproh1;
+            imgElf.Image = Resources.clelfproh1;
+            imgDL.Image = Resources.cldlproh1;
+            imagPerfil.Image = Resources.df;
+            TipoArma(4);//desactiva los tipos de arma
+
+        }
+
+        private void imagCancelar_MouseHover(object sender, EventArgs e)
+        {
+            imagCancelar.Image = Resources.btn_CancelarDesact;
+        }
+
+        private void imagCancelar_MouseLeave(object sender, EventArgs e)
+        {
+            imagCancelar.Image = Resources.btn_CancelarAct;
         }
     }
 

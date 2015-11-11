@@ -531,7 +531,8 @@ namespace FichaPersonaje
                     break;
             }
         }
-
+        
+        //Si se activa/desactiva se resta/suma 500 puntos al total.
         private void ckbItem1_CheckStateChanged(object sender, EventArgs e)
         {
             if(ckbItem1.CheckState == CheckState.Checked){
@@ -589,17 +590,17 @@ namespace FichaPersonaje
 
         private void btnTirar_MouseHover(object sender, EventArgs e)
         {
-            btnTirar.Image = Resources.stbtnAct_5;
+            btnTirar.Image = Resources.stbtnAct_5; //boton Tirar encendido
         }
 
         private void btnTirar_MouseLeave(object sender, EventArgs e)
         {
-            btnTirar.Image = Resources.stbtnDesact;
+            btnTirar.Image = Resources.stbtnDesact; //Boton Tirar apagado
         }
 
         private void btnTirar_Click(object sender, EventArgs e)
         {
-            //Disminuimos en 1 la tirada
+            //Disminuimos en 1 la tirada, reiniciamos los campos del SkillTree y generamos unos nuevos valores
             if (Int32.Parse(tvNumTiradas.Text) > 0)
             {
                 tvNumTiradas.Text = "" + (Int32.Parse(tvNumTiradas.Text) - 1);
@@ -615,6 +616,7 @@ namespace FichaPersonaje
 
         private void habilitar()
         {
+            //Activo todos los labels de la lista de skills del arbol
            foreach(Label l in listaST)
             {
                 l.Enabled = true;
@@ -623,8 +625,11 @@ namespace FichaPersonaje
 
         private void generarTreeSkill()
         {
+            //Codigo que va generando aleatoriamente, en 3 tiradas, los valores (de 0 a 5) de un TreeSkill
+            //De manera que para llegar a un nivel superior en el arbol, uno de los valores anteriores
+            //Tiene que llegar a 5 puntos. El arbol tiene 55 puntos totales y 28 puntos a repartir.
             Random rnd = new Random();
-            int cont=0; //55 max, 28 ptos totales
+            int cont=0;
             int aleat;
 
             while (cont < 28)
@@ -654,7 +659,7 @@ namespace FichaPersonaje
                     }
                     else if (aleat == 2 || aleat == 3 || aleat == 6 || aleat == 7)
                     {
-                        if ((aleat == 2 || aleat == 3) && listaST[aleat].Enabled == true)//cuidado con los parentesis
+                        if ((aleat == 2 || aleat == 3) && listaST[aleat].Enabled == true)
                         {
                             listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
                             cont++;
@@ -677,13 +682,14 @@ namespace FichaPersonaje
                         }
                     }
                 }
+                //Segundo bloque
                 else if (aleat == 1 || aleat == 4 || aleat == 5 || aleat == 8 || aleat == 9)
                 {
                     if (aleat == 1 && listaST[aleat].Enabled == true)
                     {
                         listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
                         cont++;
-                        if (listaST[aleat].Text == "5")//si llega a 5 se desactiva y activa a los siguientes
+                        if (listaST[aleat].Text == "5")
                         {
                             listaST[aleat].Enabled = false;
                             listaST[4].Enabled = true;
@@ -692,7 +698,7 @@ namespace FichaPersonaje
                     }
                     else if (aleat == 4 || aleat == 5 || aleat == 8 || aleat == 9)
                     {
-                        if ((aleat == 4 || aleat == 5) && listaST[aleat].Enabled == true)//cuidado con los parentesis
+                        if ((aleat == 4 || aleat == 5) && listaST[aleat].Enabled == true)
                         {
                             listaST[aleat].Text = "" + (Int32.Parse(listaST[aleat].Text) + 1);
                             cont++;
@@ -715,7 +721,7 @@ namespace FichaPersonaje
                         }
                     }
                 }
-                else //10
+                else //Para la ultima skill(10) que se puede llegar desde ambos bloques
                 {
                     if(aleat == 10 && listaST[aleat].Enabled == true)
                     {
@@ -734,6 +740,7 @@ namespace FichaPersonaje
 
         private void iniciarCamposTreeSkill()
         {
+            //Creamos los campos y los inicializamos a false
             listaST = new List<Label>();
             listaST.Add(tvST1);
             listaST.Add(tvST6);
@@ -755,16 +762,13 @@ namespace FichaPersonaje
         }
 
 
-        private void guardar_MouseClick(object sender, MouseEventArgs e)
-        {
-          
-        }
-
         private void imgGuardar_MouseClick(object sender, MouseEventArgs e)
         {
+            //Al hacer click en guardar primero comprueba que todos los campos sean correctos y luego guarda
+            //el personaje en array de string
             if (!comprobacion())
             {
-                tvErrorEdicion.Visible = true;//?
+                tvErrorEdicion.Visible = true;
             }
             else
             {
@@ -776,7 +780,7 @@ namespace FichaPersonaje
         private bool comprobacion()
         {
             Boolean result = true;
-
+            //Comprueba que todos los campos son correctos
             //NombrePJ
             if (etNombrePJ.Text == "")
             {
@@ -838,9 +842,8 @@ namespace FichaPersonaje
 
         private void guardarPj()
         {
-            lines = new String[12]; //POSIBLEMENTE HAYA QUE CAMBIARLO
-            //vamos introduciendo todos los atributos
-
+            lines = new String[10]; 
+            //Introduccion de atributos en array de String
             //nombrePJ
             lines[0] = etNombrePJ.Text;
             //nombreJug
@@ -901,25 +904,28 @@ namespace FichaPersonaje
 
             //Se alade al album
             album.guardarPj(lines);
-            //esto para importar/exportar
+
+            //Cambio  a modo visualizacion
+            modoVisualizacion();
+            
+            //Importar/exportar
             StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
             foreach (string line in lines)
             {
                 file.WriteLine(line);
-
             }
             file.Close();
         }
 
-        private void imgGuardar_MouseHover(object sender, EventArgs e)
+        private void modoVisualizacion()
         {
-            imgGuardar.Image = Resources.btn_GuardarDesact;
+            //Aumenta el tamaño de la ventana y oculta los botones guardar y cancelar
+            this.Size = new Size(700, 650);
+            imagCancelar.Visible = false;
+            imgGuardar.Visible = false;
         }
 
-        private void imgGuardar_MouseLeave(object sender, EventArgs e)
-        {
-            imgGuardar.Image = Resources.btn_GuardarAct;
-        }
+       
 
         private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -942,10 +948,10 @@ namespace FichaPersonaje
             rbDuprian.Checked = false;
             rbVanert.Checked = false;
             //mapa inicio
-            comboBox1.SelectedItem = null; //?
+            comboBox1.SelectedItem = null; 
             //clase
             initClickeado();
-            //puntos  quizas de error
+            //puntos
             UDFuerza.SelectedItem = null;
             UDAgilidad.SelectedItem = null;
             UDVitalidad.SelectedItem = null;
@@ -979,14 +985,24 @@ namespace FichaPersonaje
 
         }
 
+        private void imgGuardar_MouseHover(object sender, EventArgs e)
+        {
+            imgGuardar.Image = Resources.btn_GuardarDesact; //Boton guardar apagado
+        }
+
+        private void imgGuardar_MouseLeave(object sender, EventArgs e)
+        {
+            imgGuardar.Image = Resources.btn_GuardarAct;//Boton guardar encendido
+        }
+
         private void imagCancelar_MouseHover(object sender, EventArgs e)
         {
-            imagCancelar.Image = Resources.btn_CancelarDesact;
+            imagCancelar.Image = Resources.btn_CancelarDesact; //boton cancelar apagado
         }
 
         private void imagCancelar_MouseLeave(object sender, EventArgs e)
         {
-            imagCancelar.Image = Resources.btn_CancelarAct;
+            imagCancelar.Image = Resources.btn_CancelarAct; //boton cancelar encendido
         }
     }
 

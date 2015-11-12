@@ -120,6 +120,12 @@
             this.tvErrorEdicion = new System.Windows.Forms.Label();
             this.imgGuardar = new System.Windows.Forms.PictureBox();
             this.imagCancelar = new System.Windows.Forms.PictureBox();
+            this.imagMenuInf = new System.Windows.Forms.PictureBox();
+            this.imagNuevo = new System.Windows.Forms.PictureBox();
+            this.imagEditar = new System.Windows.Forms.PictureBox();
+            this.imagBorrar = new System.Windows.Forms.PictureBox();
+            this.imagAnterior = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
             this.panelDos.SuspendLayout();
@@ -141,6 +147,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgGuardar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagCancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagMenuInf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagNuevo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagEditar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // imagPerfil
@@ -903,12 +915,64 @@
             this.imagCancelar.MouseLeave += new System.EventHandler(this.imagCancelar_MouseLeave);
             this.imagCancelar.MouseHover += new System.EventHandler(this.imagCancelar_MouseHover);
             // 
+            // imagMenuInf
+            // 
+            this.imagMenuInf.Image = global::FichaPersonaje.Properties.Resources.menu_inferior1;
+            resources.ApplyResources(this.imagMenuInf, "imagMenuInf");
+            this.imagMenuInf.Name = "imagMenuInf";
+            this.imagMenuInf.TabStop = false;
+            // 
+            // imagNuevo
+            // 
+            this.imagNuevo.Image = global::FichaPersonaje.Properties.Resources.nuevoAct1;
+            resources.ApplyResources(this.imagNuevo, "imagNuevo");
+            this.imagNuevo.Name = "imagNuevo";
+            this.imagNuevo.TabStop = false;
+            this.imagNuevo.MouseLeave += new System.EventHandler(this.imagNuevo_MouseLeave);
+            this.imagNuevo.MouseHover += new System.EventHandler(this.imagNuevo_MouseHover);
+            // 
+            // imagEditar
+            // 
+            this.imagEditar.Image = global::FichaPersonaje.Properties.Resources.editarAct;
+            resources.ApplyResources(this.imagEditar, "imagEditar");
+            this.imagEditar.Name = "imagEditar";
+            this.imagEditar.TabStop = false;
+            this.imagEditar.MouseLeave += new System.EventHandler(this.imagEditar_MouseLeave);
+            this.imagEditar.MouseHover += new System.EventHandler(this.imagEditar_MouseHover);
+            // 
+            // imagBorrar
+            // 
+            this.imagBorrar.Image = global::FichaPersonaje.Properties.Resources.borrarAct;
+            resources.ApplyResources(this.imagBorrar, "imagBorrar");
+            this.imagBorrar.Name = "imagBorrar";
+            this.imagBorrar.TabStop = false;
+            // 
+            // imagAnterior
+            // 
+            this.imagAnterior.Image = global::FichaPersonaje.Properties.Resources.anterior;
+            resources.ApplyResources(this.imagAnterior, "imagAnterior");
+            this.imagAnterior.Name = "imagAnterior";
+            this.imagAnterior.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::FichaPersonaje.Properties.Resources.siguiente;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
             // FichaPersonaje
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FichaPersonaje.Properties.Resources.fichagif;
             this.CausesValidation = false;
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.imagAnterior);
+            this.Controls.Add(this.imagBorrar);
+            this.Controls.Add(this.imagEditar);
+            this.Controls.Add(this.imagNuevo);
+            this.Controls.Add(this.imagMenuInf);
             this.Controls.Add(this.imagCancelar);
             this.Controls.Add(this.imgGuardar);
             this.Controls.Add(this.tvErrorEdicion);
@@ -946,6 +1010,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgGuardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagCancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagMenuInf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagNuevo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagEditar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1044,6 +1114,12 @@
         private System.Windows.Forms.Label tvErrorEdicion;
         private System.Windows.Forms.PictureBox imgGuardar;
         private System.Windows.Forms.PictureBox imagCancelar;
+        private System.Windows.Forms.PictureBox imagMenuInf;
+        private System.Windows.Forms.PictureBox imagNuevo;
+        private System.Windows.Forms.PictureBox imagEditar;
+        private System.Windows.Forms.PictureBox imagBorrar;
+        private System.Windows.Forms.PictureBox imagAnterior;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

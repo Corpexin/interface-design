@@ -297,6 +297,39 @@
   <ItemGroup>
     <None Include="Resources\btn-GuardarDesact.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu inferior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu inferior1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevoAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevoAct1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editarAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrarAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrarDesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editarDesact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevoDesact.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

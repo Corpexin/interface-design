@@ -920,12 +920,26 @@ namespace FichaPersonaje
         private void modoVisualizacion()
         {
             //Aumenta el tamaño de la ventana y oculta los botones guardar y cancelar
-            this.Size = new Size(700, 650);
+            imagMenuInf.Visible = true;
+            this.Size = new Size(700, 661);
             imagCancelar.Visible = false;
             imgGuardar.Visible = false;
+            //Desactivar la modificacion del personaje
+            //-------------
+            //-------------
+            desactivarEdicion();
+            cargarPj();
         }
 
-       
+        private void desactivarEdicion()
+        {
+            
+        }
+
+        private void cargarPj()
+        {
+            //se carga el pj desde el arraylist =S
+        }
 
         private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -1003,6 +1017,26 @@ namespace FichaPersonaje
         private void imagCancelar_MouseLeave(object sender, EventArgs e)
         {
             imagCancelar.Image = Resources.btn_CancelarAct; //boton cancelar encendido
+        }
+
+        private void imagEditar_MouseHover(object sender, EventArgs e)
+        {
+            imagEditar.Image = Resources.editarDesact;
+        }
+
+        private void imagEditar_MouseLeave(object sender, EventArgs e)
+        {
+            imagEditar.Image = Resources.editarAct;
+        }
+
+        private void imagNuevo_MouseHover(object sender, EventArgs e)
+        {
+            imagNuevo.Image = Resources.nuevoDesact;
+        }
+
+        private void imagNuevo_MouseLeave(object sender, EventArgs e)
+        {
+            imagNuevo.Image = Resources.nuevoAct;
         }
     }
 

@@ -590,15 +590,7 @@ namespace FichaPersonaje
             }
         }
 
-        private void btnTirar_MouseHover(object sender, EventArgs e)
-        {
-            btnTirar.Image = Resources.stbtnAct_5; //boton Tirar encendido
-        }
 
-        private void btnTirar_MouseLeave(object sender, EventArgs e)
-        {
-            btnTirar.Image = Resources.stbtnDesact; //Boton Tirar apagado
-        }
 
         private void btnTirar_Click(object sender, EventArgs e)
         {
@@ -923,12 +915,89 @@ namespace FichaPersonaje
         {
             //Aumenta el tamaño de la ventana y oculta los botones guardar y cancelar
             imagMenuInf.Visible = true;
-            this.Size = new Size(700, 661);
+            this.Size = new Size(700, 660);
             imagCancelar.Visible = false;
             imgGuardar.Visible = false;
             //Desactivar la modificacion del personaje
             desactivarEdicion();
         }
+
+        private void modoEdicion()
+        {
+            //Aumenta el tamaño de la ventana y oculta los botones guardar y cancelar
+            imagMenuInf.Visible = false;
+            this.Size = new Size(700, 600);
+            imagCancelar.Visible = true;
+            imgGuardar.Visible = true;
+            //activar todos los campos
+            activarEdicion();
+        }
+
+        private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true; //Desactiva el combobox tipo arma sin perder la funcionalidad
+        }
+
+        private void cbArma_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true; //Desactiva el combobox arma sin perder la funcionalidad
+        }
+
+        private void imagCancelar_Click(object sender, EventArgs e)
+        {
+            //Resetear todas las opciones
+            resetearCampos();           
+        }
+
+        private void imagNuevo_Click(object sender, EventArgs e)
+        {
+            //pasar al modo edicion
+            modoEdicion();
+            //reiniciar los campos (usando cancelar)
+            resetearCampos();
+        }
+
+        private void resetearCampos()
+        {
+            //nombrePJ
+            etNombrePJ.Text = "";
+            //nombreJug
+            etNombreJug.Text = "";
+            //faccion
+            rbDuprian.Checked = false;
+            rbVanert.Checked = false;
+            //mapa inicio
+            comboBox1.SelectedItem = null;
+            //clase
+            initClickeado();
+            //puntos
+            inicioUptoDown();
+            //tipo de arma
+            cbTipoArma.SelectedItem = null;
+            //arma
+            cbArma.SelectedItem = null;
+            //inventario
+            ckbItem1.Checked = false;
+            ckbItem2.Checked = false;
+            ckbItem3.Checked = false;
+            ckbItem4.Checked = false;
+            //treeskill
+            iniciarCamposTreeSkill();
+            //tiradas
+            tvNumTiradas.Text = "3";
+            //imagenes de clase 
+            imgBk.Enabled = false;
+            imgDW.Enabled = false;
+            imgElf.Enabled = false;
+            imgDL.Enabled = false;
+            imgBk.Image = Resources.clbkproh1;
+            imgDW.Image = Resources.cldwproh1;
+            imgElf.Image = Resources.clelfproh1;
+            imgDL.Image = Resources.cldlproh1;
+            imagPerfil.Image = Resources.df;
+            TipoArma(4);//desactiva los tipos de arma
+        }
+
 
         private void desactivarEdicion()
         {
@@ -954,61 +1023,39 @@ namespace FichaPersonaje
             btnTirar.Enabled = false;
         }
 
-        private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
+        private void activarEdicion()
         {
-            e.Handled = true; //Desactiva el combobox tipo arma sin perder la funcionalidad
+            //activamos todos los campos
+            etNombrePJ.Enabled = true;
+            etNombreJug.Enabled = true;
+            rbVanert.Enabled = true;
+            rbDuprian.Enabled = true;
+            comboBox1.Enabled = true;
+            imgBk.Enabled = true;
+            imgDW.Enabled = true;
+            imgElf.Enabled = true;
+            imgDL.Enabled = true;
+            UDFuerza.Enabled = true;
+            UDAgilidad.Enabled = true;
+            UDVitalidad.Enabled = true;
+            UDEnergia.Enabled = true;
+            cbTipoArma.Enabled = true;
+            cbArma.Enabled = true;
+            ckbItem1.Enabled = true;
+            ckbItem2.Enabled = true;
+            ckbItem3.Enabled = true;
+            ckbItem4.Enabled = true;
+            btnTirar.Enabled = true;
         }
 
-        private void cbArma_KeyPress(object sender, KeyPressEventArgs e)
+        private void btnTirar_MouseHover(object sender, EventArgs e)
         {
-            e.Handled = true; //Desactiva el combobox arma sin perder la funcionalidad
+            btnTirar.Image = Resources.stbtnAct_5; //boton Tirar encendido
         }
 
-        private void imagCancelar_Click(object sender, EventArgs e)
+        private void btnTirar_MouseLeave(object sender, EventArgs e)
         {
-            //Resetear todas las opciones
-            //nombrePJ
-            etNombrePJ.Text ="";
-            //nombreJug
-            etNombreJug.Text ="";
-            //faccion
-            rbDuprian.Checked = false;
-            rbVanert.Checked = false;
-            //mapa inicio
-            comboBox1.SelectedItem = null; 
-            //clase
-            initClickeado();
-            //puntos
-            UDFuerza.SelectedItem = null;
-            UDAgilidad.SelectedItem = null;
-            UDVitalidad.SelectedItem = null;
-            UDEnergia.SelectedItem = null;
-            //tipo de arma
-            cbTipoArma.SelectedItem = null;
-            //arma
-            cbArma.SelectedItem = null;
-            //inventario
-            ckbItem1.Checked = false;
-            ckbItem2.Checked = false;
-            ckbItem3.Checked = false;
-            ckbItem4.Checked = false;
-            
-            //treeskill
-            iniciarCamposTreeSkill();
-
-            //tiradas
-            tvNumTiradas.Text = "3";
-            //imagenes de clase 
-            imgBk.Enabled = false;
-            imgDW.Enabled = false;
-            imgElf.Enabled = false;
-            imgDL.Enabled = false;
-            imgBk.Image = Resources.clbkproh1;
-            imgDW.Image = Resources.cldwproh1;
-            imgElf.Image = Resources.clelfproh1;
-            imgDL.Image = Resources.cldlproh1;
-            imagPerfil.Image = Resources.df;
-            TipoArma(4);//desactiva los tipos de arma
+            btnTirar.Image = Resources.stbtnDesact; //Boton Tirar apagado
         }
 
         private void imgGuardar_MouseHover(object sender, EventArgs e)
@@ -1061,12 +1108,7 @@ namespace FichaPersonaje
             imagBorrar.Image = Resources.borrarAct;
         }
 
-        private void imagNuevo_Click(object sender, EventArgs e)
-        {
-            //pasar al modo edicion
-            //activar todos los campos
-            //reiniciar los campos (usando cancelar)
-        }
+
     }
 
 }

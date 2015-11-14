@@ -1,10 +1,10 @@
-werwer
-werwer
-duprian
-     Noria
-2
-4500:0:0:0
-Arcos
-Sylph Bow
-1:0:0:0
-5:2:4:0:0:5:5:5:1:1:0
+13123123
+123123
+vanert
+     Lorencia
+1
+2800:1000:100:100
+Varas
+Imperial Staff
+1:0:0:1
+5:4:5:0:1:5:5:3:0:0:0

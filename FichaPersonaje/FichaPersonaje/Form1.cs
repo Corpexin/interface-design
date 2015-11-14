@@ -67,10 +67,12 @@ namespace FichaPersonaje
 
         private void FichaPersonaje_Load(object sender, EventArgs e)
         {
-            //Supuesto codigo que pone el doublebuffered a true en los elementos que se indiquen. sin mucho exito
+            //Supuesto codigo que pone el doublebuffered a true en los elementos que se indiquen. sin mucho exito 
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelUno, new object[] { true });
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelDos, new object[] { true });
+            typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelTres, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pictureBox1, new object[] { true });
+            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pictureBox2, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbImagenArma, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem1, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem2, new object[] { true });
@@ -902,7 +904,7 @@ namespace FichaPersonaje
             //treeskill
             lines[9] = tvST1.Text+":"+ tvST2.Text + ":" + tvST3.Text + ":" + tvST4.Text + ":" + tvST5.Text + ":" + tvST6.Text + ":" + tvST7.Text + ":" + tvST8.Text + ":" + tvST9.Text + ":" + tvST10.Text + ":" + tvST11.Text;
 
-            //Se alade al album
+            //Se añade al album
             album.guardarPj(lines);
 
             //Cambio  a modo visualizacion
@@ -925,20 +927,31 @@ namespace FichaPersonaje
             imagCancelar.Visible = false;
             imgGuardar.Visible = false;
             //Desactivar la modificacion del personaje
-            //-------------
-            //-------------
             desactivarEdicion();
-            cargarPj();
         }
 
         private void desactivarEdicion()
         {
-            
-        }
-
-        private void cargarPj()
-        {
-            //se carga el pj desde el arraylist =S
+            etNombrePJ.Enabled = false;
+            etNombreJug.Enabled = false;
+            rbVanert.Enabled = false;
+            rbDuprian.Enabled = false;
+            comboBox1.Enabled = false;
+            imgBk.Enabled = false;
+            imgDW.Enabled = false;
+            imgElf.Enabled = false;
+            imgDL.Enabled = false;
+            UDFuerza.Enabled = false;
+            UDAgilidad.Enabled = false;
+            UDVitalidad.Enabled = false;
+            UDEnergia.Enabled = false;
+            cbTipoArma.Enabled = false;
+            cbArma.Enabled = false;
+            ckbItem1.Enabled = false;
+            ckbItem2.Enabled = false;
+            ckbItem3.Enabled = false;
+            ckbItem4.Enabled = false;
+            btnTirar.Enabled = false;
         }
 
         private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
@@ -953,7 +966,7 @@ namespace FichaPersonaje
 
         private void imagCancelar_Click(object sender, EventArgs e)
         {
-            //Resetear todas las opciones T.T
+            //Resetear todas las opciones
             //nombrePJ
             etNombrePJ.Text ="";
             //nombreJug
@@ -979,7 +992,7 @@ namespace FichaPersonaje
             ckbItem2.Checked = false;
             ckbItem3.Checked = false;
             ckbItem4.Checked = false;
-
+            
             //treeskill
             iniciarCamposTreeSkill();
 
@@ -996,7 +1009,6 @@ namespace FichaPersonaje
             imgDL.Image = Resources.cldlproh1;
             imagPerfil.Image = Resources.df;
             TipoArma(4);//desactiva los tipos de arma
-
         }
 
         private void imgGuardar_MouseHover(object sender, EventArgs e)
@@ -1047,6 +1059,13 @@ namespace FichaPersonaje
         private void imagBorrar_MouseLeave(object sender, EventArgs e)
         {
             imagBorrar.Image = Resources.borrarAct;
+        }
+
+        private void imagNuevo_Click(object sender, EventArgs e)
+        {
+            //pasar al modo edicion
+            //activar todos los campos
+            //reiniciar los campos (usando cancelar)
         }
     }
 

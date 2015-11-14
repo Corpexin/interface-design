@@ -1,10 +1,10 @@
-kljwefr
-efre
-vanert
-     Lorencia
-1
-5000:0:0:0
-Varas
-Platina Staff
-0:0:0:0
-5:2:4:0:0:5:5:2:2:3:0
+werwer
+werwer
+duprian
+     Noria
+2
+4500:0:0:0
+Arcos
+Sylph Bow
+1:0:0:0
+5:2:4:0:0:5:5:5:1:1:0

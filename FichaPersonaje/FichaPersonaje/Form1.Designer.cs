@@ -49,17 +49,6 @@
             this.tvST3 = new System.Windows.Forms.Label();
             this.tvST2 = new System.Windows.Forms.Label();
             this.tvST1 = new System.Windows.Forms.Label();
-            this.tvSTText11 = new System.Windows.Forms.Label();
-            this.tvSTText10 = new System.Windows.Forms.Label();
-            this.tvSTText9 = new System.Windows.Forms.Label();
-            this.tvSTText8 = new System.Windows.Forms.Label();
-            this.tvSTText7 = new System.Windows.Forms.Label();
-            this.tvSTText6 = new System.Windows.Forms.Label();
-            this.tvSTText5 = new System.Windows.Forms.Label();
-            this.tvSTText4 = new System.Windows.Forms.Label();
-            this.tvSTText3 = new System.Windows.Forms.Label();
-            this.tvSTText2 = new System.Windows.Forms.Label();
-            this.tvSTText1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -266,17 +255,6 @@
             this.panelTres.Controls.Add(this.tvST3);
             this.panelTres.Controls.Add(this.tvST2);
             this.panelTres.Controls.Add(this.tvST1);
-            this.panelTres.Controls.Add(this.tvSTText11);
-            this.panelTres.Controls.Add(this.tvSTText10);
-            this.panelTres.Controls.Add(this.tvSTText9);
-            this.panelTres.Controls.Add(this.tvSTText8);
-            this.panelTres.Controls.Add(this.tvSTText7);
-            this.panelTres.Controls.Add(this.tvSTText6);
-            this.panelTres.Controls.Add(this.tvSTText5);
-            this.panelTres.Controls.Add(this.tvSTText4);
-            this.panelTres.Controls.Add(this.tvSTText3);
-            this.panelTres.Controls.Add(this.tvSTText2);
-            this.panelTres.Controls.Add(this.tvSTText1);
             this.panelTres.Controls.Add(this.pictureBox2);
             this.panelTres.ForeColor = System.Drawing.Color.Transparent;
             this.panelTres.Name = "panelTres";
@@ -391,75 +369,9 @@
             this.tvST1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tvST1.Name = "tvST1";
             // 
-            // tvSTText11
-            // 
-            resources.ApplyResources(this.tvSTText11, "tvSTText11");
-            this.tvSTText11.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText11.Name = "tvSTText11";
-            // 
-            // tvSTText10
-            // 
-            resources.ApplyResources(this.tvSTText10, "tvSTText10");
-            this.tvSTText10.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText10.Name = "tvSTText10";
-            // 
-            // tvSTText9
-            // 
-            resources.ApplyResources(this.tvSTText9, "tvSTText9");
-            this.tvSTText9.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText9.Name = "tvSTText9";
-            // 
-            // tvSTText8
-            // 
-            resources.ApplyResources(this.tvSTText8, "tvSTText8");
-            this.tvSTText8.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText8.Name = "tvSTText8";
-            // 
-            // tvSTText7
-            // 
-            resources.ApplyResources(this.tvSTText7, "tvSTText7");
-            this.tvSTText7.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText7.Name = "tvSTText7";
-            // 
-            // tvSTText6
-            // 
-            resources.ApplyResources(this.tvSTText6, "tvSTText6");
-            this.tvSTText6.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText6.Name = "tvSTText6";
-            // 
-            // tvSTText5
-            // 
-            resources.ApplyResources(this.tvSTText5, "tvSTText5");
-            this.tvSTText5.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText5.Name = "tvSTText5";
-            // 
-            // tvSTText4
-            // 
-            resources.ApplyResources(this.tvSTText4, "tvSTText4");
-            this.tvSTText4.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText4.Name = "tvSTText4";
-            // 
-            // tvSTText3
-            // 
-            resources.ApplyResources(this.tvSTText3, "tvSTText3");
-            this.tvSTText3.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText3.Name = "tvSTText3";
-            // 
-            // tvSTText2
-            // 
-            resources.ApplyResources(this.tvSTText2, "tvSTText2");
-            this.tvSTText2.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText2.Name = "tvSTText2";
-            // 
-            // tvSTText1
-            // 
-            resources.ApplyResources(this.tvSTText1, "tvSTText1");
-            this.tvSTText1.ForeColor = System.Drawing.Color.Salmon;
-            this.tvSTText1.Name = "tvSTText1";
-            // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::FichaPersonaje.Properties.Resources.skilltreeBtn;
+            this.pictureBox2.Image = global::FichaPersonaje.Properties.Resources.skilltreeBtn1;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
@@ -928,6 +840,7 @@
             resources.ApplyResources(this.imagNuevo, "imagNuevo");
             this.imagNuevo.Name = "imagNuevo";
             this.imagNuevo.TabStop = false;
+            this.imagNuevo.Click += new System.EventHandler(this.imagNuevo_Click);
             this.imagNuevo.MouseLeave += new System.EventHandler(this.imagNuevo_MouseLeave);
             this.imagNuevo.MouseHover += new System.EventHandler(this.imagNuevo_MouseHover);
             // 
@@ -1089,17 +1002,6 @@
         private System.Windows.Forms.Panel panelTres;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label tvST1;
-        private System.Windows.Forms.Label tvSTText11;
-        private System.Windows.Forms.Label tvSTText10;
-        private System.Windows.Forms.Label tvSTText9;
-        private System.Windows.Forms.Label tvSTText8;
-        private System.Windows.Forms.Label tvSTText7;
-        private System.Windows.Forms.Label tvSTText6;
-        private System.Windows.Forms.Label tvSTText5;
-        private System.Windows.Forms.Label tvSTText4;
-        private System.Windows.Forms.Label tvSTText3;
-        private System.Windows.Forms.Label tvSTText2;
-        private System.Windows.Forms.Label tvSTText1;
         private System.Windows.Forms.Label tvST10;
         private System.Windows.Forms.Label tvST9;
         private System.Windows.Forms.Label tvST8;

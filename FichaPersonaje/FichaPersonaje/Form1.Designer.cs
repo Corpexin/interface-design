@@ -946,6 +946,8 @@
             resources.ApplyResources(this.imagBorrar, "imagBorrar");
             this.imagBorrar.Name = "imagBorrar";
             this.imagBorrar.TabStop = false;
+            this.imagBorrar.MouseLeave += new System.EventHandler(this.imagBorrar_MouseLeave);
+            this.imagBorrar.MouseHover += new System.EventHandler(this.imagBorrar_MouseHover);
             // 
             // imagAnterior
             // 

@@ -1,10 +1,10 @@
-odifdfg
-dfgdfgfdg
-duprian
-     Devias
-3
-0:500:4000:0
-Bastones
-Mystery Stick
-0:0:0:1
-5:5:4:0:0:5:5:3:1:0:0
+kljwefr
+efre
+vanert
+     Lorencia
+1
+5000:0:0:0
+Varas
+Platina Staff
+0:0:0:0
+5:2:4:0:0:5:5:2:2:3:0

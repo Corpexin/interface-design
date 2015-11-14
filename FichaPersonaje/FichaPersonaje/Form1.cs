@@ -1036,7 +1036,17 @@ namespace FichaPersonaje
 
         private void imagNuevo_MouseLeave(object sender, EventArgs e)
         {
-            imagNuevo.Image = Resources.nuevoAct;
+            imagNuevo.Image = Resources.nuevoAct1;
+        }
+
+        private void imagBorrar_MouseHover(object sender, EventArgs e)
+        {
+            imagBorrar.Image = Resources.borrarDesact;
+        }
+
+        private void imagBorrar_MouseLeave(object sender, EventArgs e)
+        {
+            imagBorrar.Image = Resources.borrarAct;
         }
     }
 

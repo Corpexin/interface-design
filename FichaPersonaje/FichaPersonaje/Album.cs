@@ -9,7 +9,7 @@ namespace FichaPersonaje
 {
     class Album
     {
-        ArrayList listPj;
+        public ArrayList listPj;
 
         public Album()
         {
@@ -29,6 +29,29 @@ namespace FichaPersonaje
         public void modificarPj(String[] lines)
         {
 
+        }
+
+        public int siguientePJ(int cont)
+        {
+            if (cont >= listPj.Count-1)
+
+                cont = 0;
+            else
+                cont++;
+
+            return cont;
+            
+        }
+
+        public int anteriorPJ(int cont)
+        {
+            if (cont <= 0)
+
+                cont = listPj.Count-1;
+            else
+                cont--;
+
+            return cont;
         }
     }
 }

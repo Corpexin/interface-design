@@ -24,6 +24,7 @@ namespace FichaPersonaje
         List<Label> listaST; //Lista de los campos del Skill Tree
         public String[] lines;
         Album album;
+        int contadorPj;
 
         public FichaPersonaje()
         {
@@ -34,7 +35,7 @@ namespace FichaPersonaje
 
             //Inicializamos los booleans de clickeados. Controlan si una clase esta clickeada o no
             initClickeado();
-
+            contadorPj = 0;
 
             for(int i =0; i<btnclickeado.Length; i++)
             {
@@ -898,6 +899,8 @@ namespace FichaPersonaje
 
             //Se añade al album
             album.guardarPj(lines);
+            //Aumento 1 el contador de pj
+            contadorPj++;
 
             //Cambio  a modo visualizacion
             modoVisualizacion();
@@ -946,7 +949,8 @@ namespace FichaPersonaje
         private void imagCancelar_Click(object sender, EventArgs e)
         {
             //Resetear todas las opciones
-            resetearCampos();           
+            resetearCampos();       
+            //Deberia irse al modo visualizacion    
         }
 
         private void imagNuevo_Click(object sender, EventArgs e)
@@ -1108,7 +1112,121 @@ namespace FichaPersonaje
             imagBorrar.Image = Resources.borrarAct;
         }
 
+        private void imagAnterior_Click(object sender, EventArgs e)
+        {
+            contadorPj = album.anteriorPJ(contadorPj);
+            cargarPJ();
+        }
 
+        private void imagSiguiente_Click(object sender, EventArgs e)
+        {
+            contadorPj = album.siguientePJ(contadorPj);
+            cargarPJ(); //carga ese pj en los campos
+            
+        }
+
+        private void cargarPJ()
+        {
+            lines = (String[])album.listPj[contadorPj]; //obtiene el PJ guardado en el album en la posicion indicada en el contador
+            //nombrePJ
+            etNombrePJ.Text = lines[0];
+            //nombreJug
+            etNombreJug.Text = lines[1];
+            //faccion
+            if (lines[2] == "duprian")
+            {
+                rbDuprian.Checked = true;
+                rbVanert.Checked = false;
+            }
+            else{
+                rbVanert.Checked = true;
+                rbDuprian.Checked = false;
+            }
+
+            //mapa inicio
+            comboBox1.SelectedItem = lines[3]; //quizas de error
+            //clase
+            switch (lines[4])//cambiar foto arriba y deshabilitar edicion, activar el tipo de arma
+            {
+                case "0":
+                    clickeado[0] = true;
+                    imagPerfil.Image = Resources.bk1;
+                    TipoArma(0);
+                    break;
+                case "1":
+                    clickeado[1] = true;
+                    imagPerfil.Image = Resources.dw;
+                    TipoArma(1);
+                    break;
+                case "2":
+                    clickeado[2] = true;
+                    imagPerfil.Image = Resources.elf;
+                    TipoArma(2);
+                    break;
+                case "3":
+                    clickeado[3] = true;
+                    imagPerfil.Image = Resources.dl;
+                    TipoArma(3);
+                    break;
+            }
+
+            desactivarEdicion();
+
+            //inventario
+            String codigoInv = lines[8];
+            String[] valoresInv = codigoInv.Split(':');
+            if (valoresInv[0] == "1")
+                ckbItem1.Checked = true;
+            else
+                ckbItem1.Checked = false;
+            //inventario 2
+            if (valoresInv[1] == "1")
+                ckbItem2.Checked = true;
+            else
+                ckbItem2.Checked = false;
+            //inventario 3
+            if (valoresInv[2] == "1")
+                ckbItem3.Checked = true;
+            else
+                ckbItem3.Checked = false;
+            //inventario 4
+            if (valoresInv[3] == "1")
+                ckbItem4.Checked = true;
+            else
+                ckbItem4.Checked = false;
+
+            //Valores Caract
+            String codigoCaract = lines[5];
+            String[] valoresCaract = codigoCaract.Split(':');
+            UDFuerza.SelectedItem = Int32.Parse(valoresCaract[0]);
+            UDAgilidad.SelectedItem = Int32.Parse(valoresCaract[1]);
+            UDVitalidad.SelectedItem = Int32.Parse(valoresCaract[2]);
+            UDEnergia.SelectedItem = Int32.Parse(valoresCaract[3]);
+
+           
+            //tipo de arma
+            cbTipoArma.SelectedItem = lines[6];
+            //arma
+            cbArma.SelectedItem = lines[7];
+
+            //SkillTree
+            String codigoST = lines[9];
+            String[] valoresST = codigoST.Split(':');
+
+            tvST1.Text = valoresST[0];
+            tvST2.Text = valoresST[1];
+            tvST3.Text = valoresST[2];
+            tvST4.Text = valoresST[3];
+            tvST5.Text = valoresST[4];
+            tvST6.Text = valoresST[5];
+            tvST7.Text = valoresST[6];
+            tvST8.Text = valoresST[7];
+            tvST9.Text = valoresST[8];
+            tvST10.Text = valoresST[9];
+            tvST11.Text = valoresST[10];
+
+            
+        }
     }
 
 }

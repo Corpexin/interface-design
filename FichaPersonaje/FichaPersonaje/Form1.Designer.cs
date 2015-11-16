@@ -114,7 +114,7 @@
             this.imagEditar = new System.Windows.Forms.PictureBox();
             this.imagBorrar = new System.Windows.Forms.PictureBox();
             this.imagAnterior = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.imagSiguiente = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
             this.panelDos.SuspendLayout();
@@ -141,7 +141,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagEditar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagSiguiente)).BeginInit();
             this.SuspendLayout();
             // 
             // imagPerfil
@@ -868,13 +868,15 @@
             resources.ApplyResources(this.imagAnterior, "imagAnterior");
             this.imagAnterior.Name = "imagAnterior";
             this.imagAnterior.TabStop = false;
+            this.imagAnterior.Click += new System.EventHandler(this.imagAnterior_Click);
             // 
-            // pictureBox3
+            // imagSiguiente
             // 
-            this.pictureBox3.Image = global::FichaPersonaje.Properties.Resources.siguiente;
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
+            this.imagSiguiente.Image = global::FichaPersonaje.Properties.Resources.siguiente;
+            resources.ApplyResources(this.imagSiguiente, "imagSiguiente");
+            this.imagSiguiente.Name = "imagSiguiente";
+            this.imagSiguiente.TabStop = false;
+            this.imagSiguiente.Click += new System.EventHandler(this.imagSiguiente_Click);
             // 
             // FichaPersonaje
             // 
@@ -882,7 +884,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FichaPersonaje.Properties.Resources.fichagif;
             this.CausesValidation = false;
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.imagSiguiente);
             this.Controls.Add(this.imagAnterior);
             this.Controls.Add(this.imagBorrar);
             this.Controls.Add(this.imagEditar);
@@ -930,7 +932,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagEditar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagSiguiente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1023,7 +1025,7 @@
         private System.Windows.Forms.PictureBox imagEditar;
         private System.Windows.Forms.PictureBox imagBorrar;
         private System.Windows.Forms.PictureBox imagAnterior;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox imagSiguiente;
     }
 }
 

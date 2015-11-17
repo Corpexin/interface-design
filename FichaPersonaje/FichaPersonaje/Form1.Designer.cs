@@ -850,6 +850,7 @@
             resources.ApplyResources(this.imagEditar, "imagEditar");
             this.imagEditar.Name = "imagEditar";
             this.imagEditar.TabStop = false;
+            this.imagEditar.Click += new System.EventHandler(this.imagEditar_Click);
             this.imagEditar.MouseLeave += new System.EventHandler(this.imagEditar_MouseLeave);
             this.imagEditar.MouseHover += new System.EventHandler(this.imagEditar_MouseHover);
             // 

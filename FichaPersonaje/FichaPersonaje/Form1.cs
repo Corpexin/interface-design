@@ -26,6 +26,7 @@ namespace FichaPersonaje
         Album album;
         Personaje pj; //personaje actual que contiene la informacion mostrada en el formulario
         int contadorPj;
+        Boolean modificador;
 
         public FichaPersonaje()
         {
@@ -37,7 +38,7 @@ namespace FichaPersonaje
             //Inicializamos los booleans de clickeados. Controlan si una clase esta clickeada o no
             initClickeado();
             contadorPj = 0;
-
+            modificador = false;
             for(int i =0; i<btnclickeado.Length; i++)
             {
                 if (i == 0)
@@ -895,6 +896,20 @@ namespace FichaPersonaje
             cargarPJ(); //carga ese pj en los campos
         }
 
+        private void imagEditar_Click(object sender, EventArgs e)
+        {
+            //lo pone en modo edicion, habilitando los campos pero no reseteandolos
+            //a la hora de guardar, comprobar si es de un editado o de un guardado (boolean cmo parametro de guardarpj)
+            //si es de un guardado, ejecuta album.guardarPJ()
+            //si es modificado, ejecuta album.modificarPJ()
+            if (contadorPj!=0)//error
+            {
+                modoEdicion();
+                modificador = true;
+            }
+
+        }
+
         private void guardarPj()
         {
 
@@ -958,22 +973,32 @@ namespace FichaPersonaje
             //treeskill
             lines[9] = tvST1.Text + ":" + tvST2.Text + ":" + tvST3.Text + ":" + tvST4.Text + ":" + tvST5.Text + ":" + tvST6.Text + ":" + tvST7.Text + ":" + tvST8.Text + ":" + tvST9.Text + ":" + tvST10.Text + ":" + tvST11.Text;
 
-            pj = new Personaje(lines[0], lines[1], lines[2], lines[3], lines[4], lines[5], lines[6], lines[7], lines[8], lines[9]);
-            //Se añade al album
-            album.guardarPj(pj);
-            //Aumento 1 el contador de pj
-            contadorPj++;
+            
+
+            if(modificador == false) {
+                pj = new Personaje(lines[0], lines[1], lines[2], lines[3], lines[4], lines[5], lines[6], lines[7], lines[8], lines[9]);
+                //Se añade al album
+                album.guardarPj(pj);
+                //Aumento 1 el contador de pj
+                contadorPj++;
+            }
+            else
+            {//se modifica en la posicion determinada
+                album.modificarPj(pj, lines);
+                modificador = false;
+            }
+           
 
             //Cambio  a modo visualizacion
             modoVisualizacion();
 
             //Importar/exportar
-            StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
-            foreach (string line in lines)
-            {
-                file.WriteLine(line);
-            }
-            file.Close();
+           // StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
+            //foreach (string line in lines)
+           // {
+            //    file.WriteLine(line);
+           // }
+            //file.Close();
         }
 
         private void cargarPJ()
@@ -1245,7 +1270,7 @@ namespace FichaPersonaje
         private void cbArma_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true; //Desactiva el combobox arma sin perder la funcionalidad
-        } 
+        }
     }
 
 }

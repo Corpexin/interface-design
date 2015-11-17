@@ -33,8 +33,19 @@ namespace FichaPersonaje
             return cont;
         }
 
-        public void modificarPj(Personaje pj)
+        public void modificarPj(Personaje pj, String[] lines)
         {
+            pj.nombrePJ = lines[0];
+            pj.nombreJug = lines[1];
+            pj.faccion = lines[2];
+            pj.mapaInicio = lines[3];
+            pj.clase = lines[4];
+            pj.puntos = lines[5];
+            pj.tipoArma = lines[6];
+            pj.arma = lines[7];
+            pj.inventario = lines[8];
+            pj.skillTree = lines[9];
+            listPj[listPj.IndexOf(pj)] = pj;
 
         }
 

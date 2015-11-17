@@ -24,6 +24,7 @@ namespace FichaPersonaje
         List<Label> listaST; //Lista de los campos del Skill Tree
         public String[] lines;
         Album album;
+        Personaje pj; //personaje actual que contiene la informacion mostrada en el formulario
         int contadorPj;
 
         public FichaPersonaje()
@@ -835,84 +836,7 @@ namespace FichaPersonaje
             return result;
         }
 
-        private void guardarPj()
-        {
-            lines = new String[10]; 
-            //Introduccion de atributos en array de String
-            //nombrePJ
-            lines[0] = etNombrePJ.Text;
-            //nombreJug
-            lines[1] = etNombreJug.Text;
-            //faccion
-            if (rbDuprian.Checked == true)
-                lines[2] = "duprian";
-            else
-                lines[2] = "vanert";
-            //mapa inicio
-            lines[3] = ""+comboBox1.SelectedItem; //quizas de error
-            //clase
-            if (clickeado[0] == true)
-            {
-                lines[4] = "0";
-            }
-            else if (clickeado[1] == true)
-            {
-                lines[4] = "1";
-            }
-            else if (clickeado[2] == true)
-            {
-                lines[4] = "2";
-            }
-            else if (clickeado[3] == true)
-            {
-                lines[4] = "3";
-            }
-            //puntos  quizas de error
-            lines[5] = UDFuerza.SelectedItem + ":" + UDAgilidad.SelectedItem + ":" + UDVitalidad.SelectedItem + ":" + UDEnergia.SelectedItem;           
-            //tipo de arma
-            lines[6] = ""+cbTipoArma.SelectedItem;
-            //arma
-            lines[7] = "" + cbArma.SelectedItem;
-            //inventario
-            if(ckbItem1.Checked==true)
-                lines[8] = "1";
-            else
-                lines[8] = "0";
-            //inventario 2
-            if (ckbItem2.Checked == true)
-                lines[8] = lines[8] + ":1";
-            else
-                lines[8] = lines[8] + ":0";
-            //inventario 3
-            if (ckbItem3.Checked == true)
-                lines[8] = lines[8] + ":1";
-            else
-                lines[8] = lines[8] + ":0";
-            //inventario 4
-            if (ckbItem4.Checked == true)
-                lines[8] = lines[8] + ":1";
-            else
-                lines[8] = lines[8] +":0";
-
-            //treeskill
-            lines[9] = tvST1.Text+":"+ tvST2.Text + ":" + tvST3.Text + ":" + tvST4.Text + ":" + tvST5.Text + ":" + tvST6.Text + ":" + tvST7.Text + ":" + tvST8.Text + ":" + tvST9.Text + ":" + tvST10.Text + ":" + tvST11.Text;
-
-            //Se añade al album
-            album.guardarPj(lines);
-            //Aumento 1 el contador de pj
-            contadorPj++;
-
-            //Cambio  a modo visualizacion
-            modoVisualizacion();
-            
-            //Importar/exportar
-            StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
-            foreach (string line in lines)
-            {
-                file.WriteLine(line);
-            }
-            file.Close();
-        }
+       
 
         private void modoVisualizacion()
         {
@@ -936,16 +860,6 @@ namespace FichaPersonaje
             activarEdicion();
         }
 
-        private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true; //Desactiva el combobox tipo arma sin perder la funcionalidad
-        }
-
-        private void cbArma_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true; //Desactiva el combobox arma sin perder la funcionalidad
-        }
-
         private void imagCancelar_Click(object sender, EventArgs e)
         {
             //Resetear todas las opciones
@@ -959,6 +873,217 @@ namespace FichaPersonaje
             modoEdicion();
             //reiniciar los campos (usando cancelar)
             resetearCampos();
+        }
+
+        private void imagAnterior_Click(object sender, EventArgs e)
+        {
+            contadorPj = album.anteriorPJ(contadorPj);
+
+            cargarPJ();
+        }
+
+        private void imagSiguiente_Click(object sender, EventArgs e)
+        {
+            contadorPj = album.siguientePJ(contadorPj);
+            cargarPJ(); //carga ese pj en los campos
+            
+        }
+
+        private void imagBorrar_Click(object sender, EventArgs e)
+        {
+            contadorPj = album.eliminarPj(contadorPj, pj);
+            cargarPJ(); //carga ese pj en los campos
+        }
+
+        private void guardarPj()
+        {
+
+            lines = new String[10];
+            //Introduccion de atributos en array de String
+            //nombrePJ
+            lines[0] = etNombrePJ.Text;
+            //nombreJug
+            lines[1] = etNombreJug.Text;
+            //faccion
+            if (rbDuprian.Checked == true)
+                lines[2] = "duprian";
+            else
+                lines[2] = "vanert";
+            //mapa inicio
+            lines[3] = "" + comboBox1.SelectedItem;
+            //clase
+            if (clickeado[0] == true)
+            {
+                lines[4] = "0";
+            }
+            else if (clickeado[1] == true)
+            {
+                lines[4] = "1";
+            }
+            else if (clickeado[2] == true)
+            {
+                lines[4] = "2";
+            }
+            else if (clickeado[3] == true)
+            {
+                lines[4] = "3";
+            }
+            //puntos  
+            lines[5] = UDFuerza.SelectedItem + ":" + UDAgilidad.SelectedItem + ":" + UDVitalidad.SelectedItem + ":" + UDEnergia.SelectedItem;
+            //tipo de arma
+            lines[6] = "" + cbTipoArma.SelectedItem;
+            //arma
+            lines[7] = "" + cbArma.SelectedItem;
+            //inventario
+            if (ckbItem1.Checked == true)
+                lines[8] = "1";
+            else
+                lines[8] = "0";
+            //inventario 2
+            if (ckbItem2.Checked == true)
+                lines[8] = lines[8] + ":1";
+            else
+                lines[8] = lines[8] + ":0";
+            //inventario 3
+            if (ckbItem3.Checked == true)
+                lines[8] = lines[8] + ":1";
+            else
+                lines[8] = lines[8] + ":0";
+            //inventario 4
+            if (ckbItem4.Checked == true)
+                lines[8] = lines[8] + ":1";
+            else
+                lines[8] = lines[8] + ":0";
+
+            //treeskill
+            lines[9] = tvST1.Text + ":" + tvST2.Text + ":" + tvST3.Text + ":" + tvST4.Text + ":" + tvST5.Text + ":" + tvST6.Text + ":" + tvST7.Text + ":" + tvST8.Text + ":" + tvST9.Text + ":" + tvST10.Text + ":" + tvST11.Text;
+
+            pj = new Personaje(lines[0], lines[1], lines[2], lines[3], lines[4], lines[5], lines[6], lines[7], lines[8], lines[9]);
+            //Se añade al album
+            album.guardarPj(pj);
+            //Aumento 1 el contador de pj
+            contadorPj++;
+
+            //Cambio  a modo visualizacion
+            modoVisualizacion();
+
+            //Importar/exportar
+            StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
+            foreach (string line in lines)
+            {
+                file.WriteLine(line);
+            }
+            file.Close();
+        }
+
+        private void cargarPJ()
+        {
+            if (album.listPj.Count > 0)
+            {
+                pj = (Personaje)album.listPj[contadorPj]; //obtiene el PJ guardado en el album en la posicion indicada en el contador
+                                                          //nombrePJ
+                etNombrePJ.Text = pj.nombrePJ;
+                //nombreJug
+                etNombreJug.Text = pj.nombreJug;
+                //faccion
+                if (pj.faccion == "duprian")
+                {
+                    rbDuprian.Checked = true;
+                    rbVanert.Checked = false;
+                }
+                else
+                {
+                    rbVanert.Checked = true;
+                    rbDuprian.Checked = false;
+                }
+
+                //mapa inicio
+                comboBox1.SelectedItem = pj.mapaInicio;
+                //clase
+                switch (pj.clase)
+                {
+                    case "0":
+                        clickeado[0] = true;
+                        imagPerfil.Image = Resources.bk1;
+                        TipoArma(0);
+                        break;
+                    case "1":
+                        clickeado[1] = true;
+                        imagPerfil.Image = Resources.dw;
+                        TipoArma(1);
+                        break;
+                    case "2":
+                        clickeado[2] = true;
+                        imagPerfil.Image = Resources.elf;
+                        TipoArma(2);
+                        break;
+                    case "3":
+                        clickeado[3] = true;
+                        imagPerfil.Image = Resources.dl;
+                        TipoArma(3);
+                        break;
+                }
+
+                desactivarEdicion();
+
+                //inventario
+                String codigoInv = pj.inventario;
+                String[] valoresInv = codigoInv.Split(':');
+                if (valoresInv[0] == "1")
+                    ckbItem1.Checked = true;
+                else
+                    ckbItem1.Checked = false;
+                //inventario 2
+                if (valoresInv[1] == "1")
+                    ckbItem2.Checked = true;
+                else
+                    ckbItem2.Checked = false;
+                //inventario 3
+                if (valoresInv[2] == "1")
+                    ckbItem3.Checked = true;
+                else
+                    ckbItem3.Checked = false;
+                //inventario 4
+                if (valoresInv[3] == "1")
+                    ckbItem4.Checked = true;
+                else
+                    ckbItem4.Checked = false;
+
+                //Valores Caract
+                String codigoCaract = pj.puntos;
+                String[] valoresCaract = codigoCaract.Split(':');
+                UDFuerza.SelectedItem = Int32.Parse(valoresCaract[0]);
+                UDAgilidad.SelectedItem = Int32.Parse(valoresCaract[1]);
+                UDVitalidad.SelectedItem = Int32.Parse(valoresCaract[2]);
+                UDEnergia.SelectedItem = Int32.Parse(valoresCaract[3]);
+
+
+                //tipo de arma
+                cbTipoArma.SelectedItem = pj.tipoArma;
+                //arma
+                cbArma.SelectedItem = pj.arma;
+
+                //SkillTree
+                String codigoST = pj.skillTree;
+                String[] valoresST = codigoST.Split(':');
+
+                tvST1.Text = valoresST[0];
+                tvST2.Text = valoresST[1];
+                tvST3.Text = valoresST[2];
+                tvST4.Text = valoresST[3];
+                tvST5.Text = valoresST[4];
+                tvST6.Text = valoresST[5];
+                tvST7.Text = valoresST[6];
+                tvST8.Text = valoresST[7];
+                tvST9.Text = valoresST[8];
+                tvST10.Text = valoresST[9];
+                tvST11.Text = valoresST[10];
+            }
+            else
+            {
+                resetearCampos();
+            }
+           
         }
 
         private void resetearCampos()
@@ -1112,121 +1237,15 @@ namespace FichaPersonaje
             imagBorrar.Image = Resources.borrarAct;
         }
 
-        private void imagAnterior_Click(object sender, EventArgs e)
+        private void cbTipoArma_KeyPress(object sender, KeyPressEventArgs e)
         {
-            contadorPj = album.anteriorPJ(contadorPj);
-            cargarPJ();
+            e.Handled = true; //Desactiva el combobox tipo arma sin perder la funcionalidad
         }
 
-        private void imagSiguiente_Click(object sender, EventArgs e)
+        private void cbArma_KeyPress(object sender, KeyPressEventArgs e)
         {
-            contadorPj = album.siguientePJ(contadorPj);
-            cargarPJ(); //carga ese pj en los campos
-            
-        }
-
-        private void cargarPJ()
-        {
-            lines = (String[])album.listPj[contadorPj]; //obtiene el PJ guardado en el album en la posicion indicada en el contador
-            //nombrePJ
-            etNombrePJ.Text = lines[0];
-            //nombreJug
-            etNombreJug.Text = lines[1];
-            //faccion
-            if (lines[2] == "duprian")
-            {
-                rbDuprian.Checked = true;
-                rbVanert.Checked = false;
-            }
-            else{
-                rbVanert.Checked = true;
-                rbDuprian.Checked = false;
-            }
-
-            //mapa inicio
-            comboBox1.SelectedItem = lines[3]; //quizas de error
-            //clase
-            switch (lines[4])//cambiar foto arriba y deshabilitar edicion, activar el tipo de arma
-            {
-                case "0":
-                    clickeado[0] = true;
-                    imagPerfil.Image = Resources.bk1;
-                    TipoArma(0);
-                    break;
-                case "1":
-                    clickeado[1] = true;
-                    imagPerfil.Image = Resources.dw;
-                    TipoArma(1);
-                    break;
-                case "2":
-                    clickeado[2] = true;
-                    imagPerfil.Image = Resources.elf;
-                    TipoArma(2);
-                    break;
-                case "3":
-                    clickeado[3] = true;
-                    imagPerfil.Image = Resources.dl;
-                    TipoArma(3);
-                    break;
-            }
-
-            desactivarEdicion();
-
-            //inventario
-            String codigoInv = lines[8];
-            String[] valoresInv = codigoInv.Split(':');
-            if (valoresInv[0] == "1")
-                ckbItem1.Checked = true;
-            else
-                ckbItem1.Checked = false;
-            //inventario 2
-            if (valoresInv[1] == "1")
-                ckbItem2.Checked = true;
-            else
-                ckbItem2.Checked = false;
-            //inventario 3
-            if (valoresInv[2] == "1")
-                ckbItem3.Checked = true;
-            else
-                ckbItem3.Checked = false;
-            //inventario 4
-            if (valoresInv[3] == "1")
-                ckbItem4.Checked = true;
-            else
-                ckbItem4.Checked = false;
-
-            //Valores Caract
-            String codigoCaract = lines[5];
-            String[] valoresCaract = codigoCaract.Split(':');
-            UDFuerza.SelectedItem = Int32.Parse(valoresCaract[0]);
-            UDAgilidad.SelectedItem = Int32.Parse(valoresCaract[1]);
-            UDVitalidad.SelectedItem = Int32.Parse(valoresCaract[2]);
-            UDEnergia.SelectedItem = Int32.Parse(valoresCaract[3]);
-
-           
-            //tipo de arma
-            cbTipoArma.SelectedItem = lines[6];
-            //arma
-            cbArma.SelectedItem = lines[7];
-
-            //SkillTree
-            String codigoST = lines[9];
-            String[] valoresST = codigoST.Split(':');
-
-            tvST1.Text = valoresST[0];
-            tvST2.Text = valoresST[1];
-            tvST3.Text = valoresST[2];
-            tvST4.Text = valoresST[3];
-            tvST5.Text = valoresST[4];
-            tvST6.Text = valoresST[5];
-            tvST7.Text = valoresST[6];
-            tvST8.Text = valoresST[7];
-            tvST9.Text = valoresST[8];
-            tvST10.Text = valoresST[9];
-            tvST11.Text = valoresST[10];
-
-            
-        }
+            e.Handled = true; //Desactiva el combobox arma sin perder la funcionalidad
+        } 
     }
 
 }

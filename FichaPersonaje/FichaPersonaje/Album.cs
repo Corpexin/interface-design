@@ -16,17 +16,24 @@ namespace FichaPersonaje
             listPj = new ArrayList();
         }
 
-        public void guardarPj(String[] lines)
+        public void guardarPj(Personaje pj)
         {
-            listPj.Add(lines);
+            listPj.Add(pj);
         }
 
-        public void eliminarPj(String[] lines)
+        public int eliminarPj(int cont, Personaje pj)
         {
+            listPj.Remove(pj);
+            if (cont <= 0)
 
+                cont = listPj.Count - 1;
+            else
+                cont--;
+
+            return cont;
         }
 
-        public void modificarPj(String[] lines)
+        public void modificarPj(Personaje pj)
         {
 
         }

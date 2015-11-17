@@ -1,10 +1,10 @@
-ijho
-joiuj
+xzczxc
+zxczxc
 vanert
-     Lorencia
-0
+     Noria
+2
 5000:0:0:0
-Lanzas
-Dragon Spear
+Arcos
+Sylph Bow
 0:0:0:0
-5:5:5:0:0:5:4:4:0:0:0
+5:0:2:0:0:5:5:5:2:4:0

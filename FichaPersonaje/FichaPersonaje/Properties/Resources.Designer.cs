@@ -473,6 +473,26 @@ namespace FichaPersonaje.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exportarAct {
+            get {
+                object obj = ResourceManager.GetObject("exportarAct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exportarDesact {
+            get {
+                object obj = ResourceManager.GetObject("exportarDesact", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ficha {
             get {
                 object obj = ResourceManager.GetObject("ficha", resourceCulture);
@@ -496,6 +516,26 @@ namespace FichaPersonaje.Properties {
         internal static System.Drawing.Bitmap fichagif {
             get {
                 object obj = ResourceManager.GetObject("fichagif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap importarAct {
+            get {
+                object obj = ResourceManager.GetObject("importarAct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap importarDesact {
+            get {
+                object obj = ResourceManager.GetObject("importarDesact", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

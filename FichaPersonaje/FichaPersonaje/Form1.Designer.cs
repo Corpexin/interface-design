@@ -115,6 +115,8 @@
             this.imagBorrar = new System.Windows.Forms.PictureBox();
             this.imagAnterior = new System.Windows.Forms.PictureBox();
             this.imagSiguiente = new System.Windows.Forms.PictureBox();
+            this.imagImportar = new System.Windows.Forms.PictureBox();
+            this.imagExportar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
             this.panelDos.SuspendLayout();
@@ -142,6 +144,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagSiguiente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagImportar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagExportar)).BeginInit();
             this.SuspendLayout();
             // 
             // imagPerfil
@@ -880,12 +884,34 @@
             this.imagSiguiente.TabStop = false;
             this.imagSiguiente.Click += new System.EventHandler(this.imagSiguiente_Click);
             // 
+            // imagImportar
+            // 
+            this.imagImportar.Image = global::FichaPersonaje.Properties.Resources.importarAct;
+            resources.ApplyResources(this.imagImportar, "imagImportar");
+            this.imagImportar.Name = "imagImportar";
+            this.imagImportar.TabStop = false;
+            this.imagImportar.Click += new System.EventHandler(this.imagImportar_Click);
+            this.imagImportar.MouseLeave += new System.EventHandler(this.imagImportar_MouseLeave);
+            this.imagImportar.MouseHover += new System.EventHandler(this.imagImportar_MouseHover);
+            // 
+            // imagExportar
+            // 
+            this.imagExportar.Image = global::FichaPersonaje.Properties.Resources.exportarAct;
+            resources.ApplyResources(this.imagExportar, "imagExportar");
+            this.imagExportar.Name = "imagExportar";
+            this.imagExportar.TabStop = false;
+            this.imagExportar.Click += new System.EventHandler(this.imagExportar_Click);
+            this.imagExportar.MouseLeave += new System.EventHandler(this.imagExportar_MouseLeave);
+            this.imagExportar.MouseHover += new System.EventHandler(this.imagExportar_MouseHover);
+            // 
             // FichaPersonaje
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FichaPersonaje.Properties.Resources.fichagif;
             this.CausesValidation = false;
+            this.Controls.Add(this.imagExportar);
+            this.Controls.Add(this.imagImportar);
             this.Controls.Add(this.imagSiguiente);
             this.Controls.Add(this.imagAnterior);
             this.Controls.Add(this.imagBorrar);
@@ -935,6 +961,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagSiguiente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagImportar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagExportar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1028,6 +1056,8 @@
         private System.Windows.Forms.PictureBox imagBorrar;
         private System.Windows.Forms.PictureBox imagAnterior;
         private System.Windows.Forms.PictureBox imagSiguiente;
+        private System.Windows.Forms.PictureBox imagImportar;
+        private System.Windows.Forms.PictureBox imagExportar;
     }
 }
 

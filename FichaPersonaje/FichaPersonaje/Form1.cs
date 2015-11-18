@@ -843,7 +843,7 @@ namespace FichaPersonaje
         {
             //Aumenta el tamaño de la ventana y oculta los botones guardar y cancelar
             imagMenuInf.Visible = true;
-            this.Size = new Size(700, 660);
+            this.Size = new Size(700, 657);
             imagCancelar.Visible = false;
             imgGuardar.Visible = false;
             //Desactivar la modificacion del personaje
@@ -864,8 +864,9 @@ namespace FichaPersonaje
         private void imagCancelar_Click(object sender, EventArgs e)
         {
             //Resetear todas las opciones
-            resetearCampos();       
+            resetearCampos();
             //Deberia irse al modo visualizacion    
+            modoVisualizacion();
         }
 
         private void imagNuevo_Click(object sender, EventArgs e)
@@ -992,13 +993,7 @@ namespace FichaPersonaje
             //Cambio  a modo visualizacion
             modoVisualizacion();
 
-            //Importar/exportar
-           // StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
-            //foreach (string line in lines)
-           // {
-            //    file.WriteLine(line);
-           // }
-            //file.Close();
+           
         }
 
         private void cargarPJ()
@@ -1270,6 +1265,56 @@ namespace FichaPersonaje
         private void cbArma_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true; //Desactiva el combobox arma sin perder la funcionalidad
+        }
+
+        private void imagImportar_MouseHover(object sender, EventArgs e)
+        {
+            imagImportar.Image = Resources.importarDesact;
+        }
+
+        private void imagImportar_MouseLeave(object sender, EventArgs e)
+        {
+            imagImportar.Image = Resources.importarAct;
+        }
+
+        private void imagExportar_MouseHover(object sender, EventArgs e)
+        {
+            imagExportar.Image = Resources.exportarDesact;
+        }
+
+        private void imagExportar_MouseLeave(object sender, EventArgs e)
+        {
+            imagExportar.Image = Resources.exportarAct;
+        }
+
+        private void imagExportar_Click(object sender, EventArgs e)
+        {
+            //exportar
+            String line;
+            String[] aux;
+            String[] separador = { "¡-:*!" };
+            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
+            album = new Album();
+            while ((line = sr.ReadLine()) != null)
+            {
+                aux = line.Split(separador, StringSplitOptions.RemoveEmptyEntries);
+                album.listPj.Add(new Personaje(aux[0], aux[1], aux[2], aux[3], aux[4], aux[5], aux[6], aux[7], aux[8], aux[9]));
+            }
+            contadorPj = 0;
+            cargarPJ();
+            sr.Close();
+
+        }
+
+        private void imagImportar_Click(object sender, EventArgs e)
+        {
+            //Importar
+            StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
+            foreach (Personaje pj in album.listPj)
+            {
+                file.WriteLine(pj.ToString());
+            }
+            file.Close();
         }
     }
 

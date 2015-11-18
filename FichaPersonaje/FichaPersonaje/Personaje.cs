@@ -33,6 +33,11 @@ namespace FichaPersonaje
             this.skillTree = skillTree;
         }
 
-
+        override public String ToString()
+        {
+            String resultado;
+            resultado = nombrePJ + "¡-:*!" + nombreJug + "¡-:*!" + faccion + "¡-:*!" + mapaInicio + "¡-:*!" + clase + "¡-:*!" + puntos + "¡-:*!" + tipoArma + "¡-:*!" + arma + "¡-:*!" + inventario + "¡-:*!" + skillTree;
+            return resultado;
+        }
     }
 }

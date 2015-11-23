@@ -10,9 +10,14 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace LibreriaJuegos
 {
-    public partial class Form1 : Form
+    public partial class FLogin : Form
     {
-        public Form1()
+        Boolean presionT1 = true;
+        Boolean presionT2 = true;
+        SqlConnection con;
+        Form2 f2;
+
+        public FLogin()
         {
             InitializeComponent();
             conexionBD();
@@ -20,20 +25,77 @@ namespace LibreriaJuegos
 
         private void conexionBD()
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "";//ruta a la conexion. mirar en internete
+            con = new SqlConnection();
+            con.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BaseDatos;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        }
+
+        private void comprobar(int datos)
+        {
+            if(datos == 1)
+            {
+                tbUsuario.Text = "BIEN";
+                this.Hide();
+                f2 = new Form2();
+                f2.Show();
+
+            }
+            else
+            {
+                lblError.Visible = true;
+            }
+        }
+
+        private void campoEnter(object sender, EventArgs e)
+        {
+            lblError.Visible = false;
+            if (sender == tbContraseña && presionT1 == true)
+            {
+                tbContraseña.Text = "";
+                tbContraseña.UseSystemPasswordChar = true;
+                presionT1 = false;
+            }
+            else if (sender == tbUsuario && presionT2 == true)
+            {
+                tbUsuario.Text = "";
+                presionT2 = false;
+            }
+        }
+
+        private void campoLeave(object sender, EventArgs e)
+        {
+            if (sender == tbContraseña && tbContraseña.Text == "")
+            {
+                tbContraseña.Text = "Contraseña";
+                tbContraseña.UseSystemPasswordChar = false;
+            }
+            else if (sender == tbUsuario && tbUsuario.Text == "")
+            {
+                tbUsuario.Text = "Usuario";
+            }
+        }
+
+        private void confirmar(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == '\r')
+            {
+                consulta1();
+            }
+        }
+
+        private void consulta1()
+        {
             con.Open();
             //
             SqlCommand orden = new SqlCommand();
-            orden.CommandText = "SELECT COUNT(*) FROM USUARIO WHERE nombreU='1' AND contraseñaU='0';";
+            orden.CommandText = "SELECT COUNT(*) FROM USUARIO WHERE nombreU='"+tbUsuario.Text+"' AND contraseñaU='"+tbContraseña.Text+"';";//Controlar si el usuario/contraseña estan en la bd
             orden.CommandType = CommandType.Text; //mirar opciones?
             orden.Connection = con;
             int datos = (int)orden.ExecuteScalar(); //el casting sobra? integer? casting a String?
             con.Close();
 
-            //para saber si el usuario existe select count(x) from usuario where usuario='' and nick=''; si devuelve 1 existe sino no
-
-            
+            comprobar(datos);
         }
+
+
     }
 }

@@ -1,1 +1,10 @@
 c:\users\corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\bin\Debug\LibreriaJuegos.exe.config
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\bin\Debug\LibreriaJuegos.exe
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\bin\Debug\LibreriaJuegos.pdb
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.csprojResolveAssemblyReference.cache
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.FLogin.resources
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.Properties.Resources.resources
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.csproj.GenerateResource.Cache
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.exe
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.pdb
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.Form2.resources

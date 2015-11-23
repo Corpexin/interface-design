@@ -58,6 +58,8 @@ namespace FichaPersonaje
             {
                 listaValoresCaract[i] = 0;
             }
+            //Comprobamos la activacion del boton editar
+            activarDesactivarEditar();
         }
 
         private void initClickeado()
@@ -388,34 +390,27 @@ namespace FichaPersonaje
 
         private void calcularValor(DomainUpDown udCaract, int indice, ProgressBar pbCaract)
         {
-            Regex r = new Regex("^\\d+$"); //Patron que solo coge numeros (hora y media de debug y busquedas para encontrarlo .... )
-            String ft = udCaract.Text;
-            Match m2 = r.Match(ft);
-            int valor=0;
-            if (udCaract.Text != null && m2.Success && udCaract.Text.Length<=6 && Int32.Parse(udCaract.Text) <= MAX_PUNTOS_CONT)
+            int valorprevio = 0;
+            int valor = 0;
+           
+            for(int i=0; i<listaValoresCaract.Length; i++) //sumamos todos los valores de las caracteristicas menos del que ha llamado al metodo
             {
-                listaValoresCaract[indice] = Int32.Parse(udCaract.Text);
-                for (int i = 0; i < listaValoresCaract.Length; i++)
+                if(i!=indice)
+                    valorprevio = valorprevio + listaValoresCaract[i];
+            }
+            if(valorprevio + Int32.Parse(udCaract.Text) <= 5000)//si el valor previo + el nuevo numero <=5000 seguira, sino no le dejara
+            {
+                listaValoresCaract[indice] = Int32.Parse(udCaract.Text);//le pasa a la lista que guarda los puntos de cada caracteristica por separado el valor
+                for (int i = 0; i < listaValoresCaract.Length; i++) // saca la suma, pero ya con el valor introducido
                 {
                     valor = valor + listaValoresCaract[i];
                 }
-                tvContadorPuntos.Text = "" + (MAX_PUNTOS_CONT - valor);
-                pbCaract.Value = listaValoresCaract[indice];
-                if(Int32.Parse(tvContadorPuntos.Text)  < 0)
-                {
-                    tvError.Text = "El numero de puntos repartidos debe ser menor que " + MAX_PUNTOS_CONT;
-                    tvError.Visible = true;
-                }
-                else
-                {
-                    tvError.Visible = false;
-                }
+                tvContadorPuntos.Text = "" + (MAX_PUNTOS_CONT - valor); //Se le resta al contador principal(5000) la suma de los 4 caract
+                pbCaract.Value = listaValoresCaract[indice]; //se mueve la progressbar
             }
             else
             {
-                tvContadorPuntos.Text = "Valor no Soportado";
-                listaValoresCaract[indice] = 0;
-                pbCaract.Value = 0;
+                udCaract.SelectedItem = listaValoresCaract[indice]; //si el valor nuevo + los anteriores sobrepasan 5000, vuelve al valor anterior
             }
 
         }
@@ -784,6 +779,17 @@ namespace FichaPersonaje
                 result = false;
                 tvErrorEdicion.Text = "Error: Nombre de PJ debe ser rellenado";
             }
+            else
+            {//comprueba que ningun pj tenga el mismo nombre
+                foreach(Personaje p in album.listPj)
+                {
+                    if(p.nombrePJ == etNombrePJ.Text)
+                    {
+                        result = false;
+                        tvErrorEdicion.Text = "Error: Nombre de PJ ya existente en album";
+                    }
+                }
+            }
 
             //NombreJug
             if(etNombreJug.Text == "")
@@ -895,19 +901,28 @@ namespace FichaPersonaje
         {
             contadorPj = album.eliminarPj(contadorPj, pj);
             cargarPJ(); //carga ese pj en los campos
+            activarDesactivarEditar();
+        }
+
+        private void activarDesactivarEditar()
+        {
+            if (album.listPj.Count == 0)
+            {
+                imagEditar.Enabled = false;
+                imagEditar.Image = Resources.editarDesact;
+            }
+            else
+            {
+                imagEditar.Enabled = true;
+                imagEditar.Image = Resources.editarAct;
+            }
         }
 
         private void imagEditar_Click(object sender, EventArgs e)
         {
             //lo pone en modo edicion, habilitando los campos pero no reseteandolos
-            //a la hora de guardar, comprobar si es de un editado o de un guardado (boolean cmo parametro de guardarpj)
-            //si es de un guardado, ejecuta album.guardarPJ()
-            //si es modificado, ejecuta album.modificarPJ()
-            if (contadorPj!=0)//error
-            {
-                modoEdicion();
-                modificador = true;
-            }
+             modoEdicion();
+             modificador = true;
 
         }
 
@@ -993,7 +1008,8 @@ namespace FichaPersonaje
             //Cambio  a modo visualizacion
             modoVisualizacion();
 
-           
+            //comprueba la activacion del boton editar
+            activarDesactivarEditar();
         }
 
         private void cargarPJ()
@@ -1269,22 +1285,22 @@ namespace FichaPersonaje
 
         private void imagImportar_MouseHover(object sender, EventArgs e)
         {
-            imagImportar.Image = Resources.importarDesact;
+            imagExportar.Image = Resources.exportarDesact;
         }
 
         private void imagImportar_MouseLeave(object sender, EventArgs e)
         {
-            imagImportar.Image = Resources.importarAct;
+            imagExportar.Image = Resources.exportarAct;
         }
 
         private void imagExportar_MouseHover(object sender, EventArgs e)
         {
-            imagExportar.Image = Resources.exportarDesact;
+            imagImportar.Image = Resources.importarDesact;
         }
 
         private void imagExportar_MouseLeave(object sender, EventArgs e)
         {
-            imagExportar.Image = Resources.exportarAct;
+            imagImportar.Image = Resources.importarAct;
         }
 
         private void imagExportar_Click(object sender, EventArgs e)
@@ -1303,7 +1319,8 @@ namespace FichaPersonaje
             contadorPj = 0;
             cargarPJ();
             sr.Close();
-
+            activarDesactivarEditar();
+            activarTreeSkill();
         }
 
         private void imagImportar_Click(object sender, EventArgs e)
@@ -1315,6 +1332,21 @@ namespace FichaPersonaje
                 file.WriteLine(pj.ToString());
             }
             file.Close();
+        }
+
+        private void activarTreeSkill()
+        {
+            tvST1.Enabled = true;
+            tvST2.Enabled = true;
+            tvST3.Enabled = true;
+            tvST4.Enabled = true;
+            tvST5.Enabled = true;
+            tvST6.Enabled = true;
+            tvST7.Enabled = true;
+            tvST8.Enabled = true;
+            tvST9.Enabled = true;
+            tvST10.Enabled = true;
+            tvST11.Enabled = true;
         }
     }
 

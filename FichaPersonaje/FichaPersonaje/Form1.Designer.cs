@@ -34,22 +34,6 @@
             this.etNombrePJ = new System.Windows.Forms.TextBox();
             this.panelUno = new System.Windows.Forms.Panel();
             this.panelDos = new System.Windows.Forms.Panel();
-            this.panelTres = new System.Windows.Forms.Panel();
-            this.tvNumTiradas = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.btnTirar = new System.Windows.Forms.PictureBox();
-            this.tvST10 = new System.Windows.Forms.Label();
-            this.tvST9 = new System.Windows.Forms.Label();
-            this.tvST8 = new System.Windows.Forms.Label();
-            this.tvST7 = new System.Windows.Forms.Label();
-            this.tvST6 = new System.Windows.Forms.Label();
-            this.tvST11 = new System.Windows.Forms.Label();
-            this.tvST5 = new System.Windows.Forms.Label();
-            this.tvST4 = new System.Windows.Forms.Label();
-            this.tvST3 = new System.Windows.Forms.Label();
-            this.tvST2 = new System.Windows.Forms.Label();
-            this.tvST1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -82,6 +66,22 @@
             this.tvFuerza = new System.Windows.Forms.Label();
             this.tvContadorPuntos = new System.Windows.Forms.Label();
             this.tvPuntos = new System.Windows.Forms.Label();
+            this.panelTres = new System.Windows.Forms.Panel();
+            this.tvNumTiradas = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.btnTirar = new System.Windows.Forms.PictureBox();
+            this.tvST10 = new System.Windows.Forms.Label();
+            this.tvST9 = new System.Windows.Forms.Label();
+            this.tvST8 = new System.Windows.Forms.Label();
+            this.tvST7 = new System.Windows.Forms.Label();
+            this.tvST6 = new System.Windows.Forms.Label();
+            this.tvST11 = new System.Windows.Forms.Label();
+            this.tvST5 = new System.Windows.Forms.Label();
+            this.tvST4 = new System.Windows.Forms.Label();
+            this.tvST3 = new System.Windows.Forms.Label();
+            this.tvST2 = new System.Windows.Forms.Label();
+            this.tvST1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tvDarkLord = new System.Windows.Forms.Label();
             this.tvElf = new System.Windows.Forms.Label();
             this.tvSoulWizard = new System.Windows.Forms.Label();
@@ -115,20 +115,20 @@
             this.imagBorrar = new System.Windows.Forms.PictureBox();
             this.imagAnterior = new System.Windows.Forms.PictureBox();
             this.imagSiguiente = new System.Windows.Forms.PictureBox();
-            this.imagImportar = new System.Windows.Forms.PictureBox();
             this.imagExportar = new System.Windows.Forms.PictureBox();
+            this.imagImportar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagPerfil)).BeginInit();
             this.panelUno.SuspendLayout();
             this.panelDos.SuspendLayout();
-            this.panelTres.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTirar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenArma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imSeparadorVert)).BeginInit();
+            this.panelTres.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTirar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgElf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDW)).BeginInit();
@@ -144,8 +144,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagSiguiente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagImportar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagExportar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagImportar)).BeginInit();
             this.SuspendLayout();
             // 
             // imagPerfil
@@ -239,146 +239,6 @@
             this.panelDos.Controls.Add(this.tvPuntos);
             resources.ApplyResources(this.panelDos, "panelDos");
             this.panelDos.Name = "panelDos";
-            // 
-            // panelTres
-            // 
-            resources.ApplyResources(this.panelTres, "panelTres");
-            this.panelTres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panelTres.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
-            this.panelTres.Controls.Add(this.tvNumTiradas);
-            this.panelTres.Controls.Add(this.label28);
-            this.panelTres.Controls.Add(this.btnTirar);
-            this.panelTres.Controls.Add(this.tvST10);
-            this.panelTres.Controls.Add(this.tvST9);
-            this.panelTres.Controls.Add(this.tvST8);
-            this.panelTres.Controls.Add(this.tvST7);
-            this.panelTres.Controls.Add(this.tvST6);
-            this.panelTres.Controls.Add(this.tvST11);
-            this.panelTres.Controls.Add(this.tvST5);
-            this.panelTres.Controls.Add(this.tvST4);
-            this.panelTres.Controls.Add(this.tvST3);
-            this.panelTres.Controls.Add(this.tvST2);
-            this.panelTres.Controls.Add(this.tvST1);
-            this.panelTres.Controls.Add(this.pictureBox2);
-            this.panelTres.ForeColor = System.Drawing.Color.Transparent;
-            this.panelTres.Name = "panelTres";
-            // 
-            // tvNumTiradas
-            // 
-            resources.ApplyResources(this.tvNumTiradas, "tvNumTiradas");
-            this.tvNumTiradas.ForeColor = System.Drawing.Color.Salmon;
-            this.tvNumTiradas.Name = "tvNumTiradas";
-            // 
-            // label28
-            // 
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
-            this.label28.Name = "label28";
-            // 
-            // btnTirar
-            // 
-            this.btnTirar.Image = global::FichaPersonaje.Properties.Resources.stbtnDesact;
-            resources.ApplyResources(this.btnTirar, "btnTirar");
-            this.btnTirar.Name = "btnTirar";
-            this.btnTirar.TabStop = false;
-            this.btnTirar.Click += new System.EventHandler(this.btnTirar_Click);
-            this.btnTirar.MouseLeave += new System.EventHandler(this.btnTirar_MouseLeave);
-            this.btnTirar.MouseHover += new System.EventHandler(this.btnTirar_MouseHover);
-            // 
-            // tvST10
-            // 
-            resources.ApplyResources(this.tvST10, "tvST10");
-            this.tvST10.BackColor = System.Drawing.Color.Black;
-            this.tvST10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST10.Name = "tvST10";
-            // 
-            // tvST9
-            // 
-            resources.ApplyResources(this.tvST9, "tvST9");
-            this.tvST9.BackColor = System.Drawing.Color.Black;
-            this.tvST9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST9.Name = "tvST9";
-            // 
-            // tvST8
-            // 
-            resources.ApplyResources(this.tvST8, "tvST8");
-            this.tvST8.BackColor = System.Drawing.Color.Black;
-            this.tvST8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST8.Name = "tvST8";
-            // 
-            // tvST7
-            // 
-            resources.ApplyResources(this.tvST7, "tvST7");
-            this.tvST7.BackColor = System.Drawing.Color.Black;
-            this.tvST7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST7.Name = "tvST7";
-            // 
-            // tvST6
-            // 
-            resources.ApplyResources(this.tvST6, "tvST6");
-            this.tvST6.BackColor = System.Drawing.Color.Black;
-            this.tvST6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST6.Name = "tvST6";
-            // 
-            // tvST11
-            // 
-            resources.ApplyResources(this.tvST11, "tvST11");
-            this.tvST11.BackColor = System.Drawing.Color.Black;
-            this.tvST11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST11.Name = "tvST11";
-            // 
-            // tvST5
-            // 
-            resources.ApplyResources(this.tvST5, "tvST5");
-            this.tvST5.BackColor = System.Drawing.Color.Black;
-            this.tvST5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST5.Name = "tvST5";
-            // 
-            // tvST4
-            // 
-            resources.ApplyResources(this.tvST4, "tvST4");
-            this.tvST4.BackColor = System.Drawing.Color.Black;
-            this.tvST4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST4.Name = "tvST4";
-            // 
-            // tvST3
-            // 
-            resources.ApplyResources(this.tvST3, "tvST3");
-            this.tvST3.BackColor = System.Drawing.Color.Black;
-            this.tvST3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST3.Name = "tvST3";
-            // 
-            // tvST2
-            // 
-            resources.ApplyResources(this.tvST2, "tvST2");
-            this.tvST2.BackColor = System.Drawing.Color.Black;
-            this.tvST2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST2.Name = "tvST2";
-            // 
-            // tvST1
-            // 
-            resources.ApplyResources(this.tvST1, "tvST1");
-            this.tvST1.BackColor = System.Drawing.Color.Black;
-            this.tvST1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tvST1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tvST1.Name = "tvST1";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::FichaPersonaje.Properties.Resources.skilltreeBtn1;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
@@ -601,6 +461,146 @@
             resources.ApplyResources(this.tvPuntos, "tvPuntos");
             this.tvPuntos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
             this.tvPuntos.Name = "tvPuntos";
+            // 
+            // panelTres
+            // 
+            resources.ApplyResources(this.panelTres, "panelTres");
+            this.panelTres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panelTres.BackgroundImage = global::FichaPersonaje.Properties.Resources.pn;
+            this.panelTres.Controls.Add(this.tvNumTiradas);
+            this.panelTres.Controls.Add(this.label28);
+            this.panelTres.Controls.Add(this.btnTirar);
+            this.panelTres.Controls.Add(this.tvST10);
+            this.panelTres.Controls.Add(this.tvST9);
+            this.panelTres.Controls.Add(this.tvST8);
+            this.panelTres.Controls.Add(this.tvST7);
+            this.panelTres.Controls.Add(this.tvST6);
+            this.panelTres.Controls.Add(this.tvST11);
+            this.panelTres.Controls.Add(this.tvST5);
+            this.panelTres.Controls.Add(this.tvST4);
+            this.panelTres.Controls.Add(this.tvST3);
+            this.panelTres.Controls.Add(this.tvST2);
+            this.panelTres.Controls.Add(this.tvST1);
+            this.panelTres.Controls.Add(this.pictureBox2);
+            this.panelTres.ForeColor = System.Drawing.Color.Transparent;
+            this.panelTres.Name = "panelTres";
+            // 
+            // tvNumTiradas
+            // 
+            resources.ApplyResources(this.tvNumTiradas, "tvNumTiradas");
+            this.tvNumTiradas.ForeColor = System.Drawing.Color.Salmon;
+            this.tvNumTiradas.Name = "tvNumTiradas";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(175)))), ((int)(((byte)(129)))));
+            this.label28.Name = "label28";
+            // 
+            // btnTirar
+            // 
+            this.btnTirar.Image = global::FichaPersonaje.Properties.Resources.stbtnDesact;
+            resources.ApplyResources(this.btnTirar, "btnTirar");
+            this.btnTirar.Name = "btnTirar";
+            this.btnTirar.TabStop = false;
+            this.btnTirar.Click += new System.EventHandler(this.btnTirar_Click);
+            this.btnTirar.MouseLeave += new System.EventHandler(this.btnTirar_MouseLeave);
+            this.btnTirar.MouseHover += new System.EventHandler(this.btnTirar_MouseHover);
+            // 
+            // tvST10
+            // 
+            resources.ApplyResources(this.tvST10, "tvST10");
+            this.tvST10.BackColor = System.Drawing.Color.Black;
+            this.tvST10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST10.Name = "tvST10";
+            // 
+            // tvST9
+            // 
+            resources.ApplyResources(this.tvST9, "tvST9");
+            this.tvST9.BackColor = System.Drawing.Color.Black;
+            this.tvST9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST9.Name = "tvST9";
+            // 
+            // tvST8
+            // 
+            resources.ApplyResources(this.tvST8, "tvST8");
+            this.tvST8.BackColor = System.Drawing.Color.Black;
+            this.tvST8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST8.Name = "tvST8";
+            // 
+            // tvST7
+            // 
+            resources.ApplyResources(this.tvST7, "tvST7");
+            this.tvST7.BackColor = System.Drawing.Color.Black;
+            this.tvST7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST7.Name = "tvST7";
+            // 
+            // tvST6
+            // 
+            resources.ApplyResources(this.tvST6, "tvST6");
+            this.tvST6.BackColor = System.Drawing.Color.Black;
+            this.tvST6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST6.Name = "tvST6";
+            // 
+            // tvST11
+            // 
+            resources.ApplyResources(this.tvST11, "tvST11");
+            this.tvST11.BackColor = System.Drawing.Color.Black;
+            this.tvST11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST11.Name = "tvST11";
+            // 
+            // tvST5
+            // 
+            resources.ApplyResources(this.tvST5, "tvST5");
+            this.tvST5.BackColor = System.Drawing.Color.Black;
+            this.tvST5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST5.Name = "tvST5";
+            // 
+            // tvST4
+            // 
+            resources.ApplyResources(this.tvST4, "tvST4");
+            this.tvST4.BackColor = System.Drawing.Color.Black;
+            this.tvST4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST4.Name = "tvST4";
+            // 
+            // tvST3
+            // 
+            resources.ApplyResources(this.tvST3, "tvST3");
+            this.tvST3.BackColor = System.Drawing.Color.Black;
+            this.tvST3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST3.Name = "tvST3";
+            // 
+            // tvST2
+            // 
+            resources.ApplyResources(this.tvST2, "tvST2");
+            this.tvST2.BackColor = System.Drawing.Color.Black;
+            this.tvST2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST2.Name = "tvST2";
+            // 
+            // tvST1
+            // 
+            resources.ApplyResources(this.tvST1, "tvST1");
+            this.tvST1.BackColor = System.Drawing.Color.Black;
+            this.tvST1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvST1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tvST1.Name = "tvST1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::FichaPersonaje.Properties.Resources.skilltreeBtn1;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
             // tvDarkLord
             // 
@@ -884,25 +884,25 @@
             this.imagSiguiente.TabStop = false;
             this.imagSiguiente.Click += new System.EventHandler(this.imagSiguiente_Click);
             // 
-            // imagImportar
-            // 
-            this.imagImportar.Image = global::FichaPersonaje.Properties.Resources.importarAct;
-            resources.ApplyResources(this.imagImportar, "imagImportar");
-            this.imagImportar.Name = "imagImportar";
-            this.imagImportar.TabStop = false;
-            this.imagImportar.Click += new System.EventHandler(this.imagImportar_Click);
-            this.imagImportar.MouseLeave += new System.EventHandler(this.imagImportar_MouseLeave);
-            this.imagImportar.MouseHover += new System.EventHandler(this.imagImportar_MouseHover);
-            // 
             // imagExportar
             // 
             this.imagExportar.Image = global::FichaPersonaje.Properties.Resources.exportarAct;
             resources.ApplyResources(this.imagExportar, "imagExportar");
             this.imagExportar.Name = "imagExportar";
             this.imagExportar.TabStop = false;
-            this.imagExportar.Click += new System.EventHandler(this.imagExportar_Click);
-            this.imagExportar.MouseLeave += new System.EventHandler(this.imagExportar_MouseLeave);
-            this.imagExportar.MouseHover += new System.EventHandler(this.imagExportar_MouseHover);
+            this.imagExportar.Click += new System.EventHandler(this.imagImportar_Click);
+            this.imagExportar.MouseLeave += new System.EventHandler(this.imagImportar_MouseLeave);
+            this.imagExportar.MouseHover += new System.EventHandler(this.imagImportar_MouseHover);
+            // 
+            // imagImportar
+            // 
+            this.imagImportar.Image = global::FichaPersonaje.Properties.Resources.importarAct;
+            resources.ApplyResources(this.imagImportar, "imagImportar");
+            this.imagImportar.Name = "imagImportar";
+            this.imagImportar.TabStop = false;
+            this.imagImportar.Click += new System.EventHandler(this.imagExportar_Click);
+            this.imagImportar.MouseLeave += new System.EventHandler(this.imagExportar_MouseLeave);
+            this.imagImportar.MouseHover += new System.EventHandler(this.imagExportar_MouseHover);
             // 
             // FichaPersonaje
             // 
@@ -910,8 +910,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FichaPersonaje.Properties.Resources.fichagif;
             this.CausesValidation = false;
-            this.Controls.Add(this.imagExportar);
             this.Controls.Add(this.imagImportar);
+            this.Controls.Add(this.imagExportar);
             this.Controls.Add(this.imagSiguiente);
             this.Controls.Add(this.imagAnterior);
             this.Controls.Add(this.imagBorrar);
@@ -936,16 +936,16 @@
             this.panelUno.PerformLayout();
             this.panelDos.ResumeLayout(false);
             this.panelDos.PerformLayout();
-            this.panelTres.ResumeLayout(false);
-            this.panelTres.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTirar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenArma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imSeparadorVert)).EndInit();
+            this.panelTres.ResumeLayout(false);
+            this.panelTres.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTirar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgElf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDW)).EndInit();
@@ -961,8 +961,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagBorrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagAnterior)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagSiguiente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagImportar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagExportar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagImportar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1056,8 +1056,8 @@
         private System.Windows.Forms.PictureBox imagBorrar;
         private System.Windows.Forms.PictureBox imagAnterior;
         private System.Windows.Forms.PictureBox imagSiguiente;
-        private System.Windows.Forms.PictureBox imagImportar;
         private System.Windows.Forms.PictureBox imagExportar;
+        private System.Windows.Forms.PictureBox imagImportar;
     }
 }
 

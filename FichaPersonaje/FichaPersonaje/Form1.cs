@@ -155,9 +155,9 @@ namespace FichaPersonaje
 
         private void imgBk_Click(object sender, EventArgs e)
         {
-            imgBk.Image = Resources.clbk3;
             //recorro el array de booleans y si encuentra uno a true, lo desactiva
             desactivarImagen();
+            imgBk.Image = Resources.clbk3;
             clickeado[0] = true;
             imagPerfil.Image = Resources.bk1;
             //Activo los tipos de armas pertenecientes al blade knight
@@ -166,9 +166,9 @@ namespace FichaPersonaje
 
         private void imgDW_Click(object sender, EventArgs e)
         {
-            imgDW.Image = Resources.cldw1;
             //recorro el array de booleans y si encuentra uno a true, lo desactiva
             desactivarImagen();
+            imgDW.Image = Resources.cldw1;
             clickeado[1] = true;
             imagPerfil.Image = Resources.dw;
             //Activo los tipos de armas pertenecientes al dark wizard
@@ -177,9 +177,9 @@ namespace FichaPersonaje
 
         private void imgElf_Click(object sender, EventArgs e)
         {
-            imgElf.Image = Resources.clelf1;
             //recorro el array de booleans y si encuentra uno a true, lo desactiva
             desactivarImagen();
+            imgElf.Image = Resources.clelf1;
             clickeado[2] = true;
             imagPerfil.Image = Resources.elf;
             //Activo los tipos de armas pertenecientes al elf
@@ -188,9 +188,9 @@ namespace FichaPersonaje
 
         private void imgDL_Click(object sender, EventArgs e)
         {
-            imgDL.Image = Resources.cldl1;
             //recorro el array de booleans y si encuentra uno a true, lo desactiva
             desactivarImagen();
+            imgDL.Image = Resources.cldl1;
             clickeado[3] = true;
             imagPerfil.Image = Resources.dl;
             //Activo los tipos de armas pertenecientes al dark lord
@@ -783,7 +783,7 @@ namespace FichaPersonaje
             {//comprueba que ningun pj tenga el mismo nombre
                 foreach(Personaje p in album.listPj)
                 {
-                    if(p.nombrePJ == etNombrePJ.Text)
+                    if(p.nombrePJ == etNombrePJ.Text && p != pj) //si coincide el nombre pero el pj no es el actual
                     {
                         result = false;
                         tvErrorEdicion.Text = "Error: Nombre de PJ ya existente en album";
@@ -871,8 +871,10 @@ namespace FichaPersonaje
         {
             //Resetear todas las opciones
             resetearCampos();
-            //Deberia irse al modo visualizacion    
+            //Cambia al modo visualizacion    
             modoVisualizacion();
+            //cargar pj
+            cargarPJ();
         }
 
         private void imagNuevo_Click(object sender, EventArgs e)
@@ -1042,25 +1044,42 @@ namespace FichaPersonaje
                         clickeado[0] = true;
                         imagPerfil.Image = Resources.bk1;
                         TipoArma(0);
+                        imgBk.Image = Resources.clbk3;
+                        imgDW.Image = Resources.cldwdesact1;
+                        imgElf.Image = Resources.clelfproh1;
+                        imgDL.Image = Resources.cldlproh1;
                         break;
                     case "1":
                         clickeado[1] = true;
                         imagPerfil.Image = Resources.dw;
                         TipoArma(1);
+                        imgDW.Image = Resources.cldw1;
+                        imgBk.Image = Resources.clbkdesact1;
+                        imgElf.Image = Resources.clelfproh1;
+                        imgDL.Image = Resources.cldlproh1;
                         break;
                     case "2":
                         clickeado[2] = true;
                         imagPerfil.Image = Resources.elf;
                         TipoArma(2);
+                        imgElf.Image = Resources.clelf1;
+                        imgBk.Image = Resources.clbkproh1;
+                        imgDW.Image = Resources.cldwproh1;
+                        imgDL.Image = Resources.cldlproh1;
                         break;
                     case "3":
                         clickeado[3] = true;
                         imagPerfil.Image = Resources.dl;
                         TipoArma(3);
+                        imgDL.Image = Resources.cldl1;
+                        imgBk.Image = Resources.clbkproh1;
+                        imgDW.Image = Resources.cldwproh1;
+                        imgElf.Image = Resources.clelfproh1;
                         break;
                 }
 
                 desactivarEdicion();
+                tvDescrip.Visible = false;
 
                 //inventario
                 String codigoInv = pj.inventario;
@@ -1196,10 +1215,10 @@ namespace FichaPersonaje
             rbVanert.Enabled = true;
             rbDuprian.Enabled = true;
             comboBox1.Enabled = true;
-            imgBk.Enabled = true;
-            imgDW.Enabled = true;
-            imgElf.Enabled = true;
-            imgDL.Enabled = true;
+           // imgBk.Enabled = true;
+           // imgDW.Enabled = true;
+           // imgElf.Enabled = true;
+           // imgDL.Enabled = true;
             UDFuerza.Enabled = true;
             UDAgilidad.Enabled = true;
             UDVitalidad.Enabled = true;

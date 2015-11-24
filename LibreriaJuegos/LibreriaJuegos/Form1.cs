@@ -16,6 +16,7 @@ namespace LibreriaJuegos
         Boolean presionT2 = true;
         SqlConnection con;
         Form2 f2;
+        string confContraseña;
 
         public FLogin()
         {
@@ -33,21 +34,25 @@ namespace LibreriaJuegos
         {
             if(datos == 1)
             {
-                tbUsuario.Text = "BIEN";
                 this.Hide();
                 f2 = new Form2();
                 f2.Show();
-
             }
             else
             {
                 lblError.Visible = true;
+                if(tbUsuario.Text!="" && tbUsuario.Text!="Usuario" && tbContraseña.Text!="" && tbContraseña.Text != "Contraseña")
+                {
+                    registrarUser.Visible = true; //permite la opcion de registrar usuario si los campos no estan vacios
+                }
+                
             }
         }
 
         private void campoEnter(object sender, EventArgs e)
         {
             lblError.Visible = false;
+            registrarUser.Visible = false;
             if (sender == tbContraseña && presionT1 == true)
             {
                 tbContraseña.Text = "";
@@ -78,11 +83,11 @@ namespace LibreriaJuegos
         {
             if(e.KeyChar == '\r')
             {
-                consulta1();
+                consultaUsuario();
             }
         }
 
-        private void consulta1()
+        private void consultaUsuario()
         {
             con.Open();
             //
@@ -90,12 +95,43 @@ namespace LibreriaJuegos
             orden.CommandText = "SELECT COUNT(*) FROM USUARIO WHERE nombreU='"+tbUsuario.Text+"' AND contraseñaU='"+tbContraseña.Text+"';";//Controlar si el usuario/contraseña estan en la bd
             orden.CommandType = CommandType.Text; //mirar opciones?
             orden.Connection = con;
-            int datos = (int)orden.ExecuteScalar(); //el casting sobra? integer? casting a String?
+            int datos = (int)orden.ExecuteScalar(); 
             con.Close();
 
             comprobar(datos);
         }
 
+        private void registrarUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            lblError.Visible = false;
+            registrarUser.Visible = false;
+            Boolean entrada=false;
+            do
+            {
+                if (entrada == false)
+                    confContraseña = Prompt.ShowDialog("Reintroduce Pass:", "Registro");
+                else
+                    confContraseña = Prompt.ShowDialog("Pass Incorrecta. Re:", "Registro");
+                entrada = true;
+            } while (confContraseña!=""+tbContraseña.Text && confContraseña != "!q·r$t%ey&/(www24)=");
 
+            if (confContraseña == "" + tbContraseña.Text)
+            {
+                //Introducir aqui insert de usuario
+                insertUsuario();
+                consultaUsuario();//Si se registra, comprueba y entra directamente
+            }
+        }
+
+        private void insertUsuario()
+        { 
+            con.Open();
+            SqlCommand orden = new SqlCommand();
+            orden.CommandText = "INSERT INTO [dbo].[USUARIO] ([nombreU], [contraseñaU]) VALUES (N'"+tbUsuario.Text+"', N'"+tbContraseña.Text+"')";//Inserta Usuario y Contraseña en la BD
+            orden.CommandType = CommandType.Text; //mirar opciones?
+            orden.Connection = con;
+            orden.ExecuteScalar();
+            con.Close();
+        }
     }
 }

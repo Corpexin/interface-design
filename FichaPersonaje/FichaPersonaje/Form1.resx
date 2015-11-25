@@ -143,36 +143,6 @@
   <data name="&gt;&gt;imagPerfil.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="tvNombrePJ.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvNombrePJ.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvNombrePJ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 47</value>
-  </data>
-  <data name="tvNombrePJ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 27</value>
-  </data>
-  <data name="tvNombrePJ.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tvNombrePJ.Text" xml:space="preserve">
-    <value>Nombre PJ:</value>
-  </data>
-  <data name="&gt;&gt;tvNombrePJ.Name" xml:space="preserve">
-    <value>tvNombrePJ</value>
-  </data>
-  <data name="&gt;&gt;tvNombrePJ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvNombrePJ.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvNombrePJ.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
   <data name="etNombrePJ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt</value>
   </data>
@@ -202,11 +172,821 @@
     <value>panelUno</value>
   </data>
   <data name="&gt;&gt;etNombrePJ.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tvDescrip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvDescrip.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.25pt</value>
+  </data>
+  <data name="tvDescrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 240</value>
+  </data>
+  <data name="tvDescrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 17</value>
+  </data>
+  <data name="tvDescrip.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="tvDescrip.Text" xml:space="preserve">
+    <value>Rellena el campo de Mapa de Inicio para elegir Clase</value>
+  </data>
+  <data name="tvDescrip.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;tvDescrip.Name" xml:space="preserve">
+    <value>tvDescrip</value>
+  </data>
+  <data name="&gt;&gt;tvDescrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvDescrip.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;tvDescrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="comboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>     Lorencia</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>     Noria</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>     Devias</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 160</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="imgDL.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="imgDL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 289</value>
+  </data>
+  <data name="imgDL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 94</value>
+  </data>
+  <data name="imgDL.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;imgDL.Name" xml:space="preserve">
+    <value>imgDL</value>
+  </data>
+  <data name="&gt;&gt;imgDL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgDL.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;imgDL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="imgElf.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="imgElf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 289</value>
+  </data>
+  <data name="imgElf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 94</value>
+  </data>
+  <data name="imgElf.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;imgElf.Name" xml:space="preserve">
+    <value>imgElf</value>
+  </data>
+  <data name="&gt;&gt;imgElf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgElf.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;imgElf.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="imgDW.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="imgDW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 289</value>
+  </data>
+  <data name="imgDW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 94</value>
+  </data>
+  <data name="imgDW.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;imgDW.Name" xml:space="preserve">
+    <value>imgDW</value>
+  </data>
+  <data name="&gt;&gt;imgDW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgDW.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;imgDW.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="imgBk.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="imgBk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 289</value>
+  </data>
+  <data name="imgBk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 94</value>
+  </data>
+  <data name="imgBk.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;imgBk.Name" xml:space="preserve">
+    <value>imgBk</value>
+  </data>
+  <data name="&gt;&gt;imgBk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgBk.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;imgBk.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="etNombreJug.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt</value>
+  </data>
+  <data name="etNombreJug.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 77</value>
+  </data>
+  <data name="etNombreJug.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="etNombreJug.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="etNombreJug.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="etNombreJug.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;etNombreJug.Name" xml:space="preserve">
+    <value>etNombreJug</value>
+  </data>
+  <data name="&gt;&gt;etNombreJug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;etNombreJug.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;etNombreJug.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rbVanert.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbVanert.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.25pt</value>
+  </data>
+  <data name="rbVanert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 157</value>
+  </data>
+  <data name="rbVanert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="rbVanert.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="rbVanert.Text" xml:space="preserve">
+    <value>Vanert</value>
+  </data>
+  <data name="&gt;&gt;rbVanert.Name" xml:space="preserve">
+    <value>rbVanert</value>
+  </data>
+  <data name="&gt;&gt;rbVanert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbVanert.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;rbVanert.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="rbDuprian.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbDuprian.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.25pt</value>
+  </data>
+  <data name="rbDuprian.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 157</value>
+  </data>
+  <data name="rbDuprian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 21</value>
+  </data>
+  <data name="rbDuprian.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="rbDuprian.Text" xml:space="preserve">
+    <value>Duprian</value>
+  </data>
+  <data name="&gt;&gt;rbDuprian.Name" xml:space="preserve">
+    <value>rbDuprian</value>
+  </data>
+  <data name="&gt;&gt;rbDuprian.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbDuprian.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;rbDuprian.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pnRBFaccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 157</value>
+  </data>
+  <data name="pnRBFaccion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 30</value>
+  </data>
+  <data name="pnRBFaccion.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <metadata name="panelUno.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="&gt;&gt;pnRBFaccion.Name" xml:space="preserve">
+    <value>pnRBFaccion</value>
+  </data>
+  <data name="&gt;&gt;pnRBFaccion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnRBFaccion.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;pnRBFaccion.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pbItem2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbItem2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 35</value>
+  </data>
+  <data name="pbItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 380</value>
+  </data>
+  <data name="pbItem2.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pbItem2.Name" xml:space="preserve">
+    <value>pbItem2</value>
+  </data>
+  <data name="&gt;&gt;pbItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbItem2.Parent" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;pbItem2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panelUno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 112</value>
+  </data>
+  <data name="panelUno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 468</value>
+  </data>
+  <data name="panelUno.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;panelUno.Name" xml:space="preserve">
+    <value>panelUno</value>
+  </data>
+  <data name="&gt;&gt;panelUno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelUno.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelUno.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ckbItem4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
+  <data name="ckbItem4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ckbItem4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 325</value>
+  </data>
+  <data name="ckbItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="ckbItem4.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;ckbItem4.Name" xml:space="preserve">
+    <value>ckbItem4</value>
+  </data>
+  <data name="&gt;&gt;ckbItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem4.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ckbItem3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckbItem3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ckbItem3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 325</value>
+  </data>
+  <data name="ckbItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="ckbItem3.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.Name" xml:space="preserve">
+    <value>ckbItem3</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ckbItem2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckbItem2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ckbItem2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 241</value>
+  </data>
+  <data name="ckbItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="ckbItem2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.Name" xml:space="preserve">
+    <value>ckbItem2</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ckbItem1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckbItem1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 241</value>
+  </data>
+  <data name="ckbItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="ckbItem1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.Name" xml:space="preserve">
+    <value>ckbItem1</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pbImagenArma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 34</value>
+  </data>
+  <data name="pbImagenArma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 120</value>
+  </data>
+  <data name="pbImagenArma.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.Name" xml:space="preserve">
+    <value>pbImagenArma</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cbArma.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="cbArma.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cbArma.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 8.25pt</value>
+  </data>
+  <data name="cbArma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 105</value>
+  </data>
+  <data name="cbArma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="cbArma.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cbArma.Text" xml:space="preserve">
+    <value>         Arma</value>
+  </data>
+  <data name="&gt;&gt;cbArma.Name" xml:space="preserve">
+    <value>cbArma</value>
+  </data>
+  <data name="&gt;&gt;cbArma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbArma.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;cbArma.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbTipoArma.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="cbTipoArma.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cbTipoArma.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 8.25pt</value>
+  </data>
+  <data name="cbTipoArma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 68</value>
+  </data>
+  <data name="cbTipoArma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="cbTipoArma.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="cbTipoArma.Text" xml:space="preserve">
+    <value>   Tipo de Arma</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.Name" xml:space="preserve">
+    <value>cbTipoArma</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tvError.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 8.25pt</value>
+  </data>
+  <data name="tvError.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tvError.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 400</value>
+  </data>
+  <data name="tvError.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 13</value>
+  </data>
+  <data name="tvError.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tvError.Text" xml:space="preserve">
+    <value>El numero de puntos repartidos debe ser inferior a </value>
+  </data>
+  <data name="tvError.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tvError.Name" xml:space="preserve">
+    <value>tvError</value>
+  </data>
+  <data name="&gt;&gt;tvError.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvError.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;tvError.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PBEnergia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 367</value>
+  </data>
+  <data name="PBEnergia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 10</value>
+  </data>
+  <data name="PBEnergia.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.Name" xml:space="preserve">
+    <value>PBEnergia</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PBVitalidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 289</value>
+  </data>
+  <data name="PBVitalidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 10</value>
+  </data>
+  <data name="PBVitalidad.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.Name" xml:space="preserve">
+    <value>PBVitalidad</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="PBAgilidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 214</value>
+  </data>
+  <data name="PBAgilidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 10</value>
+  </data>
+  <data name="PBAgilidad.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.Name" xml:space="preserve">
+    <value>PBAgilidad</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="PBFuerza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 139</value>
+  </data>
+  <data name="PBFuerza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 10</value>
+  </data>
+  <data name="PBFuerza.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.Name" xml:space="preserve">
+    <value>PBFuerza</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="UDEnergia.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="UDEnergia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 337</value>
+  </data>
+  <data name="UDEnergia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="UDEnergia.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="UDEnergia.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.Name" xml:space="preserve">
+    <value>UDEnergia</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="UDVitalidad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="UDVitalidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 259</value>
+  </data>
+  <data name="UDVitalidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="UDVitalidad.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="UDVitalidad.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.Name" xml:space="preserve">
+    <value>UDVitalidad</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="UDAgilidad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="UDAgilidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 184</value>
+  </data>
+  <data name="UDAgilidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="UDAgilidad.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="UDAgilidad.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.Name" xml:space="preserve">
+    <value>UDAgilidad</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="UDFuerza.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="UDFuerza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 109</value>
+  </data>
+  <data name="UDFuerza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="UDFuerza.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="UDFuerza.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.Name" xml:space="preserve">
+    <value>UDFuerza</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tvContadorPuntos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tvContadorPuntos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.25pt</value>
+  </data>
+  <data name="tvContadorPuntos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>509, 62</value>
+  </data>
+  <data name="tvContadorPuntos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 17</value>
+  </data>
+  <data name="tvContadorPuntos.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tvContadorPuntos.Text" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.Name" xml:space="preserve">
+    <value>tvContadorPuntos</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="pbItem1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 36</value>
+  </data>
+  <data name="pbItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 380</value>
+  </data>
+  <data name="pbItem1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.Name" xml:space="preserve">
+    <value>pbItem1</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="panelDos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 112</value>
+  </data>
+  <data name="panelDos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 470</value>
+  </data>
+  <data name="panelDos.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="panelDos.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelDos.Name" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;panelDos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelDos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelDos.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
   <data name="panelTres.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -721,13 +1501,13 @@
     <value>14</value>
   </data>
   <data name="panelTres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>29, 112</value>
   </data>
   <data name="panelTres.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="panelTres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 468</value>
+    <value>643, 470</value>
   </data>
   <data name="panelTres.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -742,1495 +1522,10 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelTres.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;panelTres.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 18pt</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 180</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 32</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Inventario</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 349</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Stamina +10%</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 265</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 13</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Dinero +20%</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 350</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Veloc +10%</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 264</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>EXP +30%</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="ckbItem4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ckbItem4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ckbItem4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 325</value>
-  </data>
-  <data name="ckbItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="ckbItem4.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;ckbItem4.Name" xml:space="preserve">
-    <value>ckbItem4</value>
-  </data>
-  <data name="&gt;&gt;ckbItem4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ckbItem4.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;ckbItem4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="ckbItem3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ckbItem3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ckbItem3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 325</value>
-  </data>
-  <data name="ckbItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="ckbItem3.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;ckbItem3.Name" xml:space="preserve">
-    <value>ckbItem3</value>
-  </data>
-  <data name="&gt;&gt;ckbItem3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ckbItem3.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;ckbItem3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="ckbItem2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ckbItem2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ckbItem2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 241</value>
-  </data>
-  <data name="ckbItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="ckbItem2.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;ckbItem2.Name" xml:space="preserve">
-    <value>ckbItem2</value>
-  </data>
-  <data name="&gt;&gt;ckbItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ckbItem2.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;ckbItem2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="ckbItem1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ckbItem1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 241</value>
-  </data>
-  <data name="ckbItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="ckbItem1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;ckbItem1.Name" xml:space="preserve">
-    <value>ckbItem1</value>
-  </data>
-  <data name="&gt;&gt;ckbItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ckbItem1.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;ckbItem1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pbItem4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pbItem4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 301</value>
-  </data>
-  <data name="pbItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 63</value>
-  </data>
-  <data name="pbItem4.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;pbItem4.Name" xml:space="preserve">
-    <value>pbItem4</value>
-  </data>
-  <data name="&gt;&gt;pbItem4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbItem4.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;pbItem4.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="pbItem3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pbItem3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 301</value>
-  </data>
-  <data name="pbItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 63</value>
-  </data>
-  <data name="pbItem3.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;pbItem3.Name" xml:space="preserve">
-    <value>pbItem3</value>
-  </data>
-  <data name="&gt;&gt;pbItem3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbItem3.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;pbItem3.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pbItem2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pbItem2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 218</value>
-  </data>
-  <data name="pbItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 63</value>
-  </data>
-  <data name="pbItem2.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;pbItem2.Name" xml:space="preserve">
-    <value>pbItem2</value>
-  </data>
-  <data name="&gt;&gt;pbItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbItem2.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;pbItem2.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="pbItem1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 218</value>
-  </data>
-  <data name="pbItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 63</value>
-  </data>
-  <data name="pbItem1.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;pbItem1.Name" xml:space="preserve">
-    <value>pbItem1</value>
-  </data>
-  <data name="&gt;&gt;pbItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbItem1.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;pbItem1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="pbImagenArma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 34</value>
-  </data>
-  <data name="pbImagenArma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 120</value>
-  </data>
-  <data name="pbImagenArma.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;pbImagenArma.Name" xml:space="preserve">
-    <value>pbImagenArma</value>
-  </data>
-  <data name="&gt;&gt;pbImagenArma.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbImagenArma.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;pbImagenArma.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="cbArma.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="cbArma.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cbArma.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 8.25pt</value>
-  </data>
-  <data name="cbArma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 104</value>
-  </data>
-  <data name="cbArma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
-  </data>
-  <data name="cbArma.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="cbArma.Text" xml:space="preserve">
-    <value>         Arma</value>
-  </data>
-  <data name="&gt;&gt;cbArma.Name" xml:space="preserve">
-    <value>cbArma</value>
-  </data>
-  <data name="&gt;&gt;cbArma.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbArma.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;cbArma.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="cbTipoArma.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="cbTipoArma.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cbTipoArma.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 8.25pt</value>
-  </data>
-  <data name="cbTipoArma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 67</value>
-  </data>
-  <data name="cbTipoArma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
-  </data>
-  <data name="cbTipoArma.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="cbTipoArma.Text" xml:space="preserve">
-    <value>   Tipo de Arma</value>
-  </data>
-  <data name="&gt;&gt;cbTipoArma.Name" xml:space="preserve">
-    <value>cbTipoArma</value>
-  </data>
-  <data name="&gt;&gt;cbTipoArma.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbTipoArma.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;cbTipoArma.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="imSeparadorVert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 67</value>
-  </data>
-  <data name="imSeparadorVert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 330</value>
-  </data>
-  <data name="imSeparadorVert.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;imSeparadorVert.Name" xml:space="preserve">
-    <value>imSeparadorVert</value>
-  </data>
-  <data name="&gt;&gt;imSeparadorVert.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imSeparadorVert.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;imSeparadorVert.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="tvError.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 8.25pt</value>
-  </data>
-  <data name="tvError.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tvError.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 400</value>
-  </data>
-  <data name="tvError.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 13</value>
-  </data>
-  <data name="tvError.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tvError.Text" xml:space="preserve">
-    <value>El numero de puntos repartidos debe ser inferior a </value>
-  </data>
-  <data name="tvError.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;tvError.Name" xml:space="preserve">
-    <value>tvError</value>
-  </data>
-  <data name="&gt;&gt;tvError.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvError.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;tvError.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="PBEnergia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 367</value>
-  </data>
-  <data name="PBEnergia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 10</value>
-  </data>
-  <data name="PBEnergia.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;PBEnergia.Name" xml:space="preserve">
-    <value>PBEnergia</value>
-  </data>
-  <data name="&gt;&gt;PBEnergia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PBEnergia.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;PBEnergia.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="PBVitalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 289</value>
-  </data>
-  <data name="PBVitalidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 10</value>
-  </data>
-  <data name="PBVitalidad.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;PBVitalidad.Name" xml:space="preserve">
-    <value>PBVitalidad</value>
-  </data>
-  <data name="&gt;&gt;PBVitalidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PBVitalidad.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;PBVitalidad.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="PBAgilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 214</value>
-  </data>
-  <data name="PBAgilidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 10</value>
-  </data>
-  <data name="PBAgilidad.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;PBAgilidad.Name" xml:space="preserve">
-    <value>PBAgilidad</value>
-  </data>
-  <data name="&gt;&gt;PBAgilidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PBAgilidad.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;PBAgilidad.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="PBFuerza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 139</value>
-  </data>
-  <data name="PBFuerza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 10</value>
-  </data>
-  <data name="PBFuerza.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;PBFuerza.Name" xml:space="preserve">
-    <value>PBFuerza</value>
-  </data>
-  <data name="&gt;&gt;PBFuerza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PBFuerza.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;PBFuerza.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="UDEnergia.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="UDEnergia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 337</value>
-  </data>
-  <data name="UDEnergia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
-  </data>
-  <data name="UDEnergia.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="UDEnergia.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="UDEnergia.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;UDEnergia.Name" xml:space="preserve">
-    <value>UDEnergia</value>
-  </data>
-  <data name="&gt;&gt;UDEnergia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UDEnergia.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;UDEnergia.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="tvEnergia.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvEnergia.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvEnergia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 337</value>
-  </data>
-  <data name="tvEnergia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 27</value>
-  </data>
-  <data name="tvEnergia.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="tvEnergia.Text" xml:space="preserve">
-    <value>Energia:</value>
-  </data>
-  <data name="&gt;&gt;tvEnergia.Name" xml:space="preserve">
-    <value>tvEnergia</value>
-  </data>
-  <data name="&gt;&gt;tvEnergia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvEnergia.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;tvEnergia.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="UDVitalidad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="UDVitalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 259</value>
-  </data>
-  <data name="UDVitalidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
-  </data>
-  <data name="UDVitalidad.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="UDVitalidad.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="UDVitalidad.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;UDVitalidad.Name" xml:space="preserve">
-    <value>UDVitalidad</value>
-  </data>
-  <data name="&gt;&gt;UDVitalidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UDVitalidad.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;UDVitalidad.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="etVitalidad.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="etVitalidad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="etVitalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 259</value>
-  </data>
-  <data name="etVitalidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 27</value>
-  </data>
-  <data name="etVitalidad.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="etVitalidad.Text" xml:space="preserve">
-    <value>Vitalidad:</value>
-  </data>
-  <data name="&gt;&gt;etVitalidad.Name" xml:space="preserve">
-    <value>etVitalidad</value>
-  </data>
-  <data name="&gt;&gt;etVitalidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;etVitalidad.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;etVitalidad.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="UDAgilidad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="UDAgilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 184</value>
-  </data>
-  <data name="UDAgilidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
-  </data>
-  <data name="UDAgilidad.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="UDAgilidad.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="UDAgilidad.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;UDAgilidad.Name" xml:space="preserve">
-    <value>UDAgilidad</value>
-  </data>
-  <data name="&gt;&gt;UDAgilidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UDAgilidad.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;UDAgilidad.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="tvAgilidad.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvAgilidad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvAgilidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 184</value>
-  </data>
-  <data name="tvAgilidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 27</value>
-  </data>
-  <data name="tvAgilidad.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tvAgilidad.Text" xml:space="preserve">
-    <value>Agilidad:</value>
-  </data>
-  <data name="&gt;&gt;tvAgilidad.Name" xml:space="preserve">
-    <value>tvAgilidad</value>
-  </data>
-  <data name="&gt;&gt;tvAgilidad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvAgilidad.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;tvAgilidad.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="UDFuerza.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="UDFuerza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 109</value>
-  </data>
-  <data name="UDFuerza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
-  </data>
-  <data name="UDFuerza.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="UDFuerza.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="UDFuerza.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;UDFuerza.Name" xml:space="preserve">
-    <value>UDFuerza</value>
-  </data>
-  <data name="&gt;&gt;UDFuerza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UDFuerza.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;UDFuerza.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="tvFuerza.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvFuerza.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvFuerza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 107</value>
-  </data>
-  <data name="tvFuerza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
-  </data>
-  <data name="tvFuerza.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tvFuerza.Text" xml:space="preserve">
-    <value>Fuerza:</value>
-  </data>
-  <data name="&gt;&gt;tvFuerza.Name" xml:space="preserve">
-    <value>tvFuerza</value>
-  </data>
-  <data name="&gt;&gt;tvFuerza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvFuerza.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;tvFuerza.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="tvContadorPuntos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvContadorPuntos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.25pt</value>
-  </data>
-  <data name="tvContadorPuntos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 62</value>
-  </data>
-  <data name="tvContadorPuntos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 17</value>
-  </data>
-  <data name="tvContadorPuntos.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tvContadorPuntos.Text" xml:space="preserve">
-    <value>5000</value>
-  </data>
-  <data name="&gt;&gt;tvContadorPuntos.Name" xml:space="preserve">
-    <value>tvContadorPuntos</value>
-  </data>
-  <data name="&gt;&gt;tvContadorPuntos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvContadorPuntos.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;tvContadorPuntos.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="tvPuntos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvPuntos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 18pt</value>
-  </data>
-  <data name="tvPuntos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 55</value>
-  </data>
-  <data name="tvPuntos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 32</value>
-  </data>
-  <data name="tvPuntos.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tvPuntos.Text" xml:space="preserve">
-    <value>Puntos:</value>
-  </data>
-  <data name="&gt;&gt;tvPuntos.Name" xml:space="preserve">
-    <value>tvPuntos</value>
-  </data>
-  <data name="&gt;&gt;tvPuntos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvPuntos.Parent" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;tvPuntos.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="panelDos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelDos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 468</value>
-  </data>
-  <data name="panelDos.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="panelDos.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelDos.Name" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;panelDos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelDos.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;panelDos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tvDarkLord.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvDarkLord.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvDarkLord.Location" type="System.Drawing.Point, System.Drawing">
-    <value>485, 386</value>
-  </data>
-  <data name="tvDarkLord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 27</value>
-  </data>
-  <data name="tvDarkLord.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="tvDarkLord.Text" xml:space="preserve">
-    <value>Dark Lord</value>
-  </data>
-  <data name="&gt;&gt;tvDarkLord.Name" xml:space="preserve">
-    <value>tvDarkLord</value>
-  </data>
-  <data name="&gt;&gt;tvDarkLord.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvDarkLord.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvDarkLord.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tvElf.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvElf.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvElf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 386</value>
-  </data>
-  <data name="tvElf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 27</value>
-  </data>
-  <data name="tvElf.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="tvElf.Text" xml:space="preserve">
-    <value>Fairy Elf</value>
-  </data>
-  <data name="&gt;&gt;tvElf.Name" xml:space="preserve">
-    <value>tvElf</value>
-  </data>
-  <data name="&gt;&gt;tvElf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvElf.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvElf.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tvSoulWizard.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvSoulWizard.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvSoulWizard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 386</value>
-  </data>
-  <data name="tvSoulWizard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 27</value>
-  </data>
-  <data name="tvSoulWizard.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="tvSoulWizard.Text" xml:space="preserve">
-    <value>Soul Wizard</value>
-  </data>
-  <data name="&gt;&gt;tvSoulWizard.Name" xml:space="preserve">
-    <value>tvSoulWizard</value>
-  </data>
-  <data name="&gt;&gt;tvSoulWizard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvSoulWizard.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvSoulWizard.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tvBladeKnight.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvBladeKnight.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvBladeKnight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 386</value>
-  </data>
-  <data name="tvBladeKnight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 27</value>
-  </data>
-  <data name="tvBladeKnight.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="tvBladeKnight.Text" xml:space="preserve">
-    <value>Blade Knight</value>
-  </data>
-  <data name="&gt;&gt;tvBladeKnight.Name" xml:space="preserve">
-    <value>tvBladeKnight</value>
-  </data>
-  <data name="&gt;&gt;tvBladeKnight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvBladeKnight.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvBladeKnight.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tvDescrip.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvDescrip.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.25pt</value>
-  </data>
-  <data name="tvDescrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 240</value>
-  </data>
-  <data name="tvDescrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 17</value>
-  </data>
-  <data name="tvDescrip.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="tvDescrip.Text" xml:space="preserve">
-    <value>Rellena el campo de Mapa de Inicio para elegir Clase</value>
-  </data>
-  <data name="tvDescrip.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;tvDescrip.Name" xml:space="preserve">
-    <value>tvDescrip</value>
-  </data>
-  <data name="&gt;&gt;tvDescrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvDescrip.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvDescrip.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="comboBox1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="comboBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>     Lorencia</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>     Noria</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>     Devias</value>
-  </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 160</value>
-  </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="imgDL.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="imgDL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 289</value>
-  </data>
-  <data name="imgDL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 94</value>
-  </data>
-  <data name="imgDL.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;imgDL.Name" xml:space="preserve">
-    <value>imgDL</value>
-  </data>
-  <data name="&gt;&gt;imgDL.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imgDL.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;imgDL.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="imgElf.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="imgElf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 289</value>
-  </data>
-  <data name="imgElf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 94</value>
-  </data>
-  <data name="imgElf.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;imgElf.Name" xml:space="preserve">
-    <value>imgElf</value>
-  </data>
-  <data name="&gt;&gt;imgElf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imgElf.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;imgElf.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="imgDW.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="imgDW.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 289</value>
-  </data>
-  <data name="imgDW.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 94</value>
-  </data>
-  <data name="imgDW.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;imgDW.Name" xml:space="preserve">
-    <value>imgDW</value>
-  </data>
-  <data name="&gt;&gt;imgDW.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imgDW.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;imgDW.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="imgBk.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="imgBk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 289</value>
-  </data>
-  <data name="imgBk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 94</value>
-  </data>
-  <data name="imgBk.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;imgBk.Name" xml:space="preserve">
-    <value>imgBk</value>
-  </data>
-  <data name="&gt;&gt;imgBk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imgBk.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;imgBk.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="tvClase.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvClase.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 20.25pt</value>
-  </data>
-  <data name="tvClase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 205</value>
-  </data>
-  <data name="tvClase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 35</value>
-  </data>
-  <data name="tvClase.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="tvClase.Text" xml:space="preserve">
-    <value>Clase:</value>
-  </data>
-  <data name="&gt;&gt;tvClase.Name" xml:space="preserve">
-    <value>tvClase</value>
-  </data>
-  <data name="&gt;&gt;tvClase.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvClase.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvClase.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="tvMapaInicio.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvMapaInicio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 18pt</value>
-  </data>
-  <data name="tvMapaInicio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 122</value>
-  </data>
-  <data name="tvMapaInicio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 32</value>
-  </data>
-  <data name="tvMapaInicio.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="tvMapaInicio.Text" xml:space="preserve">
-    <value>Mapa Inicio:</value>
-  </data>
-  <data name="&gt;&gt;tvMapaInicio.Name" xml:space="preserve">
-    <value>tvMapaInicio</value>
-  </data>
-  <data name="&gt;&gt;tvMapaInicio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvMapaInicio.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvMapaInicio.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="tvFaccion.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvFaccion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 18pt</value>
-  </data>
-  <data name="tvFaccion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 122</value>
-  </data>
-  <data name="tvFaccion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 32</value>
-  </data>
-  <data name="tvFaccion.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="tvFaccion.Text" xml:space="preserve">
-    <value>Facción:</value>
-  </data>
-  <data name="&gt;&gt;tvFaccion.Name" xml:space="preserve">
-    <value>tvFaccion</value>
-  </data>
-  <data name="&gt;&gt;tvFaccion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvFaccion.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvFaccion.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="etNombreJug.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8pt</value>
-  </data>
-  <data name="etNombreJug.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 77</value>
-  </data>
-  <data name="etNombreJug.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="etNombreJug.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 20</value>
-  </data>
-  <data name="etNombreJug.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="etNombreJug.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;etNombreJug.Name" xml:space="preserve">
-    <value>etNombreJug</value>
-  </data>
-  <data name="&gt;&gt;etNombreJug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;etNombreJug.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;etNombreJug.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="tvNombreJug.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tvNombreJug.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Pristina, 14.25pt</value>
-  </data>
-  <data name="tvNombreJug.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 47</value>
-  </data>
-  <data name="tvNombreJug.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 27</value>
-  </data>
-  <data name="tvNombreJug.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="tvNombreJug.Text" xml:space="preserve">
-    <value>Nombre Jugador:</value>
-  </data>
-  <data name="&gt;&gt;tvNombreJug.Name" xml:space="preserve">
-    <value>tvNombreJug</value>
-  </data>
-  <data name="&gt;&gt;tvNombreJug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvNombreJug.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;tvNombreJug.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="rbVanert.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbVanert.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.25pt</value>
-  </data>
-  <data name="rbVanert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 157</value>
-  </data>
-  <data name="rbVanert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 21</value>
-  </data>
-  <data name="rbVanert.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="rbVanert.Text" xml:space="preserve">
-    <value>Vanert</value>
-  </data>
-  <data name="&gt;&gt;rbVanert.Name" xml:space="preserve">
-    <value>rbVanert</value>
-  </data>
-  <data name="&gt;&gt;rbVanert.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbVanert.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;rbVanert.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="rbDuprian.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbDuprian.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.25pt</value>
-  </data>
-  <data name="rbDuprian.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 157</value>
-  </data>
-  <data name="rbDuprian.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
-  </data>
-  <data name="rbDuprian.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="rbDuprian.Text" xml:space="preserve">
-    <value>Duprian</value>
-  </data>
-  <data name="&gt;&gt;rbDuprian.Name" xml:space="preserve">
-    <value>rbDuprian</value>
-  </data>
-  <data name="&gt;&gt;rbDuprian.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbDuprian.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;rbDuprian.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="pnRBFaccion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 157</value>
-  </data>
-  <data name="pnRBFaccion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 30</value>
-  </data>
-  <data name="pnRBFaccion.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;pnRBFaccion.Name" xml:space="preserve">
-    <value>pnRBFaccion</value>
-  </data>
-  <data name="&gt;&gt;pnRBFaccion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnRBFaccion.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;pnRBFaccion.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="separadorIzq.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 219</value>
-  </data>
-  <data name="separadorIzq.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 26</value>
-  </data>
-  <data name="separadorIzq.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;separadorIzq.Name" xml:space="preserve">
-    <value>separadorIzq</value>
-  </data>
-  <data name="&gt;&gt;separadorIzq.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;separadorIzq.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;separadorIzq.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="separadorDer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 219</value>
-  </data>
-  <data name="separadorDer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
-  </data>
-  <data name="separadorDer.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;separadorDer.Name" xml:space="preserve">
-    <value>separadorDer</value>
-  </data>
-  <data name="&gt;&gt;separadorDer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;separadorDer.Parent" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;separadorDer.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="panelUno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 113</value>
-  </data>
-  <data name="panelUno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 468</value>
-  </data>
-  <data name="panelUno.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;panelUno.Name" xml:space="preserve">
-    <value>panelUno</value>
-  </data>
-  <data name="&gt;&gt;panelUno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelUno.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelUno.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;panelTres.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <data name="btn3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>

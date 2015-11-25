@@ -1,0 +1,9 @@
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\bin\Debug\MP_DragAndDrop.exe.config
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\bin\Debug\MP_DragAndDrop.exe
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\bin\Debug\MP_DragAndDrop.pdb
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\obj\Debug\MP_DragAndDrop.csprojResolveAssemblyReference.cache
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\obj\Debug\MP_DragAndDrop.Form1.resources
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\obj\Debug\MP_DragAndDrop.Properties.Resources.resources
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\obj\Debug\MP_DragAndDrop.csproj.GenerateResource.Cache
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\obj\Debug\MP_DragAndDrop.exe
+c:\users\corpex\Documents\GitHub\interface-design\MP_DragAndDrop\MP_DragAndDrop\obj\Debug\MP_DragAndDrop.pdb

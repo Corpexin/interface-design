@@ -80,9 +80,6 @@ namespace FichaPersonaje
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pictureBox2, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbImagenArma, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem1, new object[] { true });
-            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem2, new object[] { true });
-            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem3, new object[] { true });
-            typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem4, new object[] { true });
         }
 
 
@@ -305,6 +302,7 @@ namespace FichaPersonaje
             btn1.Image = Resources.btnAct1;
             btn2.Image = Resources.btnDesact1;
             btn3.Image = Resources.btnDesact1;
+            panelUno.Visible = true;
             panelDos.Visible = false;
             panelTres.Visible = false;
             btnclickeado[0] = true;
@@ -317,6 +315,7 @@ namespace FichaPersonaje
             btn2.Image = Resources.btnAct1;
             btn1.Image = Resources.btnDesact1;
             btn3.Image = Resources.btnDesact1;
+            panelUno.Visible = false;
             panelDos.Visible = true;
             panelTres.Visible = false;
             btnclickeado[0] = false;
@@ -329,7 +328,8 @@ namespace FichaPersonaje
             btn3.Image = Resources.btnAct1;
             btn1.Image = Resources.btnDesact1;
             btn2.Image = Resources.btnDesact1;
-            panelDos.Visible = true;
+            panelUno.Visible = false;
+            panelDos.Visible = false;
             panelTres.Visible = true;
             btnclickeado[0] = false;
             btnclickeado[2] = true;

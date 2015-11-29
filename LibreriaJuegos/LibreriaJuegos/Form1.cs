@@ -12,8 +12,7 @@ namespace LibreriaJuegos
 {
     public partial class FLogin : Form
     {
-        Boolean presionT1 = true;
-        Boolean presionT2 = true;
+
         SqlConnection con;
         Form2 f2;
         string confContraseña;
@@ -53,16 +52,14 @@ namespace LibreriaJuegos
         {
             lblError.Visible = false;
             registrarUser.Visible = false;
-            if (sender == tbContraseña && presionT1 == true)
+            if (sender == tbContraseña)
             {
                 tbContraseña.Text = "";
                 tbContraseña.UseSystemPasswordChar = true;
-                presionT1 = false;
             }
-            else if (sender == tbUsuario && presionT2 == true)
+            else if (sender == tbUsuario)
             {
                 tbUsuario.Text = "";
-                presionT2 = false;
             }
         }
 

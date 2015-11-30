@@ -398,7 +398,7 @@ namespace FichaPersonaje
                 if(i!=indice)
                     valorprevio = valorprevio + listaValoresCaract[i];
             }
-            if(valorprevio + Int32.Parse(udCaract.Text) <= 5000)//si el valor previo + el nuevo numero <=5000 seguira, sino no le dejara
+            if(valorprevio + Int32.Parse(udCaract.Text) <= MAX_PUNTOS_CONT)//si el valor previo + el nuevo numero <= maximo de puntos, seguira, sino no le dejara
             {
                 listaValoresCaract[indice] = Int32.Parse(udCaract.Text);//le pasa a la lista que guarda los puntos de cada caracteristica por separado el valor
                 for (int i = 0; i < listaValoresCaract.Length; i++) // saca la suma, pero ya con el valor introducido

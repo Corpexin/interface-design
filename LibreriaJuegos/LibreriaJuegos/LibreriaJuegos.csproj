@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,13 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Juego.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Prompt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +74,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,6 +103,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counterstrike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8bitsboy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12loh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absconding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advtrees.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afterfall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\albinohunter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alienbreed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amnesia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bioshockinfinite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borderlands2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cities.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\civilizationv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codbo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dota2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dying.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farming.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goatsim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h1z1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minidrivers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyectcars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\towerofguns.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

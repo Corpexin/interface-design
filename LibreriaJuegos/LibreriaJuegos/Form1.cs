@@ -12,42 +12,15 @@ namespace LibreriaJuegos
 {
     public partial class FLogin : Form
     {
-
-        SqlConnection con;
         Form2 f2;
         string confContraseña;
 
         public FLogin()
         {
             InitializeComponent();
-            conexionBD();
         }
 
-        private void conexionBD()
-        {
-            con = new SqlConnection();
-            con.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BaseDatos;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        }
-
-        private void comprobar(int datos)
-        {
-            if(datos == 1)
-            {
-                this.Hide();
-                f2 = new Form2();
-                f2.Show();
-            }
-            else
-            {
-                lblError.Visible = true;
-                if(tbUsuario.Text!="" && tbUsuario.Text!="Usuario" && tbContraseña.Text!="" && tbContraseña.Text != "Contraseña")
-                {
-                    registrarUser.Visible = true; //permite la opcion de registrar usuario si los campos no estan vacios
-                }
-                
-            }
-        }
-
+        //Evento que se ejecuta cuando gana el foco
         private void campoEnter(object sender, EventArgs e)
         {
             lblError.Visible = false;
@@ -63,6 +36,7 @@ namespace LibreriaJuegos
             }
         }
 
+        //Evento que se ejecuta cuando pierde el foco
         private void campoLeave(object sender, EventArgs e)
         {
             if (sender == tbContraseña && tbContraseña.Text == "")
@@ -76,6 +50,7 @@ namespace LibreriaJuegos
             }
         }
 
+        //Evento que se ejecuta cuando presiona Enter
         private void confirmar(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == '\r')
@@ -84,20 +59,27 @@ namespace LibreriaJuegos
             }
         }
 
+        //Consulta con la base de datos si el usuario y contraseña existen, sino da la opcion de registrar
         private void consultaUsuario()
         {
-            con.Open();
-            //
-            SqlCommand orden = new SqlCommand();
-            orden.CommandText = "SELECT COUNT(*) FROM USUARIO WHERE nombreU='"+tbUsuario.Text+"' AND contraseñaU='"+tbContraseña.Text+"';";//Controlar si el usuario/contraseña estan en la bd
-            orden.CommandType = CommandType.Text; //mirar opciones?
-            orden.Connection = con;
-            int datos = (int)orden.ExecuteScalar(); 
-            con.Close();
+            if (Datos.comprobarLogin(tbUsuario.Text, tbContraseña.Text) == 1)
+            {
+                this.Hide();
+                f2 = new Form2(tbUsuario.Text, tbContraseña.Text);
+                f2.Show();
+            }
+            else
+            {
+                lblError.Visible = true;
+                if (tbUsuario.Text != "" && tbUsuario.Text != "Usuario" && tbContraseña.Text != "" && tbContraseña.Text != "Contraseña")
+                {
+                    registrarUser.Visible = true; //permite la opcion de registrar usuario si los campos no estan vacios
+                }
 
-            comprobar(datos);
+            }
         }
 
+        //Evento que se ejecuta si se hace click en el boton registrar
         private void registrarUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             lblError.Visible = false;
@@ -114,21 +96,10 @@ namespace LibreriaJuegos
 
             if (confContraseña == "" + tbContraseña.Text)
             {
-                //Introducir aqui insert de usuario
-                insertUsuario();
+
+                Datos.insertarUsuario(tbUsuario.Text, tbContraseña.Text);
                 consultaUsuario();//Si se registra, comprueba y entra directamente
             }
-        }
-
-        private void insertUsuario()
-        { 
-            con.Open();
-            SqlCommand orden = new SqlCommand();
-            orden.CommandText = "INSERT INTO [dbo].[USUARIO] ([nombreU], [contraseñaU]) VALUES (N'"+tbUsuario.Text+"', N'"+tbContraseña.Text+"')";//Inserta Usuario y Contraseña en la BD
-            orden.CommandType = CommandType.Text; //mirar opciones?
-            orden.Connection = con;
-            orden.ExecuteScalar();
-            con.Close();
         }
     }
 }

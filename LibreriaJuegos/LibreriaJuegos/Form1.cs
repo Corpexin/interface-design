@@ -64,9 +64,9 @@ namespace LibreriaJuegos
         {
             if (Datos.comprobarLogin(tbUsuario.Text, tbContraseña.Text) == 1)
             {
-                this.Hide();
-                f2 = new Form2(tbUsuario.Text, tbContraseña.Text);
+                f2 = new Form2(this, tbUsuario.Text, tbContraseña.Text);
                 f2.Show();
+                this.Hide();
             }
             else
             {
@@ -100,6 +100,11 @@ namespace LibreriaJuegos
                 Datos.insertarUsuario(tbUsuario.Text, tbContraseña.Text);
                 consultaUsuario();//Si se registra, comprueba y entra directamente
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

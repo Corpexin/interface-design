@@ -16,43 +16,50 @@ namespace LibreriaJuegos
 {
     public partial class Form2 : Form
     {
+        Form f;
         Form3 f3;
         SqlConnection con;
         ArrayList listaGeneros;
         ImageList il;
         String usuario;
         String contraseña;
+        int index;
 
-        public Form2(String user, String pass)
+        public Form2(Form form, String user, String pass)
         {
+            f = form;
             usuario = user;
             contraseña = pass;
             InitializeComponent();
             cargarGeneros();
-            cargarJuegos();
+            cargarJuegos(Datos.seleccionarJuegos("", ""));
             cargarListaJuegosUsuario();
+            menuStrip.ForeColor = Color.Gray;
+            index = 0;
         }
 
         //Carga los generos de la base de datos
         private void cargarGeneros()
         {
             ArrayList lista = Datos.seleccionarGeneros();
+            cbGenero.Items.Add("TODOS");
             foreach(String s in lista){cbGenero.Items.Add(s); }//Se agregan los resultados de la consulta al combobox
+            cbGenero.SelectedItem = "TODOS";
         }
 
-        private void cargarJuegos()
+        private void cargarJuegos(ArrayList lista)
         {
+            lvLibreria.Clear();
             int cont = 0;
             il = new ImageList();
-            ArrayList lista = Datos.seleccionarJuegos();//Obtengo de la bd la lista completa de juegos
-            il.ImageSize = new Size(90, 42);
-            String[] imageFiles = Directory.GetFiles(@"C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\Resources");
-                //Cambiar por ruta relativa
+            il.ImageSize = new Size(120, 56);
 
-            foreach(var file in imageFiles)
+            //Cambiar por ruta relativa
+            foreach (Juego j in lista)
             {
-                il.Images.Add(Image.FromFile(file));
+                il.Images.Add(Image.FromFile(@"C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\Resources\" + j.foto + ".jpg"));
             }
+
             lvLibreria.LargeImageList = il;
             lvLibreria.SmallImageList = il;
 
@@ -66,16 +73,18 @@ namespace LibreriaJuegos
         //Carga los juegos de la lista que tenga el usuario
         private void cargarListaJuegosUsuario()
         {
+            il = new ImageList();
+            lvMiLista.Clear();
             int cont = 0;
-            ArrayList lista = Datos.seleccionarListaJuegosUsuario(usuario);
-            il.ImageSize = new Size(90, 42);
-            String[] imageFiles = Directory.GetFiles(@"C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\Resources");
-            
+            ArrayList lista = Datos.seleccionarJuegos(usuario, "");
+            il.ImageSize = new Size(80, 32);
+
             //Cambiar por ruta relativa
-            foreach (var file in imageFiles)
+            foreach (Juego j in lista)
             {
-                il.Images.Add(Image.FromFile(file));
+                il.Images.Add(Image.FromFile(@"C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\Resources\" + j.foto + ".jpg"));
             }
+           
             lvMiLista.LargeImageList = il;
             lvMiLista.SmallImageList = il;
 
@@ -90,10 +99,18 @@ namespace LibreriaJuegos
         //Metodo que muestra el siguiente formulario con la informacion de la carta cuando se hace click en un elemento
         private void entrarEnCarta(object sender, MouseEventArgs e)
         {
-            this.Hide();
             f3 = new Form3();
             f3.Show();
         }
+
+        private void cbGenero_SelectedValueChanged(object sender, EventArgs e)
+        {
+            string genero = cbGenero.SelectedItem.ToString();
+            if (genero == "TODOS")
+                genero = "";
+            cargarJuegos(Datos.seleccionarJuegos("", genero));
+        }
+
 
 
         //Drag&Drop
@@ -112,8 +129,8 @@ namespace LibreriaJuegos
             ListView.SelectedListViewItemCollection coleccionlv = (ListView.SelectedListViewItemCollection)e.Data.GetData(typeof(ListView.SelectedListViewItemCollection));
             foreach (ListViewItem item in coleccionlv)
             {
-                //insertamos aqui en la base de datos los datos y actualizamos el listview
-                lvMiLista.Items.Add((ListViewItem)item.Clone());
+                Datos.insertarJuegoUsuario(item.Text, usuario);//insertamos los juegos dropeados en la lista de usuario
+                cargarListaJuegosUsuario(); ////////////////////////Controlar que si ya tiene el juego no pueda dropearlo
             }
         }
 
@@ -121,5 +138,30 @@ namespace LibreriaJuegos
         {
             e.Effect = DragDropEffects.All;
         }
+
+        private void pbCerrar_Click(object sender, EventArgs e)
+        {
+            f.Show();
+            this.Close();
+        }
+
+        private void pbFlechaDer_Click(object sender, EventArgs e)
+        {
+            lvMiLista.Focus();
+            SendKeys.Send("{Right}");
+        }
+
+        private void pbFlechaIzq_Click(object sender, EventArgs e)
+        {
+            lvMiLista.Focus();
+            SendKeys.Send("{Left}");
+        }
+
+        private void programaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Hola.");
+        }
+
+
     }
 }

@@ -12,7 +12,7 @@ namespace LibreriaJuegos
     static class Datos
     {
         //Creo la conexion general con la que se va a trabajar
-        private static SqlConnection conexion()
+        internal static SqlConnection conexion()
         {
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BDLibreriaJuegos;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
@@ -20,7 +20,7 @@ namespace LibreriaJuegos
         }
 
         //Metodo para comprobar que un usuario/contraseña existen en la base de datos
-        public static int comprobarLogin(String usuario, String contraseña)
+        internal static int comprobarLogin(String usuario, String contraseña)
         {
             SqlConnection con = conexion();
             con.Open();
@@ -34,7 +34,7 @@ namespace LibreriaJuegos
         }
 
         //Metodo para insertar usuario/contraseña en base de datos
-        public static void insertarUsuario(String usuario, String contraseña)
+        internal static void insertarUsuario(String usuario, String contraseña)
         {
             SqlConnection con = conexion();
             con.Open();
@@ -47,7 +47,7 @@ namespace LibreriaJuegos
         }
 
         //Metodo para seleccionar los generos
-        public static ArrayList seleccionarGeneros()
+        internal static ArrayList seleccionarGeneros()
         {
             SqlConnection con = conexion();
             ArrayList lista = new ArrayList();
@@ -66,13 +66,32 @@ namespace LibreriaJuegos
         }
 
         //Metodo para seleccionar los juegos
-        public static ArrayList seleccionarJuegos()
+        internal static ArrayList seleccionarJuegos(String usuario, String genero)
         {
+            String query = "";
+            //Carga la lista de usuario
+            if (usuario != "")
+            {
+                query = "SELECT [dbo].[JUEGO].[nombreJ], [dbo].[JUEGO].[fotoJ] FROM [dbo].[TIENE], [dbo].[JUEGO] WHERE [dbo].[TIENE].[nombreU] = '" + usuario + "' AND [dbo].[JUEGO].[nombreJ] = [dbo].[TIENE].[nombreJ];";//Carga los juegos de un usuario concreto
+            }
+            
+            //Carga la lista con un genero concreto
+            if(genero != "")
+            {
+                query = "SELECT [dbo].[JUEGO].[nombreJ], [dbo].[JUEGO].[fotoJ] FROM [dbo].[JUEGO] WHERE [dbo].[JUEGO].[generoJ] = '" + genero + "' ;";//Carga los juegos de un genero concreto
+            }
+
+            //Carga toda la lista
+            if(usuario == "" && genero == "")
+            {
+                query = "SELECT [nombreJ], [fotoJ] FROM [dbo].[JUEGO];";//Carga nombre y foto de juegos
+            }
+
             SqlConnection con = conexion();
             ArrayList lista = new ArrayList();
             con.Open();
             SqlCommand orden = new SqlCommand();
-            orden.CommandText = "SELECT [nombreJ], [fotoJ] FROM [dbo].[JUEGO];";//Carga nombre y foto de juegos
+            orden.CommandText = query;
             orden.CommandType = CommandType.Text;
             orden.Connection = con;
             SqlDataReader reader = orden.ExecuteReader();
@@ -84,24 +103,21 @@ namespace LibreriaJuegos
             return lista;
         }
 
-        public static ArrayList seleccionarListaJuegosUsuario(String usuario)
+
+        //Metodo para introducir un juego en la tabla TIENE de la bd
+        internal static void insertarJuegoUsuario(string nombreJuego, string usuario)
         {
             SqlConnection con = conexion();
-            ArrayList lista = new ArrayList();
             con.Open();
             SqlCommand orden = new SqlCommand();
-            /////////////////////////////////////////
-            orden.CommandText = "SELECT [dbo].[JUEGO].[nombreJ], [dbo].[JUEGO].[fotoJ] FROM [dbo].[TIENE], [dbo].[JUEGO] WHERE [nombreU] = 'admin';";//Carga los juegos de un usuario concreto
+            orden.CommandText = "INSERT INTO [dbo].[TIENE] ([nombreU], [nombreJ]) VALUES (N'" + usuario + "', N'" + nombreJuego + "')";//Inserta Usuario y Contraseña en la BD
             orden.CommandType = CommandType.Text;
             orden.Connection = con;
-            SqlDataReader reader = orden.ExecuteReader();
-            while (reader.Read())
-            {
-                lista.Add(new Juego(reader[0].ToString(), reader[1].ToString()));
-            }
+            orden.ExecuteScalar();
             con.Close();
-            return lista;
         }
+
+       
     }
 
 }

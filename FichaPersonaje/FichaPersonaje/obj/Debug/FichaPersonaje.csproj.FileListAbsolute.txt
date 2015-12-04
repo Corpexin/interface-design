@@ -21,3 +21,4 @@ D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\es
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\es\FichaPersonaje.resources.dll
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.FichaPersonaje.es.resources
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\es\FichaPersonaje.resources.dll
+D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csprojResolveAssemblyReference.cache

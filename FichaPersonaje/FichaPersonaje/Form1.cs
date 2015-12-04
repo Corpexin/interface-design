@@ -873,6 +873,9 @@ namespace FichaPersonaje
             resetearCampos();
             //Cambia al modo visualizacion    
             modoVisualizacion();
+            //Si el contador es distinto de 0, le resto 1
+            if (contadorPj != 0)
+                contadorPj--;
             //cargar pj
             cargarPJ();
         }

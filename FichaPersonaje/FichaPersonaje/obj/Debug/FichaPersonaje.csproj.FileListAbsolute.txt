@@ -12,7 +12,6 @@ D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\Fi
 D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.pdb
 D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.exe
 D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.pdb
-D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csprojResolveAssemblyReference.cache
 D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.FichaPersonaje.resources
 D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.Properties.Resources.resources
 D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csproj.GenerateResource.Cache

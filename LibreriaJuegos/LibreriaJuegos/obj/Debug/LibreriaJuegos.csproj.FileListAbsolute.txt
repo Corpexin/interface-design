@@ -9,3 +9,6 @@ C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\
 C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.pdb
 C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.Form2.resources
 C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.Form3.resources
+D:\Documentos\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\bin\Debug\LibreriaJuegos.exe.config
+D:\Documentos\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.exe
+D:\Documentos\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.pdb

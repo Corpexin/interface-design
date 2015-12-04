@@ -849,7 +849,7 @@ namespace FichaPersonaje
         {
             //Aumenta el tamaño de la ventana y oculta los botones guardar y cancelar
             imagMenuInf.Visible = true;
-            this.Size = new Size(700, 657);
+            this.Size = new Size(700, 653);
             imagCancelar.Visible = false;
             imgGuardar.Visible = false;
             //Desactivar la modificacion del personaje
@@ -1215,10 +1215,6 @@ namespace FichaPersonaje
             rbVanert.Enabled = true;
             rbDuprian.Enabled = true;
             comboBox1.Enabled = true;
-           // imgBk.Enabled = true;
-           // imgDW.Enabled = true;
-           // imgElf.Enabled = true;
-           // imgDL.Enabled = true;
             UDFuerza.Enabled = true;
             UDAgilidad.Enabled = true;
             UDVitalidad.Enabled = true;
@@ -1328,24 +1324,33 @@ namespace FichaPersonaje
             String line;
             String[] aux;
             String[] separador = { "¡-:*!" };
-            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
-            album = new Album();
-            while ((line = sr.ReadLine()) != null)
+            if(File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj"))
             {
-                aux = line.Split(separador, StringSplitOptions.RemoveEmptyEntries);
-                album.listPj.Add(new Personaje(aux[0], aux[1], aux[2], aux[3], aux[4], aux[5], aux[6], aux[7], aux[8], aux[9]));
+                StreamReader sr = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj");
+                album = new Album();
+                while ((line = sr.ReadLine()) != null)
+                {
+                    aux = line.Split(separador, StringSplitOptions.RemoveEmptyEntries);
+                    album.listPj.Add(new Personaje(aux[0], aux[1], aux[2], aux[3], aux[4], aux[5], aux[6], aux[7], aux[8], aux[9]));
+                }
+                contadorPj = 0;
+                cargarPJ();
+                sr.Close();
+                activarDesactivarEditar();
+                activarTreeSkill();
             }
-            contadorPj = 0;
-            cargarPJ();
-            sr.Close();
-            activarDesactivarEditar();
-            activarTreeSkill();
+
         }
 
         private void imagImportar_Click(object sender, EventArgs e)
         {
             //Importar
-            StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.txt");
+            //StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.fpj");
+            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje"))
+            {
+                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje");
+            }
+            StreamWriter file = new System.IO.StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj");
             foreach (Personaje pj in album.listPj)
             {
                 file.WriteLine(pj.ToString());
@@ -1366,6 +1371,11 @@ namespace FichaPersonaje
             tvST9.Enabled = true;
             tvST10.Enabled = true;
             tvST11.Enabled = true;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 

@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagPerfil.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="etNombrePJ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt</value>
@@ -493,7 +493,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelUno.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="ckbItem4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -634,7 +634,7 @@
     <value>35, 105</value>
   </data>
   <data name="cbArma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
+    <value>105, 22</value>
   </data>
   <data name="cbArma.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -667,7 +667,7 @@
     <value>35, 68</value>
   </data>
   <data name="cbTipoArma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
+    <value>105, 22</value>
   </data>
   <data name="cbTipoArma.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -985,7 +985,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelDos.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="panelTres.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1525,7 +1525,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelTres.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="btn3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1549,7 +1549,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="btn2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1573,7 +1573,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="btn1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1597,7 +1597,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1618,7 +1618,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="tvErrorEdicion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1648,7 +1648,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tvErrorEdicion.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="imgGuardar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1672,7 +1672,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imgGuardar.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="imagCancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>167, 70</value>
@@ -1693,7 +1693,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagCancelar.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="imagMenuInf.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 594</value>
@@ -1717,7 +1717,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagMenuInf.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="imagNuevo.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 613</value>
@@ -1738,7 +1738,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagNuevo.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="imagEditar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1762,7 +1762,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagEditar.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="imagBorrar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1786,7 +1786,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagBorrar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="imagAnterior.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1810,7 +1810,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagAnterior.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="imagSiguiente.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1834,7 +1834,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagSiguiente.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="imagExportar.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 611</value>
@@ -1855,7 +1855,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagExportar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="imagImportar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1879,6 +1879,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imagImportar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>666, 8</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 26</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

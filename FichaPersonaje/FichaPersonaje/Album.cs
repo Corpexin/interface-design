@@ -25,7 +25,6 @@ namespace FichaPersonaje
         {
             listPj.Remove(pj);
             if (cont <= 0)
-
                 cont = listPj.Count - 1;
             else
                 cont--;
@@ -52,7 +51,6 @@ namespace FichaPersonaje
         public int siguientePJ(int cont)
         {
             if (cont >= listPj.Count-1)
-
                 cont = 0;
             else
                 cont++;
@@ -64,7 +62,6 @@ namespace FichaPersonaje
         public int anteriorPJ(int cont)
         {
             if (cont <= 0)
-
                 cont = listPj.Count-1;
             else
                 cont--;

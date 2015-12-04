@@ -30,36 +30,7 @@ namespace FichaPersonaje
 
         public FichaPersonaje()
         {
-
             InitializeComponent();
-            //Inicializamos el album de pj
-            album = new Album();
-
-            //Inicializamos los booleans de clickeados. Controlan si una clase esta clickeada o no
-            initClickeado();
-            contadorPj = 0;
-            modificador = false;
-            for(int i =0; i<btnclickeado.Length; i++)
-            {
-                if (i == 0)
-                {
-                    btnclickeado[i] = true;
-                }
-                else
-                {
-                    btnclickeado[i] = false;
-                }
-            }
-            //Inicializamos el uptodown
-            inicioUptoDown();
-            
-            //Inicializamos array de valores de estadisticas a 0
-            for(int i =0; i<listaValoresCaract.Length; i++)
-            {
-                listaValoresCaract[i] = 0;
-            }
-            //Comprobamos la activacion del boton editar
-            activarDesactivarEditar();
         }
 
         private void initClickeado()
@@ -72,7 +43,7 @@ namespace FichaPersonaje
 
         private void FichaPersonaje_Load(object sender, EventArgs e)
         {
-            //Supuesto codigo que pone el doublebuffered a true en los elementos que se indiquen. sin mucho exito 
+            //Codigo que pone el doublebuffered a true en los elementos que se indiquen. 
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelUno, new object[] { true });
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelDos, new object[] { true });
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, panelTres, new object[] { true });
@@ -80,75 +51,39 @@ namespace FichaPersonaje
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pictureBox2, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbImagenArma, new object[] { true });
             typeof(PictureBox).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, pbItem1, new object[] { true });
-        }
 
+            //Inicializamos el album de pj
+            album = new Album();
 
-        private void imgBk_MouseHover(object sender, EventArgs e)
-        {
-            
-            imgBk.Image = Resources.clbk3;
-            tvDescrip.Text = "Clase enfocada al cuerpo a cuerpo a corta distancia.";
-            tvDescrip.Visible = true;
-        }
-
-       
-        private void imgBk_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[0] == false)
+            //Inicializamos los booleans de clickeados. Controlan si una clase esta clickeada o no
+            initClickeado();
+            contadorPj = 0;
+            modificador = false;
+            for (int i = 0; i < btnclickeado.Length; i++)
             {
-                imgBk.Image = Resources.clbkdesact1;
-                tvDescrip.Visible = false;
+                if (i == 0)
+                {
+                    btnclickeado[i] = true;
+                }
+                else
+                {
+                    btnclickeado[i] = false;
+                }
             }
-           
-        }
+            //Inicializamos el uptodown
+            inicioUptoDown();
 
-        private void imgDW_MouseHover(object sender, EventArgs e)
-        {
-            imgDW.Image = Resources.cldw1;
-            tvDescrip.Text = "Clase enfocada al ataque a largas distancias con hechizos.";
-            tvDescrip.Visible = true;
-        }
-
-        private void imgDW_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[1] == false)
+            //Inicializamos array de valores de estadisticas a 0
+            for (int i = 0; i < listaValoresCaract.Length; i++)
             {
-                imgDW.Image = Resources.cldwdesact1;
-                tvDescrip.Visible = false;
+                listaValoresCaract[i] = 0;
             }
+            //Comprobamos la activacion del boton editar
+            activarDesactivarEditar();
         }
 
-        private void imgElf_MouseHover(object sender, EventArgs e)
-        {
-            imgElf.Image = Resources.clelf1;
-            tvDescrip.Text = "Clase enfocada a largas distancias con arco y flechas";
-            tvDescrip.Visible = true;
-        }
 
-        private void imgElf_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[2] == false)
-            { 
-                imgElf.Image = Resources.clelfdesact1;
-                tvDescrip.Visible = false;
-            }
-        }
-
-        private void imgDL_MouseHover(object sender, EventArgs e)
-        {
-            imgDL.Image = Resources.cldl1;
-            tvDescrip.Text = "Clase enfocada a largas distancias a personajes individuales";
-            tvDescrip.Visible = true;
-        }
-
-        private void imgDL_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[3] == false)
-            {
-                imgDL.Image = Resources.cldldesact1;
-                tvDescrip.Visible = false;
-            }
-        }
+        
 
         private void imgBk_Click(object sender, EventArgs e)
         {
@@ -222,38 +157,7 @@ namespace FichaPersonaje
                 }
             }
         }
-        private void btn1_MouseHover(object sender, EventArgs e)
-        {
-            btn1.Image = Resources.btnAct1;
-        }
-
-        private void btn2_MouseHover(object sender, EventArgs e)
-        {
-            btn2.Image = Resources.btnAct1;
-        }
-
-        private void btn3_MouseHover(object sender, EventArgs e)
-        {
-            btn3.Image = Resources.btnAct1;
-        }
-
-        private void btn1_MouseLeave(object sender, EventArgs e)
-        {
-            if (btnclickeado[0] == false)
-                btn1.Image = Resources.btnDesact1;
-        }
-
-        private void btn2_MouseLeave(object sender, EventArgs e)
-        {
-            if (btnclickeado[1] == false)
-                btn2.Image = Resources.btnDesact1;
-        }
-
-        private void btn3_MouseLeave(object sender, EventArgs e)
-        {
-            if (btnclickeado[2] == false)
-                btn3.Image = Resources.btnDesact1;
-        }
+        
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -891,7 +795,6 @@ namespace FichaPersonaje
         private void imagAnterior_Click(object sender, EventArgs e)
         {
             contadorPj = album.anteriorPJ(contadorPj);
-
             cargarPJ();
         }
 
@@ -1231,6 +1134,169 @@ namespace FichaPersonaje
             btnTirar.Enabled = true;
         }
 
+        private void imagExportar_Click(object sender, EventArgs e)
+        {
+            //exportar
+            String line;
+            String[] aux;
+            String[] separador = { "¡-:*!" };
+            if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj"))
+            {
+                StreamReader sr = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj");
+                album = new Album();
+                while ((line = sr.ReadLine()) != null)
+                {
+                    aux = line.Split(separador, StringSplitOptions.RemoveEmptyEntries);
+                    album.listPj.Add(new Personaje(aux[0], aux[1], aux[2], aux[3], aux[4], aux[5], aux[6], aux[7], aux[8], aux[9]));
+                }
+                contadorPj = 0;
+                cargarPJ();
+                sr.Close();
+                activarDesactivarEditar();
+                activarTreeSkill();
+            }
+
+        }
+
+        private void imagImportar_Click(object sender, EventArgs e)
+        {
+            //Importar
+            //StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.fpj");
+            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje"))
+            {
+                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje");
+            }
+            StreamWriter file = new System.IO.StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj");
+            foreach (Personaje pj in album.listPj)
+            {
+                file.WriteLine(pj.ToString());
+            }
+            file.Close();
+        }
+
+        private void activarTreeSkill()
+        {
+            tvST1.Enabled = true;
+            tvST2.Enabled = true;
+            tvST3.Enabled = true;
+            tvST4.Enabled = true;
+            tvST5.Enabled = true;
+            tvST6.Enabled = true;
+            tvST7.Enabled = true;
+            tvST8.Enabled = true;
+            tvST9.Enabled = true;
+            tvST10.Enabled = true;
+            tvST11.Enabled = true;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
+        private void imgBk_MouseHover(object sender, EventArgs e)
+        {
+
+            imgBk.Image = Resources.clbk3;
+            tvDescrip.Text = "Clase enfocada al cuerpo a cuerpo a corta distancia.";
+            tvDescrip.Visible = true;
+        }
+
+
+        private void imgBk_MouseLeave(object sender, EventArgs e)
+        {
+            if (clickeado[0] == false)
+            {
+                imgBk.Image = Resources.clbkdesact1;
+                tvDescrip.Visible = false;
+            }
+
+        }
+
+        private void imgDW_MouseHover(object sender, EventArgs e)
+        {
+            imgDW.Image = Resources.cldw1;
+            tvDescrip.Text = "Clase enfocada al ataque a largas distancias con hechizos.";
+            tvDescrip.Visible = true;
+        }
+
+        private void imgDW_MouseLeave(object sender, EventArgs e)
+        {
+            if (clickeado[1] == false)
+            {
+                imgDW.Image = Resources.cldwdesact1;
+                tvDescrip.Visible = false;
+            }
+        }
+
+        private void imgElf_MouseHover(object sender, EventArgs e)
+        {
+            imgElf.Image = Resources.clelf1;
+            tvDescrip.Text = "Clase enfocada a largas distancias con arco y flechas";
+            tvDescrip.Visible = true;
+        }
+
+        private void imgElf_MouseLeave(object sender, EventArgs e)
+        {
+            if (clickeado[2] == false)
+            {
+                imgElf.Image = Resources.clelfdesact1;
+                tvDescrip.Visible = false;
+            }
+        }
+
+        private void imgDL_MouseHover(object sender, EventArgs e)
+        {
+            imgDL.Image = Resources.cldl1;
+            tvDescrip.Text = "Clase enfocada a largas distancias a personajes individuales";
+            tvDescrip.Visible = true;
+        }
+
+        private void imgDL_MouseLeave(object sender, EventArgs e)
+        {
+            if (clickeado[3] == false)
+            {
+                imgDL.Image = Resources.cldldesact1;
+                tvDescrip.Visible = false;
+            }
+        }
+
+
+        private void btn1_MouseHover(object sender, EventArgs e)
+        {
+            btn1.Image = Resources.btnAct1;
+        }
+
+        private void btn2_MouseHover(object sender, EventArgs e)
+        {
+            btn2.Image = Resources.btnAct1;
+        }
+
+        private void btn3_MouseHover(object sender, EventArgs e)
+        {
+            btn3.Image = Resources.btnAct1;
+        }
+
+        private void btn1_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnclickeado[0] == false)
+                btn1.Image = Resources.btnDesact1;
+        }
+
+        private void btn2_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnclickeado[1] == false)
+                btn2.Image = Resources.btnDesact1;
+        }
+
+        private void btn3_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnclickeado[2] == false)
+                btn3.Image = Resources.btnDesact1;
+        }
+
         private void btnTirar_MouseHover(object sender, EventArgs e)
         {
             btnTirar.Image = Resources.stbtnAct_5; //boton Tirar encendido
@@ -1321,65 +1387,7 @@ namespace FichaPersonaje
             imagImportar.Image = Resources.importarAct;
         }
 
-        private void imagExportar_Click(object sender, EventArgs e)
-        {
-            //exportar
-            String line;
-            String[] aux;
-            String[] separador = { "¡-:*!" };
-            if(File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj"))
-            {
-                StreamReader sr = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj");
-                album = new Album();
-                while ((line = sr.ReadLine()) != null)
-                {
-                    aux = line.Split(separador, StringSplitOptions.RemoveEmptyEntries);
-                    album.listPj.Add(new Personaje(aux[0], aux[1], aux[2], aux[3], aux[4], aux[5], aux[6], aux[7], aux[8], aux[9]));
-                }
-                contadorPj = 0;
-                cargarPJ();
-                sr.Close();
-                activarDesactivarEditar();
-                activarTreeSkill();
-            }
-
-        }
-
-        private void imagImportar_Click(object sender, EventArgs e)
-        {
-            //Importar
-            //StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\SavePJ.fpj");
-            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje"))
-            {
-                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje");
-            }
-            StreamWriter file = new System.IO.StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\FichaPersonaje\\SavePJ.fpj");
-            foreach (Personaje pj in album.listPj)
-            {
-                file.WriteLine(pj.ToString());
-            }
-            file.Close();
-        }
-
-        private void activarTreeSkill()
-        {
-            tvST1.Enabled = true;
-            tvST2.Enabled = true;
-            tvST3.Enabled = true;
-            tvST4.Enabled = true;
-            tvST5.Enabled = true;
-            tvST6.Enabled = true;
-            tvST7.Enabled = true;
-            tvST8.Enabled = true;
-            tvST9.Enabled = true;
-            tvST10.Enabled = true;
-            tvST11.Enabled = true;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
     }
 
 }

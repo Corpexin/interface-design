@@ -39,17 +39,22 @@
             this.contactoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbFlechaDer = new System.Windows.Forms.PictureBox();
             this.pbFlechaIzq = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pbBorrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblListaUsuario = new System.Windows.Forms.Label();
             this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaDer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaIzq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBorrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lvLibreria
@@ -125,15 +130,16 @@
             // programaToolStripMenuItem
             // 
             this.programaToolStripMenuItem.Name = "programaToolStripMenuItem";
-            this.programaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.programaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.programaToolStripMenuItem.Text = "Programa";
             this.programaToolStripMenuItem.Click += new System.EventHandler(this.programaToolStripMenuItem_Click);
             // 
             // sQLServerToolStripMenuItem
             // 
             this.sQLServerToolStripMenuItem.Name = "sQLServerToolStripMenuItem";
-            this.sQLServerToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.sQLServerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sQLServerToolStripMenuItem.Text = "SQL Server";
+            this.sQLServerToolStripMenuItem.Click += new System.EventHandler(this.sQLServerToolStripMenuItem_Click);
             // 
             // nETToolStripMenuItem
             // 
@@ -161,6 +167,16 @@
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
             this.githubToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.githubToolStripMenuItem.Text = "github";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LibreriaJuegos.Properties.Resources.flechaArribAct;
+            this.pictureBox1.Location = new System.Drawing.Point(738, 92);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pbFlechaDer
             // 
@@ -210,12 +226,35 @@
             this.pbBorrar.TabIndex = 3;
             this.pbBorrar.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::LibreriaJuegos.Properties.Resources.flechaAbajAct;
+            this.pictureBox2.Location = new System.Drawing.Point(739, 423);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // lblListaUsuario
+            // 
+            this.lblListaUsuario.AutoSize = true;
+            this.lblListaUsuario.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListaUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.lblListaUsuario.Location = new System.Drawing.Point(346, 475);
+            this.lblListaUsuario.Name = "lblListaUsuario";
+            this.lblListaUsuario.Size = new System.Drawing.Size(0, 14);
+            this.lblListaUsuario.TabIndex = 12;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.lblListaUsuario);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbFlechaDer);
             this.Controls.Add(this.pbFlechaIzq);
             this.Controls.Add(this.pbCerrar);
@@ -232,11 +271,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaDer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaIzq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBorrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +303,8 @@
         private System.Windows.Forms.ToolStripMenuItem emailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem;
         private System.Windows.Forms.PictureBox pbFlechaDer;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblListaUsuario;
     }
 }

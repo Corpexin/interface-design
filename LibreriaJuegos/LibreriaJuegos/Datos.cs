@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace LibreriaJuegos
 {
@@ -14,8 +15,11 @@ namespace LibreriaJuegos
         //Creo la conexion general con la que se va a trabajar
         internal static SqlConnection conexion()
         {
+            //añadida referencia system.configuration
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BDLibreriaJuegos;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //con.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BDSteam;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Corpex\\Documents\\GitHub\\interface-design\\LibreriaJuegos\\LibreriaJuegos\\BaseDatos\\BDSteam.mdf;Integrated Security=True;Connect Timeout=30";
+            //con.ConnectionString = Properties.Settings.Default.BDSteamConnection;
             return con;
         }
 

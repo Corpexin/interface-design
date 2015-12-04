@@ -136,9 +136,6 @@
   <data name="proyectcars" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proyectcars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cities" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cities.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="goatsim" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goatsim.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,8 +166,8 @@
   <data name="dota2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dota2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="absconding" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\absconding.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cities.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="counterstrike" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\counterstrike.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,6 +187,9 @@
   <data name="amnesia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\amnesia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cerrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="flechaIzqAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flechaIzqAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -205,6 +205,9 @@
   <data name="rocket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rocket.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="absconding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\absconding.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="towerofguns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\towerofguns.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,7 +217,10 @@
   <data name="12loh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\12loh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cerrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerrar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="flechaAbajAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechaAbajAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechaArribAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechaArribAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

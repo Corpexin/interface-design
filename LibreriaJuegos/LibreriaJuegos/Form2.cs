@@ -24,6 +24,7 @@ namespace LibreriaJuegos
         String usuario;
         String contraseña;
         int index;
+        Boolean comprobacionJuego;
 
         public Form2(Form form, String user, String pass)
         {
@@ -36,6 +37,8 @@ namespace LibreriaJuegos
             cargarListaJuegosUsuario();
             menuStrip.ForeColor = Color.Gray;
             index = 0;
+            lblListaUsuario.Text = "Lista de " + user;
+            comprobacionJuego = false;
         }
 
         //Carga los generos de la base de datos
@@ -129,8 +132,31 @@ namespace LibreriaJuegos
             ListView.SelectedListViewItemCollection coleccionlv = (ListView.SelectedListViewItemCollection)e.Data.GetData(typeof(ListView.SelectedListViewItemCollection));
             foreach (ListViewItem item in coleccionlv)
             {
-                Datos.insertarJuegoUsuario(item.Text, usuario);//insertamos los juegos dropeados en la lista de usuario
-                cargarListaJuegosUsuario(); ////////////////////////Controlar que si ya tiene el juego no pueda dropearlo
+                //Comprueba si ya existe el juego en la lista de usuario
+                comprobarJuego(item);
+                if (comprobacionJuego == false)
+                {
+                    Datos.insertarJuegoUsuario(item.Text, usuario);//insertamos los juegos dropeados en la lista de usuario
+                    cargarListaJuegosUsuario();
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("El juego ya se encuentra en tu lista");
+                }
+
+            }
+        }
+
+        private void comprobarJuego(ListViewItem item)
+        {
+            comprobacionJuego = false;
+            ArrayList lista = Datos.seleccionarJuegos(usuario, ""); //saca los juegos de la lista del usuario
+            foreach (Juego j in lista)
+            {
+                if(item.Text == j.nombre)//si el nombre de los juegos coincide con el nombre del juego dropeado no deja
+                {
+                    comprobacionJuego = true;
+                }
             }
         }
 
@@ -159,7 +185,23 @@ namespace LibreriaJuegos
 
         private void programaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show("Hola.");
+            System.Windows.Forms.MessageBox.Show("Libreria Juegos de Steam\nVersion 1.0 Beta");
+        }
+
+        private void sQLServerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Microsoft SQL Server 12.0.2000 Express Edition(64 - bit)");
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            lvLibreria.Focus();
+            SendKeys.Send("{Up}");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            lvLibreria.Focus();
+            SendKeys.Send("{Down}");
         }
 
 

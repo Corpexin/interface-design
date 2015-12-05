@@ -183,8 +183,8 @@
             this.imgDL.Name = "imgDL";
             this.imgDL.TabStop = false;
             this.imgDL.Click += new System.EventHandler(this.imgDL_Click);
-            this.imgDL.MouseLeave += new System.EventHandler(this.imgDL_MouseLeave);
-            this.imgDL.MouseHover += new System.EventHandler(this.imgDL_MouseHover);
+            this.imgDL.MouseLeave += new System.EventHandler(this.CursorSale);
+            this.imgDL.MouseHover += new System.EventHandler(this.CursorEncima);
             // 
             // imgElf
             // 
@@ -193,8 +193,8 @@
             this.imgElf.Name = "imgElf";
             this.imgElf.TabStop = false;
             this.imgElf.Click += new System.EventHandler(this.imgElf_Click);
-            this.imgElf.MouseLeave += new System.EventHandler(this.imgElf_MouseLeave);
-            this.imgElf.MouseHover += new System.EventHandler(this.imgElf_MouseHover);
+            this.imgElf.MouseLeave += new System.EventHandler(this.CursorSale);
+            this.imgElf.MouseHover += new System.EventHandler(this.CursorEncima);
             // 
             // imgDW
             // 
@@ -203,8 +203,8 @@
             this.imgDW.Name = "imgDW";
             this.imgDW.TabStop = false;
             this.imgDW.Click += new System.EventHandler(this.imgDW_Click);
-            this.imgDW.MouseLeave += new System.EventHandler(this.imgDW_MouseLeave);
-            this.imgDW.MouseHover += new System.EventHandler(this.imgDW_MouseHover);
+            this.imgDW.MouseLeave += new System.EventHandler(this.CursorSale);
+            this.imgDW.MouseHover += new System.EventHandler(this.CursorEncima);
             // 
             // imgBk
             // 
@@ -213,8 +213,8 @@
             this.imgBk.Name = "imgBk";
             this.imgBk.TabStop = false;
             this.imgBk.Click += new System.EventHandler(this.imgBk_Click);
-            this.imgBk.MouseLeave += new System.EventHandler(this.imgBk_MouseLeave);
-            this.imgBk.MouseHover += new System.EventHandler(this.imgBk_MouseHover);
+            this.imgBk.MouseLeave += new System.EventHandler(this.CursorSale);
+            this.imgBk.MouseHover += new System.EventHandler(this.CursorEncima);
             // 
             // etNombreJug
             // 

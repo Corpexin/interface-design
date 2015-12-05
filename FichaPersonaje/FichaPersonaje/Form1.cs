@@ -1195,74 +1195,75 @@ namespace FichaPersonaje
         }
 
 
-
-        private void imgBk_MouseHover(object sender, EventArgs e)
+        private void CursorEncima(object sender, EventArgs e)
         {
-
-            imgBk.Image = Resources.clbk3;
-            tvDescrip.Text = "Clase enfocada al cuerpo a cuerpo a corta distancia.";
-            tvDescrip.Visible = true;
-        }
-
-
-        private void imgBk_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[0] == false)
+            if(sender == imgBk)
             {
-                imgBk.Image = Resources.clbkdesact1;
-                tvDescrip.Visible = false;
+                imgBk.Image = Resources.clbk3;
+                tvDescrip.Text = "Clase enfocada al cuerpo a cuerpo a corta distancia.";
+                tvDescrip.Visible = true;
             }
 
-        }
-
-        private void imgDW_MouseHover(object sender, EventArgs e)
-        {
-            imgDW.Image = Resources.cldw1;
-            tvDescrip.Text = "Clase enfocada al ataque a largas distancias con hechizos.";
-            tvDescrip.Visible = true;
-        }
-
-        private void imgDW_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[1] == false)
+            if (sender == imgDW)
             {
-                imgDW.Image = Resources.cldwdesact1;
-                tvDescrip.Visible = false;
+                imgDW.Image = Resources.cldw1;
+                tvDescrip.Text = "Clase enfocada al ataque a largas distancias con hechizos.";
+                tvDescrip.Visible = true;
+            }
+
+            if(sender == imgElf)
+            {
+                imgElf.Image = Resources.clelf1;
+                tvDescrip.Text = "Clase enfocada a largas distancias con arco y flechas";
+                tvDescrip.Visible = true;
+            }
+            
+            if(sender == imgDL)
+            {
+                imgDL.Image = Resources.cldl1;
+                tvDescrip.Text = "Clase enfocada a largas distancias a personajes individuales";
+                tvDescrip.Visible = true;
             }
         }
 
-        private void imgElf_MouseHover(object sender, EventArgs e)
+       private void CursorSale(object sender, EventArgs e)
         {
-            imgElf.Image = Resources.clelf1;
-            tvDescrip.Text = "Clase enfocada a largas distancias con arco y flechas";
-            tvDescrip.Visible = true;
-        }
-
-        private void imgElf_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[2] == false)
+            if (sender == imgBk)
             {
-                imgElf.Image = Resources.clelfdesact1;
-                tvDescrip.Visible = false;
+                if (clickeado[0] == false)
+                {
+                    imgBk.Image = Resources.clbkdesact1;
+                    tvDescrip.Visible = false;
+                }
+            }
+
+            if (sender == imgDW)
+            {
+                if (clickeado[1] == false)
+                {
+                    imgDW.Image = Resources.cldwdesact1;
+                    tvDescrip.Visible = false;
+                }
+            }
+
+            if (sender == imgElf)
+            {
+                if (clickeado[2] == false)
+                {
+                    imgElf.Image = Resources.clelfdesact1;
+                    tvDescrip.Visible = false;
+                }
+            }
+
+            if (sender == imgDL)
+            {
+                if (clickeado[3] == false)
+                {
+                    imgDL.Image = Resources.cldldesact1;
+                    tvDescrip.Visible = false;
+                }
             }
         }
-
-        private void imgDL_MouseHover(object sender, EventArgs e)
-        {
-            imgDL.Image = Resources.cldl1;
-            tvDescrip.Text = "Clase enfocada a largas distancias a personajes individuales";
-            tvDescrip.Visible = true;
-        }
-
-        private void imgDL_MouseLeave(object sender, EventArgs e)
-        {
-            if (clickeado[3] == false)
-            {
-                imgDL.Image = Resources.cldldesact1;
-                tvDescrip.Visible = false;
-            }
-        }
-
 
         private void btn1_MouseHover(object sender, EventArgs e)
         {
@@ -1386,8 +1387,6 @@ namespace FichaPersonaje
         {
             imagImportar.Image = Resources.importarAct;
         }
-
-        
     }
 
 }

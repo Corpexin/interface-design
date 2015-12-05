@@ -495,6 +495,246 @@
   <data name="&gt;&gt;panelUno.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="&gt;&gt;ckbItem4.Name" xml:space="preserve">
+    <value>ckbItem4</value>
+  </data>
+  <data name="&gt;&gt;ckbItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem4.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.Name" xml:space="preserve">
+    <value>ckbItem3</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.Name" xml:space="preserve">
+    <value>ckbItem2</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.Name" xml:space="preserve">
+    <value>ckbItem1</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;ckbItem1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.Name" xml:space="preserve">
+    <value>pbImagenArma</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;pbImagenArma.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbArma.Name" xml:space="preserve">
+    <value>cbArma</value>
+  </data>
+  <data name="&gt;&gt;cbArma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbArma.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;cbArma.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.Name" xml:space="preserve">
+    <value>cbTipoArma</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;cbTipoArma.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tvError.Name" xml:space="preserve">
+    <value>tvError</value>
+  </data>
+  <data name="&gt;&gt;tvError.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvError.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;tvError.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.Name" xml:space="preserve">
+    <value>PBEnergia</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBEnergia.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.Name" xml:space="preserve">
+    <value>PBVitalidad</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBVitalidad.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.Name" xml:space="preserve">
+    <value>PBAgilidad</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBAgilidad.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.Name" xml:space="preserve">
+    <value>PBFuerza</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;PBFuerza.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.Name" xml:space="preserve">
+    <value>UDEnergia</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDEnergia.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.Name" xml:space="preserve">
+    <value>UDVitalidad</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDVitalidad.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.Name" xml:space="preserve">
+    <value>UDAgilidad</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDAgilidad.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.Name" xml:space="preserve">
+    <value>UDFuerza</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;UDFuerza.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.Name" xml:space="preserve">
+    <value>tvContadorPuntos</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;tvContadorPuntos.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.Name" xml:space="preserve">
+    <value>pbItem1</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.Parent" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;pbItem1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="panelDos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 112</value>
+  </data>
+  <data name="panelDos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 470</value>
+  </data>
+  <data name="panelDos.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="panelDos.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelDos.Name" xml:space="preserve">
+    <value>panelDos</value>
+  </data>
+  <data name="&gt;&gt;panelDos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelDos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelDos.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
   <data name="ckbItem4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -963,32 +1203,215 @@
   <data name="&gt;&gt;pbItem1.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="panelDos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 112</value>
-  </data>
-  <data name="panelDos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 470</value>
-  </data>
-  <data name="panelDos.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="panelDos.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelDos.Name" xml:space="preserve">
-    <value>panelDos</value>
-  </data>
-  <data name="&gt;&gt;panelDos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelDos.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelDos.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
   <data name="panelTres.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.Name" xml:space="preserve">
+    <value>tvNumTiradas</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvNumTiradas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.Name" xml:space="preserve">
+    <value>btnTirar</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;btnTirar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tvST10.Name" xml:space="preserve">
+    <value>tvST10</value>
+  </data>
+  <data name="&gt;&gt;tvST10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST10.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tvST9.Name" xml:space="preserve">
+    <value>tvST9</value>
+  </data>
+  <data name="&gt;&gt;tvST9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST9.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST9.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tvST8.Name" xml:space="preserve">
+    <value>tvST8</value>
+  </data>
+  <data name="&gt;&gt;tvST8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST8.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tvST7.Name" xml:space="preserve">
+    <value>tvST7</value>
+  </data>
+  <data name="&gt;&gt;tvST7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST7.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tvST6.Name" xml:space="preserve">
+    <value>tvST6</value>
+  </data>
+  <data name="&gt;&gt;tvST6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST6.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tvST11.Name" xml:space="preserve">
+    <value>tvST11</value>
+  </data>
+  <data name="&gt;&gt;tvST11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST11.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tvST5.Name" xml:space="preserve">
+    <value>tvST5</value>
+  </data>
+  <data name="&gt;&gt;tvST5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST5.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST5.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tvST4.Name" xml:space="preserve">
+    <value>tvST4</value>
+  </data>
+  <data name="&gt;&gt;tvST4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST4.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tvST3.Name" xml:space="preserve">
+    <value>tvST3</value>
+  </data>
+  <data name="&gt;&gt;tvST3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST3.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tvST2.Name" xml:space="preserve">
+    <value>tvST2</value>
+  </data>
+  <data name="&gt;&gt;tvST2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST2.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tvST1.Name" xml:space="preserve">
+    <value>tvST1</value>
+  </data>
+  <data name="&gt;&gt;tvST1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvST1.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;tvST1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="panelTres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 112</value>
+  </data>
+  <data name="panelTres.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="panelTres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 470</value>
+  </data>
+  <data name="panelTres.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="panelTres.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelTres.Name" xml:space="preserve">
+    <value>panelTres</value>
+  </data>
+  <data name="&gt;&gt;panelTres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTres.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTres.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="tvNumTiradas.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1499,33 +1922,6 @@
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>14</value>
-  </data>
-  <data name="panelTres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 112</value>
-  </data>
-  <data name="panelTres.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="panelTres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 470</value>
-  </data>
-  <data name="panelTres.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="panelTres.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelTres.Name" xml:space="preserve">
-    <value>panelTres</value>
-  </data>
-  <data name="&gt;&gt;panelTres.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelTres.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelTres.ZOrder" xml:space="preserve">
-    <value>18</value>
   </data>
   <data name="btn3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>

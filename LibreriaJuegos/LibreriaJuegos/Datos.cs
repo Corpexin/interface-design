@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Windows.Forms;
 
 namespace LibreriaJuegos
 {
@@ -17,9 +18,10 @@ namespace LibreriaJuegos
         {
             //añadida referencia system.configuration
             SqlConnection con = new SqlConnection();
-            //con.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BDSteam;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Corpex\\Documents\\GitHub\\interface-design\\LibreriaJuegos\\LibreriaJuegos\\BaseDatos\\BDSteam.mdf;Integrated Security=True;Connect Timeout=30";
-            //con.ConnectionString = Properties.Settings.Default.BDSteamConnection;
+            //Con este metodo, puedo cambiar el datadirectory a la carpeta donde realmente esta la base de datos.
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + "../.."));
+            con.ConnectionString = Properties.Settings.Default.BDSteamConnection;
+            //con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Corpex\\Documents\\GitHub\\interface-design\\LibreriaJuegos\\LibreriaJuegos\\BaseDatos\\BDSteam.mdf;Integrated Security=True;Connect Timeout=30";
             return con;
         }
 
@@ -107,6 +109,25 @@ namespace LibreriaJuegos
             return lista;
         }
 
+        //Metodo que saca juego completo como clase
+        internal static Juego seleccionarJuegosCompleto(string nombreJ)
+        {
+            Juego j = new Juego("", "");
+            SqlConnection con = conexion();
+            con.Open();
+            SqlCommand orden = new SqlCommand();
+            orden.CommandText = "SELECT * FROM [dbo].[JUEGO] WHERE [dbo].[JUEGO].[nombreJ] = '"+nombreJ+"' ;";
+            orden.CommandType = CommandType.Text;
+            orden.Connection = con;
+            SqlDataReader reader = orden.ExecuteReader();
+            while (reader.Read())
+            {
+                j =  new Juego(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString());
+            }
+            con.Close();
+            return j;
+        }
+
 
         //Metodo para introducir un juego en la tabla TIENE de la bd
         internal static void insertarJuegoUsuario(string nombreJuego, string usuario)
@@ -120,8 +141,19 @@ namespace LibreriaJuegos
             orden.ExecuteScalar();
             con.Close();
         }
-
-       
+        
+        //Metodo para borrar un juego en la tabla TIENE de la bd
+        internal static void borrarJuegoUsuario(string nombreJuego, string usuario)
+        {
+            SqlConnection con = conexion();
+            con.Open();
+            SqlCommand orden = new SqlCommand();
+            orden.CommandText = "DELETE FROM [dbo].[TIENE]  WHERE [nombreU] = '" + usuario + "' AND [nombreJ] = '" + nombreJuego+"';";//Borra juego de un usuario concreto
+            orden.CommandType = CommandType.Text;
+            orden.Connection = con;
+            orden.ExecuteScalar();
+            con.Close();
+        }
     }
 
 }

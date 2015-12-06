@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace LibreriaJuegos
 {
-    class Juego
+    public class Juego
     {
         public String nombre;
         public String descripcion;
         public String foto;
         public String genero;
 
+        //Constructor completo
         public Juego(String nombre, String descripcion, String foto, String genero)
         {
             this.nombre = nombre;
@@ -21,6 +22,7 @@ namespace LibreriaJuegos
             this.genero = genero;
         }
 
+        //Constructor para solo sacar el nombre y la foto
         public Juego(String nombre, String foto)
         {
             this.nombre = nombre;

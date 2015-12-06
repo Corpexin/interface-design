@@ -127,6 +127,9 @@
   <data name="flechaIzqDesAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flechaIzqDesAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flechaAbajAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechaAbajAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="borderlands2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\borderlands2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="h1z1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\h1z1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shopping232 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping232 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="advtrees" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\advtrees.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +177,9 @@
   </data>
   <data name="counterstrike" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\counterstrike.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechaArribAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechaArribAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="beep" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,10 +226,7 @@
   <data name="12loh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\12loh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flechaAbajAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flechaAbajAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flechaArribAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flechaArribAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rubbish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rubbish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

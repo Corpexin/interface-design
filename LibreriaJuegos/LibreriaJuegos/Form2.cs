@@ -18,13 +18,13 @@ namespace LibreriaJuegos
     {
         Form f;
         Form3 f3;
-        SqlConnection con;
-        ArrayList listaGeneros;
         ImageList il;
         String usuario;
         String contraseña;
-        int index;
         Boolean comprobacionJuego;
+        Boolean juegoCom;
+        String nombreFocus;
+        public static String rutaResources = System.IO.Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + "../../Resources/");
 
         public Form2(Form form, String user, String pass)
         {
@@ -36,7 +36,6 @@ namespace LibreriaJuegos
             cargarJuegos(Datos.seleccionarJuegos("", ""));
             cargarListaJuegosUsuario();
             menuStrip.ForeColor = Color.Gray;
-            index = 0;
             lblListaUsuario.Text = "Lista de " + user;
             comprobacionJuego = false;
         }
@@ -60,7 +59,7 @@ namespace LibreriaJuegos
             //Cambiar por ruta relativa
             foreach (Juego j in lista)
             {
-                il.Images.Add(Image.FromFile(@"C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\Resources\" + j.foto + ".jpg"));
+                il.Images.Add(Image.FromFile(rutaResources + j.foto + ".jpg"));
             }
 
             lvLibreria.LargeImageList = il;
@@ -85,7 +84,7 @@ namespace LibreriaJuegos
             //Cambiar por ruta relativa
             foreach (Juego j in lista)
             {
-                il.Images.Add(Image.FromFile(@"C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\Resources\" + j.foto + ".jpg"));
+                il.Images.Add(Image.FromFile(rutaResources + j.foto + ".jpg"));
             }
            
             lvMiLista.LargeImageList = il;
@@ -99,11 +98,66 @@ namespace LibreriaJuegos
 
         }
 
+
         //Metodo que muestra el siguiente formulario con la informacion de la carta cuando se hace click en un elemento
         private void entrarEnCarta(object sender, MouseEventArgs e)
         {
-            f3 = new Form3();
+           
+            if (e.Button == MouseButtons.Right)
+            {
+                if (sender == lvLibreria)
+                {
+                    if (lvLibreria.FocusedItem.Bounds.Contains(e.Location) == true)
+                    {
+                        nombreFocus = lvLibreria.FocusedItem.Text;
+                        contextMenuStrip1.Show(Cursor.Position);
+                    }
+                }
+                else if(sender == lvMiLista)
+                {
+                    if (lvMiLista.FocusedItem.Bounds.Contains(e.Location) == true)
+                    {
+                        nombreFocus = lvMiLista.FocusedItem.Text;
+                        contextMenuStrip1.Show(Cursor.Position);
+                    }
+                }
+               
+            }
+
+        }
+
+        //Cuando el elemento del menu secundario es pulsado (ver juego) se muestra el f3
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {          
+            Juego juego = Datos.seleccionarJuegosCompleto(nombreFocus);
+            juegoCom = false;
+            foreach(ListViewItem i in lvMiLista.Items)
+            {
+                if(juego.nombre == i.Text)
+                {
+                    juegoCom = true;
+                }
+            }
+
+            f3 = new Form3(juego, this, juegoCom);
+            this.Hide();
             f3.Show();
+        }
+
+        public void adquirido(bool adquirido, String nombreJ)
+        {
+            //si cuando lo envie estaba comprado y ahora ya no es que lo ha eliminado de la lista
+            if (juegoCom == true && adquirido == false)
+            {
+                Datos.borrarJuegoUsuario(nombreJ, usuario);
+                cargarListaJuegosUsuario();
+            }
+            //si cualndo lo envie no estaba comprado y ahora si lo esta, habra que a;adirlo a la lista
+            else if(juegoCom == false && adquirido == true)
+            {
+                Datos.insertarJuegoUsuario(nombreJ, usuario);
+                cargarListaJuegosUsuario();
+            }
         }
 
         private void cbGenero_SelectedValueChanged(object sender, EventArgs e)
@@ -124,6 +178,8 @@ namespace LibreriaJuegos
 
         private void lvLibreria_ItemDrag(object sender, ItemDragEventArgs e)
         {
+            ((Control)pbBorrar).AllowDrop = false;
+            lvMiLista.AllowDrop = true;
             DoDragDrop(lvLibreria.SelectedItems, DragDropEffects.All);
         }
 
@@ -147,6 +203,34 @@ namespace LibreriaJuegos
             }
         }
 
+        private void lvMiLista_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
+        }
+
+        private void lvMiLista_ItemDrag(object sender, ItemDragEventArgs e)
+        {
+            ((Control)pbBorrar).AllowDrop = true;
+            lvMiLista.AllowDrop = false;
+            DoDragDrop(lvMiLista.SelectedItems, DragDropEffects.All);
+        }
+
+        private void pbBorrar_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
+        }
+
+        private void pbBorrar_DragDrop(object sender, DragEventArgs e)
+        {
+            ListView.SelectedListViewItemCollection coleccionlv = (ListView.SelectedListViewItemCollection)e.Data.GetData(typeof(ListView.SelectedListViewItemCollection));
+            foreach (ListViewItem item in coleccionlv)
+            {
+                Datos.borrarJuegoUsuario(item.Text, usuario);
+                cargarListaJuegosUsuario();
+            }
+        }
+    
+
         private void comprobarJuego(ListViewItem item)
         {
             comprobacionJuego = false;
@@ -160,10 +244,7 @@ namespace LibreriaJuegos
             }
         }
 
-        private void lvMiLista_DragEnter(object sender, DragEventArgs e)
-        {
-            e.Effect = DragDropEffects.All;
-        }
+
 
         private void pbCerrar_Click(object sender, EventArgs e)
         {
@@ -204,6 +285,24 @@ namespace LibreriaJuegos
             SendKeys.Send("{Down}");
         }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            ((Control)pbBorrar).AllowDrop = true;
+        }
 
+        private void emailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("corpex@programmer.net");
+        }
+
+        private void nETToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show(".NET Framework 4.5.2");
+        }
+
+        private void githubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("https://github.com/Corpexin");
+        }
     }
 }

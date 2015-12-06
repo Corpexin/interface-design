@@ -403,6 +403,26 @@ namespace LibreriaJuegos.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rubbish {
+            get {
+                object obj = ResourceManager.GetObject("rubbish", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping232__1_ {
+            get {
+                object obj = ResourceManager.GetObject("shopping232 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap towerofguns {
             get {
                 object obj = ResourceManager.GetObject("towerofguns", resourceCulture);

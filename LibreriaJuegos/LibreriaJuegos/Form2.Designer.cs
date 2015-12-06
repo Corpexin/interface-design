@@ -1,4 +1,6 @@
-﻿namespace LibreriaJuegos
+﻿using System;
+
+namespace LibreriaJuegos
 {
     partial class Form2
     {
@@ -28,7 +30,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lvLibreria = new System.Windows.Forms.ListView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lvMiLista = new System.Windows.Forms.ListView();
             this.cbGenero = new System.Windows.Forms.ComboBox();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
@@ -47,6 +52,7 @@
             this.pbBorrar = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblListaUsuario = new System.Windows.Forms.Label();
+            this.contextMenuStrip1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaDer)).BeginInit();
@@ -59,11 +65,10 @@
             // 
             // lvLibreria
             // 
-            this.lvLibreria.AllowDrop = true;
             this.lvLibreria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
             this.lvLibreria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvLibreria.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvLibreria.ForeColor = System.Drawing.Color.DimGray;
+            this.lvLibreria.ForeColor = System.Drawing.Color.White;
             this.lvLibreria.Location = new System.Drawing.Point(-1, 77);
             this.lvLibreria.Margin = new System.Windows.Forms.Padding(1);
             this.lvLibreria.Name = "lvLibreria";
@@ -73,6 +78,22 @@
             this.lvLibreria.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.lvLibreria_ItemDrag);
             this.lvLibreria.DragEnter += new System.Windows.Forms.DragEventHandler(this.lvLibreria_DragEnter);
             this.lvLibreria.MouseClick += new System.Windows.Forms.MouseEventHandler(this.entrarEnCarta);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(129, 26);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.toolStripMenuItem1.Text = "Ver Juego";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // lvMiLista
             // 
@@ -87,8 +108,10 @@
             this.lvMiLista.Size = new System.Drawing.Size(594, 88);
             this.lvMiLista.TabIndex = 1;
             this.lvMiLista.UseCompatibleStateImageBehavior = false;
+            this.lvMiLista.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.lvMiLista_ItemDrag);
             this.lvMiLista.DragDrop += new System.Windows.Forms.DragEventHandler(this.lvMiLista_DragDrop);
             this.lvMiLista.DragEnter += new System.Windows.Forms.DragEventHandler(this.lvMiLista_DragEnter);
+            this.lvMiLista.MouseClick += new System.Windows.Forms.MouseEventHandler(this.entrarEnCarta);
             // 
             // cbGenero
             // 
@@ -137,15 +160,16 @@
             // sQLServerToolStripMenuItem
             // 
             this.sQLServerToolStripMenuItem.Name = "sQLServerToolStripMenuItem";
-            this.sQLServerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sQLServerToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.sQLServerToolStripMenuItem.Text = "SQL Server";
             this.sQLServerToolStripMenuItem.Click += new System.EventHandler(this.sQLServerToolStripMenuItem_Click);
             // 
             // nETToolStripMenuItem
             // 
             this.nETToolStripMenuItem.Name = "nETToolStripMenuItem";
-            this.nETToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.nETToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nETToolStripMenuItem.Text = ".NET";
+            this.nETToolStripMenuItem.Click += new System.EventHandler(this.nETToolStripMenuItem_Click);
             // 
             // contactoToolStripMenuItem
             // 
@@ -159,14 +183,16 @@
             // emailToolStripMenuItem
             // 
             this.emailToolStripMenuItem.Name = "emailToolStripMenuItem";
-            this.emailToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.emailToolStripMenuItem.Text = "email";
+            this.emailToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.emailToolStripMenuItem.Text = "Email";
+            this.emailToolStripMenuItem.Click += new System.EventHandler(this.emailToolStripMenuItem_Click);
             // 
             // githubToolStripMenuItem
             // 
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.githubToolStripMenuItem.Text = "github";
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.githubToolStripMenuItem.Text = "Github";
+            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -225,6 +251,8 @@
             this.pbBorrar.Size = new System.Drawing.Size(44, 64);
             this.pbBorrar.TabIndex = 3;
             this.pbBorrar.TabStop = false;
+            this.pbBorrar.DragDrop += new System.Windows.Forms.DragEventHandler(this.pbBorrar_DragDrop);
+            this.pbBorrar.DragEnter += new System.Windows.Forms.DragEventHandler(this.pbBorrar_DragEnter);
             // 
             // pictureBox2
             // 
@@ -269,6 +297,8 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Form2_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -282,6 +312,7 @@
             this.PerformLayout();
 
         }
+
 
         #endregion
 
@@ -306,5 +337,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblListaUsuario;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

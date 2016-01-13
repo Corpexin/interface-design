@@ -35,7 +35,7 @@ namespace LibreriaJuegos
             lblDescrip.Enter += noFocus_Enter;
             lblGenero.Enter += noFocus_Enter;
             lblTitulo.Enter += noFocus_Enter;
-            pbFoto.Image = Image.FromFile(Form2.rutaResources + j.foto + ".jpg");
+            pbFoto.Image = (Image)Resources.ResourceManager.GetObject(j.foto);
             if (adquirido == true)
             {
                 pbAdquirir.Image = Resources.rubbish;

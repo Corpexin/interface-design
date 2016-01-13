@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LibreriaJuegos.exe" version="1.0.0.8" publicKeyToken="ec2738504bdb51b9" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Sicons-Basic-Round-Social-Steam.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LibreriaJuegos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="LibreriaJuegos.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LibreriaJuegos.exe" size="543720">
+      <assemblyIdentity name="LibreriaJuegos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tuHMQUgj9IA5ZYnFzpGQJyI3cEfdWEJnqkxpWSN7hZ8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BDLib.mdf" size="3342336" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IGRu9zZoygvoYygo3ZWJtj/kPXqQvbaC78bYTQKSJbU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="BDLib_log.ldf" size="851968" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aKbhpi/drcBN7NuYOuCRvz9iz6n6dl+LmbOz2cgrADQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="LibreriaJuegos.exe.config" size="834">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x6qQmU/BR571M3ZPPEx0Ac2+hBA9WKZ4CTffh+QDEFs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sicons-Basic-Round-Social-Steam.ico" size="175786">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8iNtAVLS7yBoMxBHvGlUcZfiaoquLZeSh8sTWS2KlBI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CORPEX-PORTATIL\corpex" issuerKeyHash="767bac1bad26b9e5806f66baefc3efab7cc83879" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bySQBlsvahpk7HQGhegMNUEuJJw26SF8kETAJjhuzxo=</DigestValue></Reference></SignedInfo><SignatureValue>ikCWtJqgR1t0vwNacNrBbdRiGSmJC3vZDXCWzMogUR1LnQogOi/OER5qblScGfzUsATkgX8N8HZkogkObQlH3ZYaXWad1pP76JncedZkrrqwQybC/twA8Jx0qiiiwiy0130A0v6u1zQ+dOP8C3mmVcvb8lbhXly3WhlPlrJmvfw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qMTl8nB8ypTABe5N3iH57KD17iAuiXqA83mlGcAQtTLncWi6iLZvaPdGRRamAkRznCuuJvkvsMWPgq0qd4zHBDwfSyZzu75Y85N+F/ct/w2VTV2Kg4QYjpDgc35tOUYHjSdZ2DSHZJ6HVTjS4rXjsksQ9J0mrHqWnm66qWhPdjM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1acf6e3826c044907c21e9369c242e41350ce8850674ec641a6a2f5b0690246f" Description="" Url=""><as:assemblyIdentity name="LibreriaJuegos.exe" version="1.0.0.8" publicKeyToken="ec2738504bdb51b9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CORPEX-PORTATIL\corpex</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xNktqbutrn78T7MaqrbWD/aKz6QSTVMVsA5XJY+d5vI=</DigestValue></Reference></SignedInfo><SignatureValue>QHT7pTJGIUebcayh8b/N/fTrRQeZfN9qhmf77t83Nru6fLtuQcoAxRff576DAWsIIEKskwa6h4pQhfXtbTxJ43C8bxMiTgSU63ke9VHj98B0gw66Y3DEb7yQlf2cKRdpd/v4kTwWfQ9vlXmz2uy9EJys1JUdLq4lFEaEKu9QnvE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qMTl8nB8ypTABe5N3iH57KD17iAuiXqA83mlGcAQtTLncWi6iLZvaPdGRRamAkRznCuuJvkvsMWPgq0qd4zHBDwfSyZzu75Y85N+F/ct/w2VTV2Kg4QYjpDgc35tOUYHjSdZ2DSHZJ6HVTjS4rXjsksQ9J0mrHqWnm66qWhPdjM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQWQOKqmaeH5FMfOs9We0PsjANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwAQwBPAFIAUABFAFgALQBQAE8AUgBUAEEAVABJAEwAXABjAG8AcgBwAGUAeDAeFw0xNTEyMDYxMjA5MzRaFw0xNjEyMDUxODA5MzRaMDcxNTAzBgNVBAMeLABDAE8AUgBQAEUAWAAtAFAATwBSAFQAQQBUAEkATABcAGMAbwByAHAAZQB4MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoxOXycHzKlMAF7k3eIfnsoPXuIC6JeoDzeaUZwBC1MudxaLqItm9o90ZFFqYCRHOcK64m+S+wxY+CrSp3jMcEPB9LJnO7vljzk34X9y3/DZVNXYqDhBiOkOBzfm05RgeNJ1nYNIdknodVONLiteOySxD0nSasepaebrqpaE92MwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABls7xXWv0cfXCznjSKqWF7S8AGNunTTYHoRBViFOh79WijMUmtwAYTDc0/BP/7aASVN/ctwPxq/8x127loQb9kl++yAFR0Srb0YGXy+XSkYqLbVhsDR27zIN+yDf8790qkkz1pBKx9oCqh03vxo19lnITQbMGmc+TE9OPPP30ul</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

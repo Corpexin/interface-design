@@ -190,9 +190,6 @@
   <data name="civilizationv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\civilizationv.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8bitsboy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8bitsboy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="amnesia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\amnesia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -223,10 +220,13 @@
   <data name="afterfall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\afterfall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="12loh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="doceloh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\12loh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rubbish" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rubbish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ochobitsboy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8bitsboy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

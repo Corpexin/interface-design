@@ -1,7 +1,6 @@
 c:\users\corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.exe.config
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.exe
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.pdb
-C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csprojResolveAssemblyReference.cache
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.Properties.Resources.resources
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csproj.GenerateResource.Cache
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.exe
@@ -22,3 +21,7 @@ C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.FichaPersonaje.es.resources
 C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\es\FichaPersonaje.resources.dll
 D:\Documentos\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.csprojResolveAssemblyReference.cache
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.exe.manifest
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\bin\Debug\FichaPersonaje.application
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.exe.manifest
+C:\Users\Corpex\Documents\GitHub\interface-design\FichaPersonaje\FichaPersonaje\obj\Debug\FichaPersonaje.application

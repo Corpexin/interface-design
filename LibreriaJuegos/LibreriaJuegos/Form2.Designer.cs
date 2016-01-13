@@ -322,8 +322,6 @@ namespace LibreriaJuegos
         private System.Windows.Forms.PictureBox pbBorrar;
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.PictureBox pbCerrar;
-        private string text1;
-        private string text2;
         private System.Windows.Forms.PictureBox pbFlechaIzq;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem versionToolStripMenuItem;

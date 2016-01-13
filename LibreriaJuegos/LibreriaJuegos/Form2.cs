@@ -8,9 +8,11 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace LibreriaJuegos
 {
@@ -55,11 +57,12 @@ namespace LibreriaJuegos
             int cont = 0;
             il = new ImageList();
             il.ImageSize = new Size(120, 56);
-
+            
             //Cambiar por ruta relativa
             foreach (Juego j in lista)
             {
-                il.Images.Add(Image.FromFile(rutaResources + j.foto + ".jpg"));
+                //il.Images.Add(Image.FromFile(rutaResources + j.foto + ".jpg"));
+                il.Images.Add((Image)Resources.ResourceManager.GetObject(j.foto));
             }
 
             lvLibreria.LargeImageList = il;
@@ -84,7 +87,8 @@ namespace LibreriaJuegos
             //Cambiar por ruta relativa
             foreach (Juego j in lista)
             {
-                il.Images.Add(Image.FromFile(rutaResources + j.foto + ".jpg"));
+                //il.Images.Add(Image.FromFile(rutaResources + j.foto + ".jpg"));
+                il.Images.Add((Image)Resources.ResourceManager.GetObject(j.foto));
             }
            
             lvMiLista.LargeImageList = il;

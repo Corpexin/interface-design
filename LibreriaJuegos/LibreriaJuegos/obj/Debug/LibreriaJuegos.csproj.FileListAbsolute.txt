@@ -15,3 +15,6 @@ C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\
 C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\bin\Debug\LibreriaJuegos.application
 C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.exe.manifest
 C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.application
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\bin\Debug\BDLib.mdf
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\bin\Debug\BDLib_log.ldf
+C:\Users\Corpex\Documents\GitHub\interface-design\LibreriaJuegos\LibreriaJuegos\obj\Debug\LibreriaJuegos.csprojResolveAssemblyReference.cache

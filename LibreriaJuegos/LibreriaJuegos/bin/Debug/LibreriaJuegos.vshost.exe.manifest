@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="LibreriaJuegos.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="LibreriaJuegos.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Sicons-Basic-Round-Social-Steam.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="LibreriaJuegos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,24 +43,51 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LibreriaJuegos.exe" size="367080">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LibreriaJuegos.exe" size="543720">
       <assemblyIdentity name="LibreriaJuegos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>I0nkGRULj+A5Fxs68vpoKbvhVWI0SnGB+9pSKjYEn7w=</dsig:DigestValue>
+        <dsig:DigestValue>tuHMQUgj9IA5ZYnFzpGQJyI3cEfdWEJnqkxpWSN7hZ8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="LibreriaJuegos.exe.config" size="578">
+  <file name="BDLib.mdf" size="3342336" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>N+cYhh8pazsYdQ2MBxau3IPfV4G6JgJwWRcgRfXJ18Q=</dsig:DigestValue>
+      <dsig:DigestValue>IGRu9zZoygvoYygo3ZWJtj/kPXqQvbaC78bYTQKSJbU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="BDLib_log.ldf" size="851968" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aKbhpi/drcBN7NuYOuCRvz9iz6n6dl+LmbOz2cgrADQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="LibreriaJuegos.exe.config" size="834">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x6qQmU/BR571M3ZPPEx0Ac2+hBA9WKZ4CTffh+QDEFs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sicons-Basic-Round-Social-Steam.ico" size="175786">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8iNtAVLS7yBoMxBHvGlUcZfiaoquLZeSh8sTWS2KlBI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

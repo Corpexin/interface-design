@@ -19,8 +19,8 @@ namespace LibreriaJuegos
             //añadida referencia system.configuration
             SqlConnection con = new SqlConnection();
             //Con este metodo, puedo cambiar el datadirectory a la carpeta donde realmente esta la base de datos.
-            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + "../.."));
-            con.ConnectionString = Properties.Settings.Default.BDSteamConnection;
+            //AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + "../.."));
+            con.ConnectionString = Properties.Settings.Default.BDLib;
             //con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Corpex\\Documents\\GitHub\\interface-design\\LibreriaJuegos\\LibreriaJuegos\\BaseDatos\\BDSteam.mdf;Integrated Security=True;Connect Timeout=30";
             return con;
         }

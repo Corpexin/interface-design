@@ -63,26 +63,6 @@ namespace LibreriaJuegos.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _12loh {
-            get {
-                object obj = ResourceManager.GetObject("12loh", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _8bitsboy {
-            get {
-                object obj = ResourceManager.GetObject("8bitsboy", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap absconding {
             get {
                 object obj = ResourceManager.GetObject("absconding", resourceCulture);
@@ -253,6 +233,16 @@ namespace LibreriaJuegos.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doceloh {
+            get {
+                object obj = ResourceManager.GetObject("doceloh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dota2 {
             get {
                 object obj = ResourceManager.GetObject("dota2", resourceCulture);
@@ -376,6 +366,16 @@ namespace LibreriaJuegos.Properties {
         internal static System.Drawing.Bitmap minidrivers {
             get {
                 object obj = ResourceManager.GetObject("minidrivers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ochobitsboy {
+            get {
+                object obj = ResourceManager.GetObject("ochobitsboy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

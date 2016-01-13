@@ -175,7 +175,6 @@ namespace LibreriaJuegos
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbCerrar;
         private System.Windows.Forms.PictureBox pbAdquirir;
-        private Juego juego;
         private System.Windows.Forms.TextBox lblTitulo;
         private System.Windows.Forms.RichTextBox lblDescrip;
         public System.Windows.Forms.Label lblGen;

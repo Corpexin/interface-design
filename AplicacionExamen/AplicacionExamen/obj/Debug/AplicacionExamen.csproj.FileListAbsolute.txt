@@ -1,0 +1,11 @@
+c:\users\corpex.corpex-portatil\documents\visual studio 2015\Projects\AplicacionExamen\AplicacionExamen\bin\Debug\AplicacionExamen.exe.config
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\bin\Debug\AplicacionExamen.exe
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\bin\Debug\AplicacionExamen.pdb
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.csprojResolveAssemblyReference.cache
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.Login.resources
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.Properties.Resources.resources
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.csproj.GenerateResource.Cache
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.exe
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.pdb
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.InterfazProgenitores.resources
+c:\Users\corpex.Corpex-Portatil\Documents\Visual Studio 2015\Projects\AplicacionExamen\AplicacionExamen\obj\Debug\AplicacionExamen.InterfazRatonPerez.resources

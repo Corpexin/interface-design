@@ -73,8 +73,8 @@ namespace BotonEscurridizo
             }
         }
 
-        public void huir(MouseEventArgs e)
-        {
+            public void huir(MouseEventArgs e)
+            {
             //arriba
             if (e.Y - boton.Location.Y > 0 && boton.Location.Y > 35)
             {

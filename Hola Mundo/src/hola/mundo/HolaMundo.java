@@ -102,6 +102,9 @@ public class HolaMundo extends Application {
         {
             boton.setLayoutX(boton.getLayoutX() + aceleracion);
         }
+        
+        int matriz[][] = new int[4][4];
+        metodo(matriz);
      }
     
     
@@ -123,6 +126,10 @@ public class HolaMundo extends Application {
        Random rnd = new Random();
        boton.setLayoutX(rnd.nextInt(800));
        boton.setLayoutY(rnd.nextInt(600));
+    }
+
+    private void metodo(int[][] matriz) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

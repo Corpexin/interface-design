@@ -41,3 +41,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/Forms/nbproject/private/
+/Forms/dist/
+/Forms/build/

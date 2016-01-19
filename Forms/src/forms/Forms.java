@@ -55,13 +55,14 @@ public class Forms extends Application {
 
         Label userName = new Label("Usuario:");
         grid.add(userName, 0, 1);
+        userName.setId("usuario");
 
         TextField userTextField = new TextField();
         grid.add(userTextField, 1, 1);
 
         Label pw = new Label("Contraseña:");
         grid.add(pw, 0, 2);
-
+        pw.setId("contra");
         PasswordField pwBox = new PasswordField();
         grid.add(pwBox, 1, 2);
         

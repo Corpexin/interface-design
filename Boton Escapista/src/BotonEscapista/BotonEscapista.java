@@ -56,7 +56,7 @@ public class BotonEscapista extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
         
-        
+        //Temporizador de crecimiento
         timer();
     }
 
@@ -69,8 +69,10 @@ public class BotonEscapista extends Application {
 
     
     public void mirar(MouseEvent e){
-            //Si la distancia es de 0-100 va corriendo, si la distancia es de 100-140 va andando.
-        if (fDistancia((int)e.getX(), (int)e.getY(), (int)boton.getLayoutX(), (int)boton.getLayoutY()) < 100){
+        //Si esta muy cerca pega un salto, Si la distancia es de 0-100 va corriendo, si la distancia es de 100-140 va andando.
+        if(fDistancia((int)e.getX(), (int)e.getY(), (int)boton.getLayoutX(), (int)boton.getLayoutY()) < 20){
+            salto();
+        }else if (fDistancia((int)e.getX(), (int)e.getY(), (int)boton.getLayoutX(), (int)boton.getLayoutY()) < 100){
             aceleracion = 10;
             huir(e);
         }else if (fDistancia((int)e.getX(), (int)e.getY(), (int)boton.getLayoutX(), (int)boton.getLayoutY()) < 140){

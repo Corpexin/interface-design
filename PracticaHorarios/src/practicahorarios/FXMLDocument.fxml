@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicahorarios.FXMLDocumentController">
+   <children>
+      <ComboBox fx:id="cbProfesor" layoutX="108.0" layoutY="14.0" onAction="#cbProfesorSelectedItemChanged" prefWidth="150.0" />
+      <RadioButton fx:id="rbDiario" layoutX="65.0" layoutY="68.0" mnemonicParsing="false" text="Diario" />
+      <RadioButton fx:id="rbSemanal" layoutX="215.0" layoutY="68.0" mnemonicParsing="false" text="Semanal" />
+      <ListView fx:id="lvHorario" layoutX="47.0" layoutY="122.0" prefHeight="200.0" prefWidth="268.0" />
+   </children>
+</Pane>

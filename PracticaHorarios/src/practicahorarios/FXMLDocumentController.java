@@ -24,14 +24,17 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 /**
  *
  * @author corpex
  */
+
 public class FXMLDocumentController implements Initializable {
+
     ArrayList codProfLista;
-    
     @FXML
     private ComboBox<?> cbProfesor;
     @FXML
@@ -40,121 +43,193 @@ public class FXMLDocumentController implements Initializable {
     private RadioButton rbSemanal;
     @FXML
     private ListView<?> lvHorario;
-    
+
+    @FXML
+    private TableView<Horario> tbHorarioSemanal;
+    @FXML
+    private TableColumn<Horario, String> clHora;
+    @FXML
+    private TableColumn<Horario, String> clLunes;
+    @FXML
+    private TableColumn<Horario, String> clMartes;
+    @FXML
+    private TableColumn<Horario, String> clMiercoles;
+    @FXML
+    private TableColumn<Horario, String> clJueves;
+    @FXML
+    private TableColumn<Horario, String> clViernes;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         getProfesores();
+        rellenarColumnas();
     }
-    
+
     private void getProfesores() {
         //hacer que en getprofesor se obtenga el codigo del profesor tambien.
         //usar ese codigo para no tener que tocar la tabla profesor
-       ObservableList data = FXCollections.observableArrayList();
-       codProfLista = new ArrayList<>();
+        ObservableList datosProf = FXCollections.observableArrayList();
+        codProfLista = new ArrayList<>();
         String nombre;
         String codProf;
-	try{
+        try {
             // Cargamos el driver
             Class.forName("com.mysql.jdbc.Driver");
             // Preparamos la consulta
-            try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/horario", "root", "PHILIPS355");Statement sentencia = conexion.createStatement()) {
+            try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/horario", "root", "PHILIPS355"); Statement sentencia = conexion.createStatement()) {
                 ResultSet rs = sentencia.executeQuery("SELECT nombre, CodProf FROM Profesor");
                 ResultSetMetaData rsmd = rs.getMetaData();
-                while(rs.next()){
+                while (rs.next()) {
                     nombre = rs.getString("nombre");
                     codProf = rs.getString("CodProf");
-                    data.add(nombre);
+                    datosProf.add(nombre);
                     codProfLista.add(codProf);
                 }
-                cbProfesor.setItems(data);
+                cbProfesor.setItems(datosProf);
             }
-        }catch(ClassNotFoundException cn){} catch (SQLException ex) {
-           System.out.printf("Error Excepcion");
-        }   
+        } catch (ClassNotFoundException cn) {
+        } catch (SQLException ex) {
+            System.out.printf("Error Excepcion");
+        }
     }
-    
+
     private void getHorarioDiario(String codProf) {
-        ObservableList data = FXCollections.observableArrayList();
-        
+        ObservableList datosDiario = FXCollections.observableArrayList();
+
         Date d = new Date();
         SimpleDateFormat formato = new SimpleDateFormat("EEEE");
         String dia = formato.format(d);
-        
+
         String horaInicio;
         String horaFin;
         String codAsig;
         String query;
-       
-        query = "SELECT th.HoraInicio, th.HoraFin, re.CodAsignatura FROM Reparto as re,  Horario as ho LEFT JOIN TramoHorario as th ON th.codTramo = ho.codTramo WHERE re.CodAsignatura = ho.CodAsignatura && re.CodProf = '"+codProf+"' && th.dia = '"+dia+"'";
 
-        try{
+        query = "SELECT th.HoraInicio, th.HoraFin, re.CodAsignatura FROM Reparto as re,  Horario as ho LEFT JOIN TramoHorario as th ON th.codTramo = ho.codTramo WHERE re.CodAsignatura = ho.CodAsignatura && re.CodProf = '" + codProf + "' && th.dia = '" + dia + "'";
+
+        try {
             // Cargamos el driver
             Class.forName("com.mysql.jdbc.Driver");
             // Preparamos la consulta
-            try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/horario", "root", "PHILIPS355");Statement sentencia = conexion.createStatement()) {
-               ResultSet rs = sentencia.executeQuery(query);
+            try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/horario", "root", "PHILIPS355"); Statement sentencia = conexion.createStatement()) {
+                ResultSet rs = sentencia.executeQuery(query);
                 ResultSetMetaData rsmd = rs.getMetaData();
-                while(rs.next()){
+                while (rs.next()) {
                     horaInicio = rs.getString("HoraInicio");
                     horaFin = rs.getString("HoraFin");
                     codAsig = rs.getString("codAsignatura");
-                    data.add(horaInicio+"-"+horaFin+"   "+codAsig);
+                    datosDiario.add(horaInicio + "-" + horaFin + "   " + codAsig);
                 }
-                lvHorario.setItems(data);
+                lvHorario.setItems(datosDiario);
             }
-        }catch(ClassNotFoundException cn){} catch (SQLException ex) {
-           System.out.printf("Error Excepcion");
-        }   
+        } catch (ClassNotFoundException cn) {
+        } catch (SQLException ex) {
+            System.out.printf("Error Excepcion");
+        }
     }
-    
+
     private void getHorarioSemanal(String codProf) {
-        ObservableList data = FXCollections.observableArrayList();
-        
-        
-        String horaInicio;
-        String horaFin;
+        ObservableList<Horario> data = FXCollections.observableArrayList();
+        ArrayList<Tramo> tramos = new ArrayList<>();
+        String codTramo;
         String codAsig;
         String query;
-       
-        query = "SELECT th.dia, th.HoraInicio, th.HoraFin, re.CodAsignatura FROM Reparto as re,  Horario as ho LEFT JOIN TramoHorario as th ON th.codTramo = ho.codTramo WHERE re.CodAsignatura = ho.CodAsignatura && re.CodProf = '"+codProf+"' order by th.dia";
 
-        try{
+        query = "SELECT th.codTramo, re.CodAsignatura FROM Reparto as re,  Horario as ho LEFT JOIN TramoHorario as th ON th.codTramo = ho.codTramo WHERE re.CodAsignatura = ho.CodAsignatura && re.CodCurso = ho.codCurso && re.CodOe = ho.CodOe && re.CodProf = '" + codProf + "' ORDER BY SUBSTRING(th.codTramo, 2)  ASC, CASE WHEN th.codTramo LIKE 'L%' THEN 1 WHEN th.codTramo LIKE 'M%' THEN 2 WHEN th.codTramo LIKE 'X%' THEN 3 WHEN th.codTramo LIKE 'J%' THEN 4 WHEN th.codTramo LIKE 'V%' THEN 5 END";
+
+        try {
             // Cargamos el driver
             Class.forName("com.mysql.jdbc.Driver");
             // Preparamos la consulta
-            try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/horario", "root", "PHILIPS355");Statement sentencia = conexion.createStatement()) {
-               ResultSet rs = sentencia.executeQuery(query);
+            try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/horario", "root", "PHILIPS355"); Statement sentencia = conexion.createStatement()) {
+                ResultSet rs = sentencia.executeQuery(query);
                 ResultSetMetaData rsmd = rs.getMetaData();
-                while(rs.next()){
-                    horaInicio = rs.getString("HoraInicio");
-                    horaFin = rs.getString("HoraFin");
-                    codAsig = rs.getString("codAsignatura");
-                    data.add(horaInicio+"-"+horaFin+"   "+codAsig);
+                while (rs.next()) {
+                    codTramo = rs.getString("th.codTramo");
+                    codAsig = rs.getString("re.CodAsignatura");
+                    tramos.add(new Tramo(codTramo, codAsig));
                 }
-                lvHorario.setItems(data);
+
             }
-        }catch(ClassNotFoundException cn){} catch (SQLException ex) {
-           System.out.printf("Error Excepcion");
-        }   
+        } catch (ClassNotFoundException cn) {
+        } catch (SQLException ex) {
+            System.out.printf("Error Excepcion");
+        }
+
+        String[] semana = new String[5];
+        String hora = "";
+
+        for (int i = 0; i < 6; i++) {
+            //Renueva el array
+            for (int j = 0; j < semana.length; j++) {
+                semana[j] = "";
+            }
+            for (Tramo t : tramos) {
+                if (t.getCodTramo().contains("" + (i + 1))) {
+                    switch (t.getCodTramo().charAt(0)) {
+                        case 'L':
+                            semana[0] = t.getCodAsig();
+                            break;
+                        case 'M':
+                            semana[1] = t.getCodAsig();
+                            break;
+                        case 'X':
+                            semana[2] = t.getCodAsig();
+                            break;
+                        case 'J':
+                            semana[3] = t.getCodAsig();
+                            break;
+                        case 'V':
+                            semana[4] = t.getCodAsig();
+                            break;
+                    }
+                }
+            }
+            switch (i) {
+                case 0:
+                    hora = "08:15-09:15";
+                    break;
+                case 1:
+                    hora = "09:15-10:15";
+                    break;
+                case 2:
+                    hora = "10:15-11:15";
+                    break;
+                case 3:
+                    hora = "11:45-12:45";
+                    break;
+                case 4:
+                    hora = "12:45-13:45";
+                    break;
+                case 5:
+                    hora = "13:45-14:45";
+                    break;
+            }
+            data.add(new Horario(hora, semana[0], semana[1], semana[2], semana[3], semana[4]));
+        }
+        
+        tbHorarioSemanal.setItems(data);
     }
 
     @FXML
     private void cbProfesorSelectedItemChanged(ActionEvent event) {
         int opcionRB;
-        if(rbDiario.isSelected())
-           opcionRB = 1;
-        else if(rbSemanal.isSelected())
-           opcionRB = 2;
-        else
-           opcionRB = 3;
-        
+        if (rbDiario.isSelected()) {
+            opcionRB = 1;
+        } else if (rbSemanal.isSelected()) {
+            opcionRB = 2;
+        } else {
+            opcionRB = 3;
+        }
+
         String selectedProfesor = cbProfesor.getSelectionModel().getSelectedItem().toString();
-        switch(opcionRB){
+        switch (opcionRB) {
             case 1://diario
-                getHorarioDiario(""+codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
+                getHorarioDiario("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
                 break;
             case 2://semanal
-                getHorarioSemanal(""+codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));//NO SIRVE, PORQUE HAY QUE USAR UNA TABLE/GRIDVIEW
+                getHorarioSemanal("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));//NO SIRVE, PORQUE HAY QUE USAR UNA TABLE/GRIDVIEW
                 break;
             case 3://ninguno seleccionado
                 ObservableList data = FXCollections.observableArrayList();
@@ -165,12 +240,39 @@ public class FXMLDocumentController implements Initializable {
     }
 
     
+    private void rellenarColumnas() {
+        // Initialize the person table with the two columns.
+        clHora.setCellValueFactory(cellData -> cellData.getValue().HoraProperty());
+        clLunes.setCellValueFactory(cellData -> cellData.getValue().LunesProperty());
+        clMartes.setCellValueFactory(cellData -> cellData.getValue().MartesProperty());
+        clMiercoles.setCellValueFactory(cellData -> cellData.getValue().MiercolesProperty());
+        clJueves.setCellValueFactory(cellData -> cellData.getValue().JuevesProperty());
+        clViernes.setCellValueFactory(cellData -> cellData.getValue().ViernesProperty());
+    }
 
-    
+    @FXML
+    private void rbSemanalPressed(ActionEvent event) {
+        if(!rbSemanal.isSelected()){
+            rbSemanal.setSelected(true);
+        }
+        if(rbDiario.isSelected()){
+            rbDiario.setSelected(false);
+        }
+        lvHorario.setVisible(false);
+        tbHorarioSemanal.setVisible(true);
+    }
 
+    @FXML
+    private void rbDiarioPressed(ActionEvent event) {      
+        if(!rbDiario.isSelected()){
+            rbDiario.setSelected(true);
+        }
+         if(rbSemanal.isSelected()){
+            rbSemanal.setSelected(false);
+        }
+         
+        lvHorario.setVisible(true);
+        tbHorarioSemanal.setVisible(false);
+    }
 
-   
-
-    
-    
 }

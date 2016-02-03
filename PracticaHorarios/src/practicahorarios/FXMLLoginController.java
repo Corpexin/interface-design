@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practicahorarios;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,9 +15,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.text.Text;
-import javafx.stage.Stage;
+
 import javafx.util.Duration;
+import practicahorarios.PracticaHorarios;
 
 /**
  * FXML Controller class

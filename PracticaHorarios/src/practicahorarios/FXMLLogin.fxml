@@ -8,11 +8,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="287.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicahorarios.FXMLLoginController">
    <children>
-      <TextField fx:id="tbUsuario" layoutX="72.0" layoutY="83.0" />
-      <TextField fx:id="tbPassword" layoutX="72.0" layoutY="151.0" />
+      <TextField fx:id="tbUsuario" alignment="CENTER" layoutX="72.0" layoutY="83.0" />
       <Label fx:id="lblUsuario" layoutX="126.0" layoutY="58.0" text="Usuario" />
       <Label fx:id="lblPassword" layoutX="116.0" layoutY="127.0" text="Contraseña" />
       <Button fx:id="btnEnviar" layoutX="121.0" layoutY="202.0" mnemonicParsing="false" onAction="#btnEnviar" text="Enviar" />
       <Label fx:id="lblError" layoutX="55.0" layoutY="248.0" prefHeight="17.0" prefWidth="184.0" text="Usuario o Contraseña incorrectos" textFill="#f80707" visible="false" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="53.0" />
+      <PasswordField fx:id="tbPassword" alignment="CENTER" layoutX="73.0" layoutY="151.0" />
    </children>
 </AnchorPane>

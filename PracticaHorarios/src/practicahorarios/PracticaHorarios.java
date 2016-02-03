@@ -126,6 +126,10 @@ public class PracticaHorarios extends Application {
         }
         Scene scene = new Scene(page);
         stage.setScene(scene);
+        if(fxml.matches("FXMLDocument.fxml"))
+            scene.getStylesheets().add(PracticaHorarios.class.getResource("Document.css").toExternalForm());
+        else if(fxml.matches("FXMLProfesorH.fxml"))
+            scene.getStylesheets().add(PracticaHorarios.class.getResource("ProfesorH.css").toExternalForm());
         stage.sizeToScene();
         return (Initializable) loader.getController();
     }

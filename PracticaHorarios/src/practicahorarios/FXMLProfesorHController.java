@@ -58,7 +58,7 @@ public class FXMLProfesorHController extends AnchorPane implements Initializable
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+          
     }    
 
     @FXML
@@ -71,9 +71,8 @@ public class FXMLProfesorHController extends AnchorPane implements Initializable
     }
 
     
-    private void getHorarioDiario(String dia) {
+    public void getHorarioDiario(String dia) {
         ObservableList datosDiario = FXCollections.observableArrayList();
-
         String horaInicio;
         String horaFin;
         String codAsig;

@@ -114,12 +114,13 @@ public class PracticaHorarios extends Application {
         InputStream in = PracticaHorarios.class.getResourceAsStream(fxml);
         loader.setBuilderFactory(new JavaFXBuilderFactory());
         loader.setLocation(PracticaHorarios.class.getResource(fxml));
-       
+        
         AnchorPane page;
         try {
             page = (AnchorPane) loader.load(in);
             if (fxml.matches("FXMLProfesorH.fxml")) {
                 ((FXMLProfesorHController) loader.getController()).codProf = login.getCodProf();
+                 ((FXMLProfesorHController) loader.getController()).getHorarioDiario("Lunes");
             }
         } finally {
             in.close();

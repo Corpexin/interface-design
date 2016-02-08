@@ -21,6 +21,7 @@ import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * @author corpex
@@ -31,6 +32,7 @@ public class PracticaHorarios extends Application {
     FXMLLoginController login;
     @Override
     public void start(Stage primaryStage) throws Exception {
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         stage = primaryStage;
         goToLogin();
         primaryStage.show();
@@ -131,6 +133,8 @@ public class PracticaHorarios extends Application {
             scene.getStylesheets().add(PracticaHorarios.class.getResource("Document.css").toExternalForm());
         else if(fxml.matches("FXMLProfesorH.fxml"))
             scene.getStylesheets().add(PracticaHorarios.class.getResource("ProfesorH.css").toExternalForm());
+        else
+            scene.getStylesheets().add(PracticaHorarios.class.getResource("Login.css").toExternalForm());
         stage.sizeToScene();
         return (Initializable) loader.getController();
     }

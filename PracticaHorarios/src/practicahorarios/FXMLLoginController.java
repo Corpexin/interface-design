@@ -9,12 +9,16 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 import javafx.util.Duration;
@@ -40,13 +44,14 @@ public class FXMLLoginController extends AnchorPane implements Initializable {
     private Label lblError;
 
     private PracticaHorarios application;
+    @FXML
+    private ImageView ivCerrar;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
     }
 
     @FXML
@@ -71,6 +76,12 @@ public class FXMLLoginController extends AnchorPane implements Initializable {
         }));
         t.setCycleCount(1);
         t.play();
+    }
+
+    @FXML
+    private void cerrarClick(MouseEvent event) {
+        Platform.exit();
+        System.exit(0);
     }
 
 }

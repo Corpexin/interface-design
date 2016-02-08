@@ -229,7 +229,7 @@ public class FXMLDocumentController implements Initializable {
                 getHorarioDiario("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
                 break;
             case 2://semanal
-                getHorarioSemanal("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));//NO SIRVE, PORQUE HAY QUE USAR UNA TABLE/GRIDVIEW
+                getHorarioSemanal("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
                 break;
             case 3://ninguno seleccionado
                 ObservableList data = FXCollections.observableArrayList();
@@ -260,6 +260,11 @@ public class FXMLDocumentController implements Initializable {
         }
         lvHorario.setVisible(false);
         tbHorarioSemanal.setVisible(true);
+        
+        if(!cbProfesor.getSelectionModel().isEmpty() && rbDiario.isSelected())
+            getHorarioDiario("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
+        else if(!cbProfesor.getSelectionModel().isEmpty() && rbSemanal.isSelected())
+            getHorarioSemanal("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
     }
 
     @FXML
@@ -273,6 +278,11 @@ public class FXMLDocumentController implements Initializable {
          
         lvHorario.setVisible(true);
         tbHorarioSemanal.setVisible(false);
+        
+        if(!cbProfesor.getSelectionModel().isEmpty() && rbDiario.isSelected())
+            getHorarioDiario("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
+        else if(!cbProfesor.getSelectionModel().isEmpty() && rbSemanal.isSelected())
+            getHorarioSemanal("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
     }
 
 }

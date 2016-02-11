@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicahorarios.FXMLProfesorHController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicahorarios.FXMLProfesorHController">
    <children>
-      <TabPane fx:id="tabPanel" prefHeight="400.0" prefWidth="277.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <TabPane fx:id="tabPanel" layoutY="35.0" prefHeight="365.0" prefWidth="277.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <tabs>
           <Tab fx:id="tabLunes" onSelectionChanged="#cambioTab" text="Lunes">
             <content>
@@ -56,5 +57,15 @@
             </Tab>
         </tabs>
       </TabPane>
+      <ImageView fx:id="btnAtras" fitHeight="24.0" fitWidth="24.0" layoutX="7.0" layoutY="6.0" onMouseClicked="#atrasPressed" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="/practicahorarios/atras.png" />
+          </image>
+      </ImageView>
+      <ImageView fx:id="btnCerrar" fitHeight="12.0" fitWidth="12.0" layoutX="274.0" layoutY="11.0" onMouseClicked="#cerrarClicked" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="/practicahorarios/cruz.png" />
+        </image>
+      </ImageView>
    </children>
 </AnchorPane>

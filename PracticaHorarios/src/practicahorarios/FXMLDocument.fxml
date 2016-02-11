@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicahorarios.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="btnAtras" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicahorarios.FXMLDocumentController">
    <children>
-      <TableView fx:id="tbHorarioSemanal" layoutX="76.0" layoutY="132.0" prefHeight="200.0" prefWidth="452.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="132.0">
+      <TableView id="tabla" fx:id="tbHorarioSemanal" layoutY="94.0" prefHeight="200.0" prefWidth="452.0">
          <columns>
             <TableColumn fx:id="clHora" prefWidth="75.0" text="Hora" />
             <TableColumn fx:id="clLunes" prefWidth="75.0" text="Lunes" />
@@ -16,9 +17,33 @@
             <TableColumn fx:id="clViernes" prefWidth="75.0" text="Viernes" />
          </columns>
       </TableView>
-      <ListView fx:id="lvHorario" layoutX="76.0" layoutY="132.0" prefHeight="200.0" prefWidth="452.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="132.0" />
-      <RadioButton fx:id="rbSemanal" layoutX="350.0" layoutY="34.0" mnemonicParsing="false" onAction="#rbSemanalPressed" text="Semanal" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="184.0" />
-      <RadioButton fx:id="rbDiario" layoutX="187.0" layoutY="34.0" mnemonicParsing="false" onAction="#rbDiarioPressed" text="Diario" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="347.0" />
-      <ComboBox fx:id="cbProfesor" layoutX="187.0" layoutY="79.0" onAction="#cbProfesorSelectedItemChanged" prefHeight="25.0" prefWidth="229.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="184.0" />
+      <ListView id="lista" fx:id="lvHorario" layoutY="94.0" prefHeight="200.0" prefWidth="452.0" />
+      <RadioButton id="rbS" fx:id="rbSemanal" layoutX="282.0" layoutY="31.0" mnemonicParsing="false" onAction="#rbSemanalPressed" text="Semanal" />
+      <RadioButton id="rbD" fx:id="rbDiario" layoutX="117.0" layoutY="31.0" mnemonicParsing="false" onAction="#rbDiarioPressed" text="Diario" />
+      <ComboBox id="cbProf" fx:id="cbProfesor" layoutX="132.0" layoutY="59.0" onAction="#cbProfesorSelectedItemChanged" prefHeight="25.0" prefWidth="189.0" AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="131.0" />
+      <ImageView fx:id="imgCerrar" fitHeight="12.0" fitWidth="12.0" layoutX="431.0" layoutY="10.0" onMouseClicked="#btnCerrarClick" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="/practicahorarios/cruz.png" />
+        </image>
+      </ImageView>
+      <ImageView fx:id="imgAtras" fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#btnAtrasClick" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="/practicahorarios/atras.png" />
+        </image>
+      </ImageView>
+      <MenuBar layoutX="162.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Easter Egg">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Drag&amp;Drop" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </AnchorPane>

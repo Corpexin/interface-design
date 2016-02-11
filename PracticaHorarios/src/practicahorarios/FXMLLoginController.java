@@ -1,4 +1,5 @@
 package practicahorarios;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,8 +17,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -56,17 +58,14 @@ public class FXMLLoginController extends AnchorPane implements Initializable {
 
     @FXML
     private void btnEnviar(ActionEvent event) {
-        if (!application.userLogging(tbUsuario.getText(), tbPassword.getText())) {
-            lblError.setVisible(true);
-            timer();
-        }
+        comprobarEntrar();
     }
 
     public void setApp(PracticaHorarios application) {
         this.application = application;
     }
-    
-    public String getCodProf(){
+
+    public String getCodProf() {
         return tbUsuario.getText();
     }
 
@@ -84,4 +83,17 @@ public class FXMLLoginController extends AnchorPane implements Initializable {
         System.exit(0);
     }
 
+    @FXML
+    private void pressKeyPass(KeyEvent event) {
+        if (event.getCode().equals(KeyCode.ENTER)) {
+           comprobarEntrar();
+        }
+    }
+
+    private void comprobarEntrar() {
+        if (!application.userLogging(tbUsuario.getText(), tbPassword.getText())) {
+            lblError.setVisible(true);
+            timer();
+        }
+    }
 }

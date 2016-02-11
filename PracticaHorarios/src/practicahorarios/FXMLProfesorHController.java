@@ -13,6 +13,7 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
@@ -21,6 +22,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -55,6 +58,11 @@ public class FXMLProfesorHController extends AnchorPane implements Initializable
 
     String idAnt = "Lunes";
     String codProf;
+    @FXML
+    private ImageView btnAtras;
+    @FXML
+    private ImageView btnCerrar;
+    private PracticaHorarios application;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -91,7 +99,7 @@ public class FXMLProfesorHController extends AnchorPane implements Initializable
                     horaInicio = rs.getString("HoraInicio");
                     horaFin = rs.getString("HoraFin");
                     codAsig = rs.getString("codAsignatura");
-                    datosDiario.add(horaInicio + "-" + horaFin + "   " + codAsig);
+                    datosDiario.add(horaInicio + "-" + horaFin + "    -    " + codAsig);
                 }
                 switch (dia) {
                     case "Lunes":
@@ -115,6 +123,21 @@ public class FXMLProfesorHController extends AnchorPane implements Initializable
         } catch (SQLException ex) {
             System.out.printf("Error Excepcion");
         }
+    }
+
+    @FXML
+    private void atrasPressed(MouseEvent event) {
+        application.goToLogin();
+    }
+
+    @FXML
+    private void cerrarClicked(MouseEvent event) {
+        Platform.exit();
+        System.exit(0);
+    }
+
+    void setApp(PracticaHorarios application) {
+        this.application = application;
     }
     
 }

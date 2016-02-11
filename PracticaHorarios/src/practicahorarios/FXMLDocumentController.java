@@ -16,16 +16,26 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.StringBinding;
+import javafx.beans.property.ObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ContextMenu;
+import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 /**
  *
@@ -42,7 +52,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private RadioButton rbSemanal;
     @FXML
-    private ListView<?> lvHorario;
+    private ListView<String> lvHorario;
 
     @FXML
     private TableView<Horario> tbHorarioSemanal;
@@ -58,12 +68,23 @@ public class FXMLDocumentController implements Initializable {
     private TableColumn<Horario, String> clJueves;
     @FXML
     private TableColumn<Horario, String> clViernes;
+    @FXML
+    private AnchorPane btnAtras;
+    @FXML
+    private ImageView imgCerrar;
+    @FXML
+    private ImageView imgAtras;
+    private PracticaHorarios application;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+        configurarLista();
         getProfesores();
         rellenarColumnas();
+    }
+    
+    public void setApp(PracticaHorarios application) {
+        this.application = application;
     }
 
     private void getProfesores() {
@@ -119,7 +140,7 @@ public class FXMLDocumentController implements Initializable {
                     horaInicio = rs.getString("HoraInicio");
                     horaFin = rs.getString("HoraFin");
                     codAsig = rs.getString("codAsignatura");
-                    datosDiario.add(horaInicio + "-" + horaFin + "   " + codAsig);
+                    datosDiario.add(horaInicio + "-" + horaFin + "    -    " + codAsig);
                 }
                 lvHorario.setItems(datosDiario);
             }
@@ -284,5 +305,69 @@ public class FXMLDocumentController implements Initializable {
         else if(!cbProfesor.getSelectionModel().isEmpty() && rbSemanal.isSelected())
             getHorarioSemanal("" + codProfLista.get(cbProfesor.getSelectionModel().getSelectedIndex()));
     }
+
+    @FXML
+    private void btnCerrarClick(MouseEvent event) {
+        Platform.exit();
+        System.exit(0);
+    }
+
+    @FXML
+    private void btnAtrasClick(MouseEvent event) {
+        application.goToLogin();
+    }
+
+    private void configurarLista() {
+        lvHorario.setCellFactory(lv -> {
+
+            ListCell<String> listaCeldas = new ListCell<>();
+            listaCeldas.textProperty().bind(listaCeldas.itemProperty()); //bindea el textproperty de la lista con el itemproperty de la lista (?)
+            listaCeldas.emptyProperty().addListener((obs, wasEmpty, isNowEmpty) -> { 
+                if (isNowEmpty) {
+                    listaCeldas.setContextMenu(null);
+                } else {
+                    ContextMenu menu = new ContextMenu();
+                    MenuItem menuItem = new MenuItem();
+                    menuItem.setText(obtenerInfo(listaCeldas.itemProperty().get()));
+                    menu.getItems().addAll(menuItem);
+                    listaCeldas.setContextMenu(menu); //si se hace click en una celda llena sale el menu contextual
+                }
+            });
+            return listaCeldas ;
+        });
+    }
+    
+    public String obtenerInfo(String codigo){
+        String idA = codigo.substring(26);
+        
+        
+        String query;
+        String nombre="";
+        int horasS=0;
+        int horasT=0;
+
+        try {
+            // Cargamos el driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Preparamos la consulta
+            try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/horario", "root", "PHILIPS355"); Statement sentencia = conexion.createStatement()) {
+                ResultSet rs = sentencia.executeQuery("SELECT * FROM asignatura WHERE codAsignatura = '"+idA+"';");
+                ResultSetMetaData rsmd = rs.getMetaData();
+                while (rs.next()) {
+                    nombre = rs.getString("Nombre");
+                    horasS = rs.getInt("HorasSemanales");
+                    horasT = rs.getInt("HorasTotales");
+                }
+            }
+        } catch (ClassNotFoundException cn) {
+        } catch (SQLException ex) {
+            System.out.printf("Error Excepcion");
+        }
+        
+        
+        return nombre+"\nHoras semanales: "+horasS+"\nHoras totales: "+horasT;
+    }
+
+    
 
 }

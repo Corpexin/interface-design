@@ -30,6 +30,10 @@ public class PracticaHorarios extends Application {
 
     private Stage stage;
     FXMLLoginController login;
+    FXMLDocumentController horarioU;
+    FXMLProfesorHController horarioP;
+    
+    
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.initStyle(StageStyle.UNDECORATED);
@@ -48,7 +52,7 @@ public class PracticaHorarios extends Application {
 
     }
 
-    private void goToLogin() {
+    public void goToLogin() {
         try {
             login = (FXMLLoginController) replaceSceneContent("FXMLLogin.fxml");
             login.setApp(this);
@@ -59,7 +63,8 @@ public class PracticaHorarios extends Application {
 
     private void goToHorario() {
         try {
-            replaceSceneContent("FXMLDocument.fxml");
+            horarioU = (FXMLDocumentController) replaceSceneContent("FXMLDocument.fxml");
+            horarioU.setApp(this);
         } catch (Exception ex) {
             Logger.getLogger(PracticaHorarios.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -67,7 +72,8 @@ public class PracticaHorarios extends Application {
     
      private void goToPersonalHorario() {
         try {
-            FXMLProfesorHController horarioP = (FXMLProfesorHController) replaceSceneContent("FXMLProfesorH.fxml");
+            horarioP = (FXMLProfesorHController) replaceSceneContent("FXMLProfesorH.fxml");
+            horarioP.setApp(this);
         } catch (Exception ex) {
             Logger.getLogger(PracticaHorarios.class.getName()).log(Level.SEVERE, null, ex);
         }

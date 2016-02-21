@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="287.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Login.FXMLLoginController">
+   <children>
+      <Label fx:id="lblUsuario" layoutX="127.0" layoutY="42.0" text="usuario" />
+      <TextField id="usuario" fx:id="tbUsuario" alignment="CENTER" layoutX="74.0" layoutY="72.0" onKeyPressed="#pressKeyPass" />
+      <Label fx:id="lblPassword" layoutX="116.0" layoutY="126.0" text="contraseña" />
+      <PasswordField id="password" fx:id="tbPassword" alignment="CENTER" layoutX="75.0" layoutY="156.0" onKeyPressed="#pressKeyPass" />
+      <Button fx:id="btnEnviar" layoutX="111.0" layoutY="216.0" mnemonicParsing="false" onAction="#btnEnviar" text="   entrar   " />
+      <Label id="error" fx:id="lblError" alignment="CENTER" layoutX="55.0" layoutY="255.0" prefHeight="17.0" prefWidth="184.0" text="Usuario o Contraseña incorrectos" textAlignment="CENTER" textFill="#f80707" visible="false" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="53.0" />
+      <ImageView id="cerrar" fx:id="ivCerrar" fitHeight="12.0" fitWidth="12.0" layoutX="269.0" layoutY="10.0" onMouseClicked="#cerrarClick" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="/Main/Resources/cruz.png" />
+        </image>
+      </ImageView>
+   </children>
+</AnchorPane>

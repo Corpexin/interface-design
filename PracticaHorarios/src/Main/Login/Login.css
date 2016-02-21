@@ -1,0 +1,56 @@
+#AnchorPane{
+    -fx-background-color: #232f61;
+}
+
+.label{
+   -fx-font-size: 14px;
+   -fx-text-fill: #ffffff;
+}
+
+.button{
+    -fx-background-color: #1ba2fd;
+    -fx-font-size: 14px;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-border-radius: 30;
+    -fx-background-color: #3b60be;
+    -fx-text-fill: white;
+}
+
+.button:pressed{
+    -fx-border-radius: 30;
+    -fx-background-color: #232f61;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#error{
+   -fx-font-size: 12px;
+   -fx-text-fill: indianred;
+}
+
+#usuario{
+    -fx-border-radius: 30;
+    -fx-border-color: gray;
+    -fx-background-color: #232f61;
+    -fx-text-fill: #d8d8d8;
+}
+
+#usuario:focused{
+    -fx-border-color: white;
+}
+
+#password{
+    -fx-border-radius: 30;
+    -fx-border-color: gray;
+    -fx-background-color: #232f61;
+    -fx-text-fill: #d8d8d8;
+}
+
+#password:focused{
+    -fx-border-color: white;
+}
+

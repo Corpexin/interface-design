@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Profesor.FXMLProfesorController">
+   <children>
+      <TabPane fx:id="tabPanel" layoutY="35.0" prefHeight="365.0" prefWidth="277.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <tabs>
+          <Tab fx:id="tabLunes" onSelectionChanged="#cambioTab" text="Lunes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="lvLunes" prefHeight="374.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabMartes" onSelectionChanged="#cambioTab" text="Martes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="lvMartes" prefHeight="371.0" prefWidth="277.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabMiercoles" onSelectionChanged="#cambioTab" text="Miercoles">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="lvMiercoles" prefHeight="371.0" prefWidth="277.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabJueves" onSelectionChanged="#cambioTab" text="Jueves">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="lvJueves" prefHeight="371.0" prefWidth="277.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabViernes" onSelectionChanged="#cambioTab" text="Viernes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="lvViernes" prefHeight="372.0" prefWidth="277.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fx:id="btnAtras" fitHeight="24.0" fitWidth="24.0" layoutX="7.0" layoutY="6.0" onMouseClicked="#atrasPressed" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="/Main/Resources/atras.png" />
+          </image>
+      </ImageView>
+      <ImageView fx:id="btnCerrar" fitHeight="12.0" fitWidth="12.0" layoutX="274.0" layoutY="11.0" onMouseClicked="#cerrarClicked" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="/Main/Resources/cruz.png" />
+        </image>
+      </ImageView>
+      <Label fx:id="lblCodProf" layoutX="134.0" layoutY="10.0" text="+++" textAlignment="CENTER" textFill="#1ba2fd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

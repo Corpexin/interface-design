@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="examen2talejandromadrid.ListaPController">
+    <stylesheets>
+        <URL value="@Listap.css" />
+    </stylesheets>
+   <children>
+      <ListView fx:id="lvLista" layoutX="14.0" layoutY="42.0" onMouseClicked="#lvItemClick" prefHeight="306.0" prefWidth="205.0" />
+      <TextArea fx:id="tbDatos" editable="false" layoutX="242.0" layoutY="44.0" prefHeight="168.0" prefWidth="346.0" />
+      <Button fx:id="btnVotarP" layoutX="486.0" layoutY="233.0" mnemonicParsing="false" onAction="#votarPClick" text="Votar propuesta" />
+      <Button fx:id="btnNuevaP" layoutX="63.0" layoutY="361.0" mnemonicParsing="false" onAction="#nuevaPClick" text="Nueva Propuesta" />
+      <Button fx:id="btnVerVot" layoutX="449.0" layoutY="361.0" mnemonicParsing="false" onAction="#estadoVClick" text="Ver estado Votacion" />
+      <Button fx:id="btnCerrarSesion" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrarSesionClick" prefHeight="25.0" prefWidth="205.0" text="Cerrar Sesion" />
+      <Button fx:id="btnCerrar" layoutX="561.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrarClick" text="X" />
+   </children>
+</AnchorPane>

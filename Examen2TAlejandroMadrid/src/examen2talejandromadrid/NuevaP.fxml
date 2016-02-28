@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="examen2talejandromadrid.NuevaPController">
+   <children>
+      <Label layoutX="40.0" layoutY="14.0" text="Titulo:" />
+      <TextField fx:id="tbTituloP" layoutX="102.0" layoutY="10.0" prefHeight="25.0" prefWidth="463.0" />
+      <Label layoutX="43.0" layoutY="65.0" text="Datos de propuesta:" />
+      <TextArea fx:id="tbDatosP" layoutX="185.0" layoutY="65.0" prefHeight="283.0" prefWidth="380.0" />
+      <Button fx:id="btnProponer" layoutX="31.0" layoutY="361.0" mnemonicParsing="false" onAction="#proponerClick" text="Proponer" />
+      <Button fx:id="btnCancelar" layoutX="513.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelarClick" text="Cancelar" />
+   </children>
+</AnchorPane>

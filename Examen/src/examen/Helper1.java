@@ -13,9 +13,9 @@ import java.sql.SQLException;
  *
  * @author corpex
  */
-public class Helper {
+public class Helper1 {
      //Clase estatica auxiliar, la usamos para la conexion a la BD y como clase de constantes (Asi matamos 2 pajaros de 1 tiro)
-    private final static String BD_CONEXION= "jdbc:mysql://localhost/horario";
+    private final static String BD_CONEXION= "jdbc:mysql://localhost/prueba";
     private final static String BD_USUARIO= "root";
     private final static String BD_PASSWORD= "PHILIPS355";
     

@@ -6,9 +6,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="examen.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" minHeight="200.0" minWidth="320.0" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="examen.FXMLDocumentController">
+   <children>
+      <ListView fx:id="lvLista" layoutY="27.0" minHeight="173.0" minWidth="162.0" onDragDetected="#DragDetectado" onDragDone="#DragHecho" onMouseClicked="#lvItemClick" prefHeight="173.0" prefWidth="162.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="27.0" />
+      <TableView fx:id="tvTabla" layoutX="160.0" minHeight="200.0" minWidth="162.0" onDragDropped="#DropSoltado" onDragEntered="#DragEntrado" onDragExited="#DragSalido" onDragOver="#DragEncima" prefHeight="200.0" prefWidth="162.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="cl1" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="cl2" prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField id="tbBuscador" fx:id="tbBuscador" layoutY="-1.0" onKeyTyped="#writeText" prefHeight="28.0" prefWidth="156.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-1.0" />
+   </children>
 </AnchorPane>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PrMRepRetrofit</string>
+    <string name="action_settings">Settings</string>
+    <string name="stringNombre">Nombre:</string>
+    <string name="stringEdad">Edad:</string>
+    <string name="stringCurso">Curso:</string>
+    <string name="stringRepetidor">Repetidor:</string>
+    <string name="si">Si</string>
+    <string name="stringNo">No</string>
+    <string name="stringDireccion">Direccion:</string>
+</resources>

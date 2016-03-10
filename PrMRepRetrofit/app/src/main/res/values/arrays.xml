@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayCursos">
+        <item>1CFGS-DAM</item>
+        <item>2CFGS-DAM</item>
+    </string-array>
+</resources>
